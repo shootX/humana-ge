@@ -1,0 +1,1 @@
+<script src="{{ asset('assets/custom/libs/jquery/dist/jquery.min.js') }}"></script> 
