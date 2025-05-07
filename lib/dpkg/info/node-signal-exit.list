@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/node-signal-exit
+/usr/share/doc/node-signal-exit/README.md
+/usr/share/doc/node-signal-exit/changelog.Debian.gz
+/usr/share/doc/node-signal-exit/copyright
+/usr/share/nodejs
+/usr/share/nodejs/@types
+/usr/share/nodejs/@types/signal-exit
+/usr/share/nodejs/@types/signal-exit/index.d.ts
+/usr/share/nodejs/@types/signal-exit/package.json
+/usr/share/nodejs/signal-exit
+/usr/share/nodejs/signal-exit/index.js
+/usr/share/nodejs/signal-exit/package.json
+/usr/share/nodejs/signal-exit/signals.js

@@ -1,0 +1,11 @@
+/.
+/usr
+/usr/lib
+/usr/lib/x86_64-linux-gnu
+/usr/lib/x86_64-linux-gnu/libmcrypt.so.4.4.8
+/usr/share
+/usr/share/doc
+/usr/share/doc/libmcrypt4
+/usr/share/doc/libmcrypt4/changelog.Debian.gz
+/usr/share/doc/libmcrypt4/copyright
+/usr/lib/x86_64-linux-gnu/libmcrypt.so.4

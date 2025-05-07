@@ -1,0 +1,3 @@
+b5742c67323f6551f0f981de469f3c15  usr/lib/nginx/modules/ngx_stream_geoip2_module.so
+9dcd0bb65f6659b061a6df2b9e071293  usr/share/doc/libnginx-mod-stream-geoip2/copyright
+8890bd0689d6e69697f9c8759b9ab4d0  usr/share/nginx/modules-available/mod-stream-geoip2.conf

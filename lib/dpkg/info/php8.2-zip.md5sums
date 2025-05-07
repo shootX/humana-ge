@@ -1,0 +1,5 @@
+bc95ec00b9bced6e0330ec95f8946cf2  usr/lib/php/20220829/zip.so
+77bd9ec9de72d42b8fb6436a964c26ee  usr/share/bug/php8.2-zip/control
+0fc1832280088736cfe4ed4c075c5947  usr/share/bug/php8.2-zip/script
+4303eef7e0f582df7f689301b57feac1  usr/share/lintian/overrides/php8.2-zip
+c46baba51984fb09217d9c7fab433e89  usr/share/php8.2-zip/zip/zip.ini

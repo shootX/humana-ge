@@ -1,0 +1,15 @@
+09af1212cce389152e8444d228768275  usr/lib/php/20230831/dom.so
+ef9492e0a7a8a184cb9aa1985690fb8c  usr/lib/php/20230831/simplexml.so
+8885097045dcdec481ba923f3e6c5145  usr/lib/php/20230831/xml.so
+b2c72842878cb7fb7866bb8ea30cc101  usr/lib/php/20230831/xmlreader.so
+292088fee74382d54829811d484839ed  usr/lib/php/20230831/xmlwriter.so
+5331f606770d4a732f7af9348cd2642e  usr/lib/php/20230831/xsl.so
+df11103a63de394d6a375b1a02e8d0df  usr/share/bug/php8.3-xml/control
+1063723c64c9ef5adbae35f2d56d0114  usr/share/bug/php8.3-xml/script
+bb1390311524370b965f3917bafd5aaa  usr/share/lintian/overrides/php8.3-xml
+e88bd9b3d32d3ce6ae86ce23758b7fb3  usr/share/php8.3-xml/xml/dom.ini
+d59ce88cfda1c4161044ca85d33f9293  usr/share/php8.3-xml/xml/simplexml.ini
+148d7029bf667c8b3eeb4a2180431062  usr/share/php8.3-xml/xml/xml.ini
+ce6be61dbe2d23cbb9fbe76e76131997  usr/share/php8.3-xml/xml/xmlreader.ini
+0850b6a32fea855c178b1bceb6572d0b  usr/share/php8.3-xml/xml/xmlwriter.ini
+74ea439610ac4f9c28abbfbc8cd4cbf3  usr/share/php8.3-xml/xml/xsl.ini

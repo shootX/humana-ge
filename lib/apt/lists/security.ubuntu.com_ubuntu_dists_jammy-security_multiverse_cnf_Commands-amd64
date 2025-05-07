@@ -1,0 +1,37 @@
+suite: jammy-security
+component: multiverse
+arch: amd64
+
+
+name: mumax3
+version: 3.10-2ubuntu0.1
+commands: mumax3,mumax3-convert,mumax3-doc,mumax3-httpfsd,mumax3-plot,mumax3-script,mumax3-server,mumax3-test
+
+name: nvidia-fabricmanager-450
+version: 450.248.02-0ubuntu0.22.04.1
+commands: nv-fabricmanager,nvswitch-audit
+
+name: nvidia-fabricmanager-470
+version: 470.256.02-0ubuntu0.22.04.1
+commands: nv-fabricmanager,nvswitch-audit
+
+name: nvidia-fabricmanager-535
+version: 535.230.02-0ubuntu0.22.04.1
+commands: nv-fabricmanager,nvswitch-audit
+
+name: nvidia-fabricmanager-570
+version: 570.86.15-0ubuntu0.22.04.1
+commands: nv-fabricmanager,nvidia-fabricmanager-start.sh,nvswitch-audit
+
+name: nvidia-imex-570
+version: 570.86.15-0ubuntu0.22.04.1
+commands: nvidia-imex,nvidia-imex-ctl
+
+name: rar
+version: 2:6.23-1~22.04.1
+commands: rar
+
+name: unrar
+version: 1:6.1.5-1ubuntu0.1
+commands: unrar,unrar-nonfree
+

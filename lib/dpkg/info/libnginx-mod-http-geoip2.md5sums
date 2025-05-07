@@ -1,0 +1,4 @@
+6aec05020def73b3c865d8c1702de165  usr/lib/nginx/modules/ngx_http_geoip2_module.so
+6e6ce6c65125a91dd87e35714bd9299d  usr/share/doc/libnginx-mod-http-geoip2/changelog.Debian.gz
+9dcd0bb65f6659b061a6df2b9e071293  usr/share/doc/libnginx-mod-http-geoip2/copyright
+c39662483b1d709bd653fa149941a71d  usr/share/nginx/modules-available/mod-http-geoip2.conf

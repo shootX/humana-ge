@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/node-set-blocking
+/usr/share/doc/node-set-blocking/README.md
+/usr/share/doc/node-set-blocking/changelog.Debian.gz
+/usr/share/doc/node-set-blocking/copyright
+/usr/share/nodejs
+/usr/share/nodejs/set-blocking
+/usr/share/nodejs/set-blocking/index.js
+/usr/share/nodejs/set-blocking/package.json

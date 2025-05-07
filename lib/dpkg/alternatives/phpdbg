@@ -1,0 +1,9 @@
+auto
+/usr/bin/phpdbg
+phpdbg.1.gz
+/usr/share/man/man1/phpdbg.1.gz
+
+/usr/bin/phpdbg8.4
+84
+/usr/share/man/man1/phpdbg8.4.1.gz
+

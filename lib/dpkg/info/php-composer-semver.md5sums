@@ -1,0 +1,16 @@
+e28729f9ebc22c9b0613bf46c489af48  usr/share/doc/php-composer-semver/README.md
+75b7ae0310aa7a62217ee71f53dcdde2  usr/share/doc/php-composer-semver/changelog.Debian.gz
+bd48955c860a17fe0b1bbacf34a0ef9a  usr/share/doc/php-composer-semver/copyright
+583568e63e5a8cce0f074d57c640240e  usr/share/php/Composer/Semver/Comparator.php
+e76aa41e178044c4e5f75ada41f8d1ca  usr/share/php/Composer/Semver/CompilingMatcher.php
+5f7d563a4dfea193b7b7f8f34760ca36  usr/share/php/Composer/Semver/Constraint/Bound.php
+f8ff88fb710a4ced64eb4007ebd77bf0  usr/share/php/Composer/Semver/Constraint/Constraint.php
+d02eae849942f4ef314b889386e2a3df  usr/share/php/Composer/Semver/Constraint/ConstraintInterface.php
+a79367dd9ebe97d601c020797f509a42  usr/share/php/Composer/Semver/Constraint/MatchAllConstraint.php
+1d163bb922d7eb53dd59789df3dee056  usr/share/php/Composer/Semver/Constraint/MatchNoneConstraint.php
+ac6c427c8bd13d4d40090eec171ef3f2  usr/share/php/Composer/Semver/Constraint/MultiConstraint.php
+d157976f9a4bdca116ac631996d0ae62  usr/share/php/Composer/Semver/Interval.php
+fe52ffc3bd88d9c1c28212695ed93e3f  usr/share/php/Composer/Semver/Intervals.php
+0e500c120937cd2a5c9bfa00f98c895e  usr/share/php/Composer/Semver/Semver.php
+8d0cd5ee4a441bd9e05b605008b9bf2e  usr/share/php/Composer/Semver/VersionParser.php
+eb7a41976db0e5864e4d1f50adb7be9f  usr/share/php/Composer/Semver/autoload.php

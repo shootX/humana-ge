@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/node-foreground-child
+/usr/share/doc/node-foreground-child/README.md
+/usr/share/doc/node-foreground-child/changelog.Debian.gz
+/usr/share/doc/node-foreground-child/copyright
+/usr/share/nodejs
+/usr/share/nodejs/foreground-child
+/usr/share/nodejs/foreground-child/index.js
+/usr/share/nodejs/foreground-child/package.json

@@ -1,0 +1,8 @@
+f953a9fc5ba3f5108b5d6cc992f890d3  usr/share/doc/php-twig-i18n-extension/README.rst.gz
+3cd52147dced600f1bb043a79bf69a70  usr/share/doc/php-twig-i18n-extension/changelog.Debian.gz
+caeb01fb76bbc4241dcfbaf15e885087  usr/share/doc/php-twig-i18n-extension/copyright
+a24a2ee74a2e3ee81197f78a8b7c6a6a  usr/share/php/PhpMyAdmin/Twig/Extensions/I18nExtension.php
+1de01189a0c45d1a22828827a87dfbc4  usr/share/php/PhpMyAdmin/Twig/Extensions/Node/TransNode.php
+6bb5b2c39e0c2ef59357700599b347a7  usr/share/php/PhpMyAdmin/Twig/Extensions/TokenParser/TransTokenParser.php
+82dccfbdc598ccbf4721d1b4fe39c288  usr/share/php/PhpMyAdmin/Twig/Extensions/autoload.php
+28124a3d8207326f44b81c107f8e097f  usr/share/pkg-php-tools/overrides/twig-i18n-extension

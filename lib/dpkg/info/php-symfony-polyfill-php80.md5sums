@@ -1,0 +1,10 @@
+29f43fa90bb5c473f4b7ae7cd08a7eaa  usr/share/doc/php-symfony-polyfill-php80/changelog.Debian.gz
+adc052889bb7e194773f0b293dea4f26  usr/share/doc/php-symfony-polyfill-php80/copyright
+44c3c8112a88f58ec2504a9c4c35b04d  usr/share/php/Symfony/Polyfill/Php80/Php80.php
+58affafef30c1e66b40cc59ebe413348  usr/share/php/Symfony/Polyfill/Php80/Resources/stubs/Attribute.php
+1ba603c5fb7e7a51fb47ef4ba9d916ab  usr/share/php/Symfony/Polyfill/Php80/Resources/stubs/Stringable.php
+aed692b03db08c77e9e75efc36e46f04  usr/share/php/Symfony/Polyfill/Php80/Resources/stubs/UnhandledMatchError.php
+c7dc8938b37076b11b63c272c6244207  usr/share/php/Symfony/Polyfill/Php80/Resources/stubs/ValueError.php
+977f005e31b77dbf44bde99fbf7645d4  usr/share/php/Symfony/Polyfill/Php80/autoload.php
+a182f8d65875bfeba83939b11715d436  usr/share/php/Symfony/Polyfill/Php80/bootstrap.php
+daedb56e56f626bc65e9eaad50dac3ba  usr/share/pkg-php-tools/autoloaders/php-symfony-polyfill-php80

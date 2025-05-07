@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/node-inflight
+/usr/share/doc/node-inflight/README.md
+/usr/share/doc/node-inflight/changelog.Debian.gz
+/usr/share/doc/node-inflight/copyright
+/usr/share/nodejs
+/usr/share/nodejs/inflight
+/usr/share/nodejs/inflight/inflight.js
+/usr/share/nodejs/inflight/package.json

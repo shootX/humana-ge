@@ -11,6 +11,7 @@ return array(
     'ZipStream\\' => array($vendorDir . '/maennchen/zipstream-php/src'),
     'YooKassa\\Validator\\' => array($vendorDir . '/yoomoney/yookassa-sdk-validator/src'),
     'YooKassa\\' => array($vendorDir . '/yoomoney/yookassa-sdk-php/lib'),
+    'Yajra\\DataTables\\' => array($vendorDir . '/yajra/laravel-datatables-oracle/src'),
     'Wikimedia\\Composer\\Merge\\V2\\' => array($vendorDir . '/wikimedia/composer-merge-plugin/src'),
     'Whoops\\' => array($vendorDir . '/filp/whoops/src/Whoops'),
     'WhichBrowser\\' => array($vendorDir . '/whichbrowser/parser/src'),

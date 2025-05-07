@@ -1,0 +1,10 @@
+90225c2c2101ae9520b6c8839898fff3  usr/share/doc/php-phpmyadmin-motranslator/PERFORMANCE.md
+6024390c2ba355f3197e29a0228f73e5  usr/share/doc/php-phpmyadmin-motranslator/README.md.gz
+f75ae63094a62da9eb0303fde5d79b39  usr/share/doc/php-phpmyadmin-motranslator/changelog.Debian.gz
+7de72fc43560cb366b225a031bda2d15  usr/share/doc/php-phpmyadmin-motranslator/copyright
+7ebbd262c00278d5eb004cb865b89388  usr/share/php/PhpMyAdmin/MoTranslator/Loader.php
+28d05815b3b91aa40f9d5e39a538838a  usr/share/php/PhpMyAdmin/MoTranslator/ReaderException.php
+7467b172ffb38c8e0aae6a8b740f3f7c  usr/share/php/PhpMyAdmin/MoTranslator/StringReader.php
+eaeecba72583d137673cec8ca07dfc90  usr/share/php/PhpMyAdmin/MoTranslator/Translator.php
+7bec47a46e72f39fc68d20cdb5b95435  usr/share/php/PhpMyAdmin/MoTranslator/autoload.php
+33e6928917e4ffc7c41da91a6e139964  usr/share/php/PhpMyAdmin/MoTranslator/functions.php

@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/node-is-plain-obj
+/usr/share/doc/node-is-plain-obj/changelog.Debian.gz
+/usr/share/doc/node-is-plain-obj/copyright
+/usr/share/doc/node-is-plain-obj/readme.md
+/usr/share/nodejs
+/usr/share/nodejs/is-plain-obj
+/usr/share/nodejs/is-plain-obj/index.d.ts
+/usr/share/nodejs/is-plain-obj/index.js
+/usr/share/nodejs/is-plain-obj/package.json

@@ -1,0 +1,11 @@
+f7a487989a4eba06b64ee0f71ebb1b54  usr/share/doc/php-symfony-service-contracts/changelog.Debian.gz
+e7a762c0bb9991fc307ab9499161746f  usr/share/doc/php-symfony-service-contracts/copyright
+97eaac0aa7299985298efb1902281100  usr/share/php/Symfony/Contracts/Service/Attribute/Required.php
+b105805d3817743c1049a1239aa7ebe2  usr/share/php/Symfony/Contracts/Service/ResetInterface.php
+abf48b404c3682ecca4c3e9cd20eaa24  usr/share/php/Symfony/Contracts/Service/ServiceLocatorTrait.php
+29b886ced321fe9b7c7499f6cc77e048  usr/share/php/Symfony/Contracts/Service/ServiceProviderInterface.php
+e38d660aa88a75857158f7377e12f764  usr/share/php/Symfony/Contracts/Service/ServiceSubscriberInterface.php
+a8455a6b8fc57601866cac0efa3f2c75  usr/share/php/Symfony/Contracts/Service/ServiceSubscriberTrait.php
+0c46602fc6b34821b12643032d574495  usr/share/php/Symfony/Contracts/Service/Test/ServiceLocatorTest.php
+adebc1826bdcffac6c76b856d8b3ede9  usr/share/php/Symfony/Contracts/Service/autoload.php
+d615a841b0ee016a1a3e3ab89bc037a0  usr/share/pkg-php-tools/autoloaders/php-symfony-service-contracts

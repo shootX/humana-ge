@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/node-whatwg-fetch
+/usr/share/doc/node-whatwg-fetch/README.md.gz
+/usr/share/doc/node-whatwg-fetch/changelog.Debian.gz
+/usr/share/doc/node-whatwg-fetch/copyright
+/usr/share/javascript
+/usr/share/nodejs
+/usr/share/nodejs/whatwg-fetch
+/usr/share/nodejs/whatwg-fetch/dist
+/usr/share/nodejs/whatwg-fetch/dist/fetch.umd.js
+/usr/share/nodejs/whatwg-fetch/fetch.js
+/usr/share/nodejs/whatwg-fetch/fetch.js.flow
+/usr/share/nodejs/whatwg-fetch/package.json
+/usr/share/javascript/whatwg-fetch

@@ -1,0 +1,5 @@
+edafb8cf827cf0e67b55fbc969bc7a82  usr/share/doc/php-symfony-deprecation-contracts/changelog.Debian.gz
+e7a762c0bb9991fc307ab9499161746f  usr/share/doc/php-symfony-deprecation-contracts/copyright
+7c7ac2311e22b97438814e033b7f308f  usr/share/php/Symfony/Contracts/Deprecation/autoload.php
+1a356b2db7f4f1552b1cc85206d22eca  usr/share/php/Symfony/Contracts/Deprecation/function.php
+1b5674442ed0e86f6016be49df6a7996  usr/share/pkg-php-tools/autoloaders/php-symfony-deprecation-contracts

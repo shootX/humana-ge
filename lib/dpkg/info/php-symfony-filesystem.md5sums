@@ -1,0 +1,12 @@
+1ac11de4bdcdb09dfb87f6c262e6f112  usr/share/doc/php-symfony-filesystem/changelog.Debian.gz
+971ed8c01ee0af35c9433bbca2bd3224  usr/share/doc/php-symfony-filesystem/copyright
+b14dc5c2f06a5bc04c45d88afd84884d  usr/share/php/Symfony/Component/Filesystem/Exception/ExceptionInterface.php
+d1f77ee8983f90321acd957447d69816  usr/share/php/Symfony/Component/Filesystem/Exception/FileNotFoundException.php
+b835bb839b277abe071cd44ec1d5b8bc  usr/share/php/Symfony/Component/Filesystem/Exception/IOException.php
+0d2b1ef4159b3b961b1e713f84d161dd  usr/share/php/Symfony/Component/Filesystem/Exception/IOExceptionInterface.php
+fefaaa9c9dc136c8e7fb3ea7c3ccbae9  usr/share/php/Symfony/Component/Filesystem/Exception/InvalidArgumentException.php
+8417f5c2439b71908ba49b43ae395d80  usr/share/php/Symfony/Component/Filesystem/Exception/RuntimeException.php
+f877007cc211629dc77f353580696860  usr/share/php/Symfony/Component/Filesystem/Filesystem.php
+2d71530fe82caac60942f13353181a7c  usr/share/php/Symfony/Component/Filesystem/Path.php
+6f52299892843c4a8eff7df436c1ab49  usr/share/php/Symfony/Component/Filesystem/autoload.php
+f5258513ae1c9e802416bfafabe09048  usr/share/pkg-php-tools/autoloaders/php-symfony-filesystem

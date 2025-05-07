@@ -1,0 +1,14 @@
+92d4c67b64c1d88a9c27d7f6c6f830f4  usr/share/doc/libjs-source-map/README.md.gz
+e409c2198743fb3f9c3e5939358bc32e  usr/share/nodejs/source-map/lib/array-set.js
+10ab2672fb7feaa6e4a2ca651d2412f9  usr/share/nodejs/source-map/lib/base64-vlq.js
+d6ba9a233e14b859b51f538c0b295953  usr/share/nodejs/source-map/lib/base64.js
+250315731532fce9f782a6dcc6a0f569  usr/share/nodejs/source-map/lib/binary-search.js
+b43d49bb65a0e89b26e13a97de816cad  usr/share/nodejs/source-map/lib/mapping-list.js
+dfeffc75906e8f42d235a55801ae2a42  usr/share/nodejs/source-map/lib/quick-sort.js
+ace24088d46d7c799dcaaffebfd0b0bb  usr/share/nodejs/source-map/lib/source-map-consumer.js
+85a051f0e4bdb90a4beafe62f6f1cedf  usr/share/nodejs/source-map/lib/source-map-generator.js
+c53b081a390b23d134d60c390843b5de  usr/share/nodejs/source-map/lib/source-node.js
+17caa6910791c90d80d98be1d8b9034e  usr/share/nodejs/source-map/lib/util.js
+90a0260966ba73fb39b6c84612ed1337  usr/share/nodejs/source-map/package.json
+85653942d3090260ae5369fc65e9b6e9  usr/share/nodejs/source-map/source-map.d.ts
+1bb9c1d35d2fbb3779c67306ca3d8070  usr/share/nodejs/source-map/source-map.js

@@ -1,0 +1,11 @@
+5bcfe12ce1ba9a1b945a0875a9739a06  usr/bin/jsonlint-php
+e30a19821eb89678db94d4a3d67b6f77  usr/share/doc/jsonlint/README.md
+c1c0d447c43c7b2ab682d9be10e547cb  usr/share/doc/jsonlint/changelog.Debian.gz
+ab2d8de07a748fe3267ad178e6406076  usr/share/doc/jsonlint/copyright
+d8c8af264e4c58d745a8252a2335836f  usr/share/man/man1/jsonlint-php.1.gz
+4718cf5d5bbdd517cb6f581dbf2e7585  usr/share/php/Seld/JsonLint/DuplicateKeyException.php
+163b6d9062e72eb138c94c602cd3c30c  usr/share/php/Seld/JsonLint/JsonParser.php
+d88ed314cfd6d22e7d34374a5026a9d6  usr/share/php/Seld/JsonLint/Lexer.php
+a6f89a93c15843fc792352b6b9dc2507  usr/share/php/Seld/JsonLint/ParsingException.php
+978d1432cb2c546f639c2f301787cc4f  usr/share/php/Seld/JsonLint/Undefined.php
+93ccdf92d14adc20e055ae5c3e55d4ba  usr/share/php/Seld/JsonLint/autoload.php

@@ -46,13 +46,14 @@
                 class="ti ti-copy"></i></span></a>
     </a> --}}
 
-    @if (
+    {{-- TimeSheet ღილაკი - დაკომენტარებულია მომხმარებლის მოთხოვნით --}}
+    {{-- @if (
         (isset($permissions) && in_array('show timesheet', $permissions)) ||
             (isset($currentWorkspace) && $currentWorkspace->permission == 'Owner'))
         <a href="{{ route($client_keyword . 'projects.timesheet.index', [$currentWorkspace->slug, $project->id]) }}"
             data-toggle="tooltip" title="{{ __('TimeSheet') }}" class="btn btn-sm btn-primary">
             <i class="ti ti-alarm"></i></a>
-    @endif
+    @endif --}}
 
     @if (
         (isset($permissions) && in_array('show gantt', $permissions)) ||
@@ -70,13 +71,14 @@
             <i class="ti ti-layout-kanban"></i></a>
     @endif
 
-    @if (
+    {{-- Bug Report ღილაკი - დაკომენტარებულია მომხმარებლის მოთხოვნით --}}
+    {{-- @if (
         (isset($permissions) && in_array('show bug report', $permissions)) ||
             (isset($currentWorkspace) && $currentWorkspace->permission == 'Owner'))
         <a href="{{ route($client_keyword . 'projects.bug.report', [$currentWorkspace->slug, $project->id]) }}"
             data-toggle="tooltip" title="{{ __('Bug Report') }}" class="btn btn-sm btn-primary">
             <i class="ti ti-bug"></i></a>
-    @endif
+    @endif --}}
 
     @if (
         (isset($permissions) && in_array('show expenses', $permissions)) ||
@@ -86,9 +88,10 @@
             <i class="ti ti-file-text"></i></a>
     @endif
 
-    <a href="{{ route($client_keyword . 'projecttime.tracker', [$currentWorkspace->slug, $project->id]) }}"
+    {{-- Tracker ღილაკი - დაკომენტარებულია მომხმარებლის მოთხოვნით --}}
+    {{-- <a href="{{ route($client_keyword . 'projecttime.tracker', [$currentWorkspace->slug, $project->id]) }}"
         data-toggle="tooltip" title="{{ __('Tracker') }}" class="btn btn-sm btn-primary">
-        <i class="ti ti-device-watch"></i></a>
+        <i class="ti ti-device-watch"></i></a> --}}
 @endsection
 
 @push('css-page')
@@ -223,7 +226,7 @@
                                         <div class="text-end project-card-content">
                                             <h6 class="text-muted mb-1">{{ __('Budget') }}</h6>
                                             <span
-                                                class="h6 font-weight-bold mb-0 ">{{ !empty($currentWorkspace->currency) ? $currentWorkspace->currency : '$' }}{{ number_format($project->budget) }}</span>
+                                                class="h6 font-weight-bold mb-0 ">{{ !empty($currentWorkspace->currency) ? $currentWorkspace->currency : '$' }}{{ number_format($paidInvoicesSum) }}</span>
                                         </div>
                                     </div>
                                 </div>
@@ -890,10 +893,10 @@
             @php($storage_file = asset($logo_project_files . $file->file_path))
 
             // Create the mock file:
-            @if (Storage::disk($setting['storage_setting'])->exists('/project_files/' . $file->file_path))
+            @if (Storage::disk($setting['storage_setting'])->exists('project_files/' . $file->file_path))
                 var mockFile = {
                     name: "{{ $file->file_name }}",
-                    size: {{ filesize('storage/project_files/' . $file->file_path) }}
+                    size: {{ Storage::disk($setting['storage_setting'])->size('project_files/' . $file->file_path) }}
                 };
             @endif
             // Call the default addedfile event handler

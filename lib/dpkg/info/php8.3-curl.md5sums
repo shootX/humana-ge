@@ -1,0 +1,5 @@
+1088a6b50bbc344fdbccc30e45e7e577  usr/lib/php/20230831/curl.so
+df11103a63de394d6a375b1a02e8d0df  usr/share/bug/php8.3-curl/control
+7fcd0db8e3682b7f88d93bcbf000d084  usr/share/bug/php8.3-curl/script
+5eba53f006f1e1ec046592d703597cb8  usr/share/lintian/overrides/php8.3-curl
+0278905f22bb2770ddee828403d70cfd  usr/share/php8.3-curl/curl/curl.ini

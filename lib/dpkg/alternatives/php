@@ -1,0 +1,15 @@
+manual
+/usr/bin/php
+php.1.gz
+/usr/share/man/man1/php.1.gz
+
+/usr/bin/php8.2
+82
+/usr/share/man/man1/php8.2.1.gz
+/usr/bin/php8.3
+83
+/usr/share/man/man1/php8.3.1.gz
+/usr/bin/php8.4
+84
+/usr/share/man/man1/php8.4.1.gz
+

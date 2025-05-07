@@ -1,0 +1,9 @@
+86429a8987ff4765000cb6f6091e144f  usr/bin/phar8.4.phar
+d9ea7f970b80bfe5f5ed5e020df031a7  usr/bin/php8.4
+d41d8cd98f00b204e9800998ecf8427e  usr/lib/php/8.4/sapi/cli
+f416814ce2602e70f72b231143d5ead9  usr/share/bug/php8.4-cli/control
+9837e06ba5b4c8dbc29a2922790ba5d2  usr/share/bug/php8.4-cli/script
+90afe2f50bb78aa75d99404548185a7c  usr/share/lintian/overrides/php8.4-cli
+5b1970ef54318c9301aef83a3a2bb1de  usr/share/man/man1/phar8.4.1.gz
+5cb52b99ebed3e1055572300de9c9c48  usr/share/man/man1/phar8.4.phar.1.gz
+622b00711bed11ff700f95df5a697244  usr/share/man/man1/php8.4.1.gz

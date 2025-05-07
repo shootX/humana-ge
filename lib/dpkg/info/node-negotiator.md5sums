@@ -1,0 +1,15 @@
+caa0253a088a38ebf2dda46208e22eea  usr/share/doc/node-negotiator/README.md.gz
+bf6c3585d8a9310a5b498ae89bc875f6  usr/share/doc/node-negotiator/changelog.Debian.gz
+eb423e9c961c82fd73ec20aaf27f6c07  usr/share/doc/node-negotiator/copyright
+24642c8cdfbc083438cdc69f9446edc7  usr/share/doc/node-negotiator/examples/accept.js
+c7d49be7a3b2fe186b98b676c5e35678  usr/share/doc/node-negotiator/examples/charset.js
+bb238585285b239d75e500b111a5c2e9  usr/share/doc/node-negotiator/examples/encoding.js
+bcc64f552589a16ae7d3bf84a12c70be  usr/share/doc/node-negotiator/examples/language.js
+8b73039a416ab52381fd4ed7052df648  usr/share/nodejs/@types/negotiator/index.d.ts
+81b7cf4bf2226bd6000fa8ca3277ccef  usr/share/nodejs/@types/negotiator/package.json
+9ed619fb70c6bc360f3908dd90a79046  usr/share/nodejs/negotiator/index.js
+7977a65b1542fa8ce9650e58607f4b07  usr/share/nodejs/negotiator/lib/charset.js
+e03dd226452c58ce083ab4468851f0b1  usr/share/nodejs/negotiator/lib/encoding.js
+4538455326d31cc086bb901f7e3b83fc  usr/share/nodejs/negotiator/lib/language.js
+0fdaa0ed7cab2ce5fcbd7b361a85892c  usr/share/nodejs/negotiator/lib/mediaType.js
+f532dffa79bfce9737c04201d64b5160  usr/share/nodejs/negotiator/package.json

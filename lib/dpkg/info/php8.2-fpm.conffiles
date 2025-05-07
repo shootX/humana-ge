@@ -1,0 +1,5 @@
+/etc/apache2/conf-available/php8.2-fpm.conf
+/etc/init.d/php8.2-fpm
+/etc/logrotate.d/php8.2-fpm
+/etc/php/8.2/fpm/php-fpm.conf
+/etc/php/8.2/fpm/pool.d/www.conf

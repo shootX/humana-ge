@@ -110,20 +110,24 @@
                             </a>
                         </li>
 
+                        {{-- დროებით გათიშულია Timesheet ფუნქციონალი
                         <li class="dash-item {{ Request::route()->getName() == 'timesheet.index' ? ' active' : '' }}">
                             <a href="{{ route('timesheet.index', $currentWorkspace->slug) }}" class="dash-link ">
                                 <span class="dash-micon"><i data-feather="clock"></i></span>
                                 <span class="dash-mtext">{{ __('Timesheet') }}</span>
                             </a>
                         </li>
+                        --}}
 
                         @if (Auth::user()->type == 'user' && $currentWorkspace->creater->id == Auth::user()->id)
+                            {{-- დროებით გათიშულია Tracker ფუნქციონალი
                             <li class="dash-item {{ \Request::route()->getName() == 'time.tracker' ? 'active' : '' }}">
                                 <a href="{{ route('time.tracker', $currentWorkspace->slug) }}" class="dash-link ">
                                     <span class="dash-micon"><i data-feather="watch"></i></span>
                                     <span class="dash-mtext">{{ __('Tracker') }}</span>
                                 </a>
                             </li>
+                            --}}
                         @endif
 
                         @if ($currentWorkspace->creater->id == Auth::user()->id)
@@ -136,34 +140,7 @@
                             </li>
                         @endif
 
-                        @if (isset($currentWorkspace) && $currentWorkspace && $currentWorkspace->creater->id == Auth::user()->id)
-                            <li
-                                class="dash-item dash-hasmenu {{ Request::route()->getName() == 'contracts.index' || Request::route()->getName() == 'contracts.show' ? ' active' : '' }}">
-                                <a href="#" class="dash-link">
-                                    <span class="dash-micon"><i class="ti ti-device-floppy"></i></span>
-                                    <span class="dash-mtext">{{ __('Contracts') }}</span>
-                                    <span class="dash-arrow"><i data-feather="chevron-right"></i></span>
-                                </a>
-
-                                <ul
-                                    class="dash-submenu collapse  {{ Request::route()->getName() == 'contracts.index' ? ' active' : '' }}">
-                                    <li
-                                        class="dash-item {{ Request::route()->getName() == 'contracts.index' || Request::route()->getName() == 'contracts.show' ? 'active' : '' }}">
-                                        <a class="dash-link"
-                                            href="{{ route('contracts.index', $currentWorkspace->slug) }}">
-                                            {{ __('Contracts') }}
-                                        </a>
-                                    </li>
-
-                                    <li class="dash-item ">
-                                        <a class="dash-link"
-                                            href="{{ route('contract_type.index', $currentWorkspace->slug) }}">
-                                            {{ __('Contract Type') }}
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                        @endif
+                       
 
                         <li class="dash-item {{ Request::route()->getName() == 'calender.index' ? ' active' : '' }}">
                             <a href="{{ route('calender.google.calendar', $currentWorkspace->slug) }}" class="dash-link ">
@@ -188,6 +165,15 @@
                             </li>
                         @endif
 
+                        {{-- Add Inventory Menu Item --}}
+                        <li class="dash-item {{ Request::route()->getName() == 'inventory.index' ? ' active' : '' }}">
+                            <a href="{{ route('inventory.index', $currentWorkspace->slug) }}" class="dash-link">
+                                <span class="dash-micon"><i data-feather="archive"></i></span>
+                                <span class="dash-mtext">{{ __('Inventory') }}</span>
+                            </a>
+                        </li>
+                        {{-- End Inventory Menu Item --}}
+
                         @elseauth
 
                         <li
@@ -198,6 +184,7 @@
                             </a>
                         </li>
 
+                        {{-- დროებით გათიშულია Timesheet ფუნქციონალი
                         <li
                             class="dash-item {{ Request::route()->getName() == 'client.timesheet.index' ? ' active' : '' }}">
                             <a href="{{ route('client.timesheet.index', $currentWorkspace->slug) }}" class="dash-link ">
@@ -205,6 +192,7 @@
                                 <span class="dash-mtext">{{ __('Timesheet') }}</span>
                             </a>
                         </li>
+                        --}}
 
                         <li
                             class="dash-item {{ Request::route()->getName() == 'client.invoices.index' ? ' active' : '' }}">
@@ -214,13 +202,7 @@
                             </a>
                         </li>
 
-                        <li
-                            class="dash-item {{ Request::route()->getName() == 'client.contracts.index' || Request::route()->getName() == 'client.contracts.show' ? 'active' : '' }}">
-                            <a href="{{ route('client.contracts.index', $currentWorkspace->slug) }}" class="dash-link ">
-                                <span class="dash-micon"><i class="ti ti-device-floppy"></i></span>
-                                <span class="dash-mtext">{{ __('Contracts') }}</span>
-                            </a>
-                        </li>
+                        {{-- contracts და contract type მენიუს პუნქტი სრულად ამოღებულია ყველა როლისთვის --}}
 
                         <li
                             class="dash-item {{ Request::route()->getName() == 'client.project_report.index' || Request::segment(3) == 'project_report' ? ' active' : '' }}">

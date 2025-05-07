@@ -1,0 +1,6 @@
+645ea79b23f505525001e86784898fc8  usr/bin/mysqlreport
+efed8f990f3b99d2a3fc6107cfa2a8a8  usr/share/doc/mysql-client-8.0/README
+ac76b53e4d4e8eec9d73f83248c9ad3a  usr/share/doc/mysql-client-8.0/README.Debian
+10b2778731292822b69036ad0218cc04  usr/share/doc/mysql-client-8.0/copyright
+35f2b6525a48ed49e9fcfaf986f5cd53  usr/share/lintian/overrides/mysql-client-8.0
+da5566bef83e29891e02712f88c23299  usr/share/man/man1/mysqlreport.1.gz

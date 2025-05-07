@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/lib
+/usr/lib/tasksel
+/usr/lib/tasksel/tests
+/usr/lib/tasksel/tests/default-desktop
+/usr/lib/tasksel/tests/desktop
+/usr/lib/tasksel/tests/laptop
+/usr/lib/tasksel/tests/server
+/usr/share
+/usr/share/doc
+/usr/share/tasksel
+/usr/share/tasksel/descs
+/usr/share/tasksel/descs/debian-tasks.desc
+/usr/share/doc/tasksel-data

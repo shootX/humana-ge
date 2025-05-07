@@ -1,0 +1,10 @@
+7e6ef1ea14865af9af7fe68a798e9d34  lib/systemd/system/php8.2-fpm.service
+d41d8cd98f00b204e9800998ecf8427e  usr/lib/php/8.2/sapi/fpm
+86e9edcb8a317fd65ca3c544aec0ccf3  usr/lib/php/php8.2-fpm-reopenlogs
+83495ba911a7f77915fed5a92996e5db  usr/lib/tmpfiles.d/php8.2-fpm.conf
+e1367a00ecfc99ef636407de9d8e11c9  usr/sbin/php-fpm8.2
+a2e953e488220348284f864610e8fba4  usr/share/bug/php8.2-fpm/control
+e7a664e085b7f37c8b59c7583bfe9720  usr/share/bug/php8.2-fpm/script
+c44d81fe9250b12eb16fd8e865b084ec  usr/share/lintian/overrides/php8.2-fpm
+5ea02e719dc0c067573c45e56254e404  usr/share/man/man8/php-fpm8.2.8.gz
+b72576b7ba102000e6af9969bec20bf9  usr/share/php/8.2/fpm/status.html

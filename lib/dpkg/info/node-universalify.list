@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/node-universalify
+/usr/share/doc/node-universalify/README.md
+/usr/share/doc/node-universalify/changelog.Debian.gz
+/usr/share/doc/node-universalify/copyright
+/usr/share/nodejs
+/usr/share/nodejs/universalify
+/usr/share/nodejs/universalify/index.js
+/usr/share/nodejs/universalify/package.json

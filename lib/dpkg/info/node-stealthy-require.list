@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/node-stealthy-require
+/usr/share/doc/node-stealthy-require/README.md.gz
+/usr/share/doc/node-stealthy-require/changelog.Debian.gz
+/usr/share/doc/node-stealthy-require/copyright
+/usr/share/nodejs
+/usr/share/nodejs/stealthy-require
+/usr/share/nodejs/stealthy-require/lib
+/usr/share/nodejs/stealthy-require/lib/index.js
+/usr/share/nodejs/stealthy-require/package.json

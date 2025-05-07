@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/node-kind-of
+/usr/share/doc/node-kind-of/README.md.gz
+/usr/share/doc/node-kind-of/changelog.Debian.gz
+/usr/share/doc/node-kind-of/copyright
+/usr/share/nodejs
+/usr/share/nodejs/kind-of
+/usr/share/nodejs/kind-of/index.js
+/usr/share/nodejs/kind-of/package.json

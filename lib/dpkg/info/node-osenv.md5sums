@@ -1,0 +1,7 @@
+cac6c5143b8782b36cb433eedf3a618d  usr/share/doc/node-osenv/README.md
+a1f1df7297fff08e5c77a2b0e558d458  usr/share/doc/node-osenv/changelog.Debian.gz
+33ff9529d2a75a99f2bdc6a926fc7c45  usr/share/doc/node-osenv/copyright
+dfd8a38b0420bcd8dfb765c8a9dbb6e6  usr/share/nodejs/@types/osenv/index.d.ts
+7749ee8488337687f7abb2b059fa2440  usr/share/nodejs/@types/osenv/package.json
+9bcbc925d6778debe7d7d285c0464677  usr/share/nodejs/osenv/osenv.js
+4690af52479190b37d7e5df62fa167d8  usr/share/nodejs/osenv/package.json

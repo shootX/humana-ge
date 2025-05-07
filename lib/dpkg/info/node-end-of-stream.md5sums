@@ -1,0 +1,7 @@
+ed25a93bb0dc7028d5478619f6e02785  usr/share/doc/node-end-of-stream/README.md
+6c548c24b7ccc16883d70047d833e681  usr/share/doc/node-end-of-stream/changelog.Debian.gz
+e67115c8fe1afa367f36ca6c5c75dce3  usr/share/doc/node-end-of-stream/copyright
+61200dc7f0cbe9700d9d44d3f19f5561  usr/share/nodejs/@types/end-of-stream/index.d.ts
+608fdb4b14b18904485018328260a844  usr/share/nodejs/@types/end-of-stream/package.json
+2c81e5e7dae5854bdba5be8e0d5b4c79  usr/share/nodejs/end-of-stream/index.js
+36be3e35e3740830415138528c4237d4  usr/share/nodejs/end-of-stream/package.json

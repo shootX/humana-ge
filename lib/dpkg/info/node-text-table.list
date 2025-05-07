@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/node-text-table
+/usr/share/doc/node-text-table/changelog.Debian.gz
+/usr/share/doc/node-text-table/copyright
+/usr/share/doc/node-text-table/readme.markdown
+/usr/share/nodejs
+/usr/share/nodejs/text-table
+/usr/share/nodejs/text-table/index.js
+/usr/share/nodejs/text-table/package.json

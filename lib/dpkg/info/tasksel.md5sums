@@ -1,0 +1,14 @@
+33597a75ed3d624db54fd49e300212d9  usr/bin/tasksel
+1ca772d3c9fe058ae565647d9135b1d0  usr/lib/tasksel/default_desktop
+8f7bce0460bf599df6f47140d3775d33  usr/lib/tasksel/packages/list
+aa8760a68fe2b6623bb848c7167f6b83  usr/lib/tasksel/tasksel-debconf
+92152dc0b99d730aafdbb73aa37fdea0  usr/lib/tasksel/tests/debconf
+4e510db9ea8cab6a007a91550ef2701b  usr/lib/tasksel/tests/lang
+1134e8d21eb3edad2cf26739001656e4  usr/lib/tasksel/tests/new-install
+e22c04ffdcef8cb29be1ddea976baf26  usr/share/doc/tasksel/README.gz
+c6c53982a317fdfb5443ac05dbd15472  usr/share/doc/tasksel/TODO
+9bdac8fda25d3d22c263bb0c25566055  usr/share/doc/tasksel/changelog.gz
+d1112d809117b6453d255dfba448bf73  usr/share/doc/tasksel/copyright
+2973f15d0659b0887fee6a1f2e1bbebe  usr/share/lintian/overrides/tasksel
+1167123f6b5eeee534d12975748dade9  usr/share/man/man8/tasksel.8.gz
+3056504ac7124a1beabc227dac851914  usr/share/menu/tasksel

@@ -1,0 +1,14 @@
+dcfe3fc97d75c269ef4baa686332f777  usr/share/doc/php-symfony-var-exporter/changelog.Debian.gz
+971ed8c01ee0af35c9433bbca2bd3224  usr/share/doc/php-symfony-var-exporter/copyright
+f062a8281608da7ab34626ac5b786b69  usr/share/php/Symfony/Component/VarExporter/Exception/ClassNotFoundException.php
+1444324de018b4d82076eecfd47f72e7  usr/share/php/Symfony/Component/VarExporter/Exception/ExceptionInterface.php
+674e46fed565fc5a21d556c2b2ba4982  usr/share/php/Symfony/Component/VarExporter/Exception/NotInstantiableTypeException.php
+fb9b72000612d5276b40c723d957cfd3  usr/share/php/Symfony/Component/VarExporter/Instantiator.php
+773ece6ca65960f0c7535cb8b0373c1c  usr/share/php/Symfony/Component/VarExporter/Internal/Exporter.php
+7023dd97bd12b11465142f0611ec60d5  usr/share/php/Symfony/Component/VarExporter/Internal/Hydrator.php
+eab40e8b86ada4dc6b014bf482c255a4  usr/share/php/Symfony/Component/VarExporter/Internal/Reference.php
+338d91d50f394f4803952854a0288a5c  usr/share/php/Symfony/Component/VarExporter/Internal/Registry.php
+a7e95df75b206a547428b0e4e721eb62  usr/share/php/Symfony/Component/VarExporter/Internal/Values.php
+0fe404eb8e851c25f1a23fc00bc8a3d5  usr/share/php/Symfony/Component/VarExporter/VarExporter.php
+d3f09bac630b8d815c63711d3f28a895  usr/share/php/Symfony/Component/VarExporter/autoload.php
+33311066eefd8a7d7b3c190374019b2d  usr/share/pkg-php-tools/autoloaders/php-symfony-var-exporter

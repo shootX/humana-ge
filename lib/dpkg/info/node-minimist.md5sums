@@ -1,0 +1,11 @@
+d28739b00bc01cb2bd6ad08913928979  usr/share/doc/node-minimist/changelog.Debian.gz
+25a1aca71568577680977106a98ecc09  usr/share/doc/node-minimist/copyright
+ec61a2f24b121c24aa91fe3e63816652  usr/share/doc/node-minimist/examples/parse.js
+24b2ee78b486c47b03a4651e2b7e611c  usr/share/doc/node-minimist/readme.markdown
+8312aaf8b6499b5fc8d656cf42614126  usr/share/nodejs/@types/minimist/index.d.ts
+2f444bae81c3bce2242546ad07c6ce8d  usr/share/nodejs/@types/minimist/package.json
+fafe57a7c0cfb51bc8fc398f5065432a  usr/share/nodejs/minimist-options/index.d.ts
+5280468fd2c16238f4c12fbcc5291301  usr/share/nodejs/minimist-options/index.js
+b53b7b73c2f87e55e78453905ae21570  usr/share/nodejs/minimist-options/package.json
+2119e80ea083f018b35c479d064ab598  usr/share/nodejs/minimist/index.js
+84505571ecc56b8071068f44de7c79b2  usr/share/nodejs/minimist/package.json

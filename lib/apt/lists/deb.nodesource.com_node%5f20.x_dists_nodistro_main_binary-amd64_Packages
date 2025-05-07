@@ -1,0 +1,1509 @@
+Package: nodejs
+Priority: optional
+Section: web
+Installed-Size: 194284
+Maintainer: NodeSource Support <support@nodesource.com>
+Architecture: amd64
+Version: 20.19.1-1nodesource1
+Replaces: nodejs-dev (<= 0.8.22), nodejs-legacy, npm (<= 1.2.14)
+Provides: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Depends: libc6 (>= 2.28), libgcc1 (>= 1:3.4), libstdc++6 (>= 5.2), python3, ca-certificates
+Conflicts: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Filename: pool/main/n/nodejs/nodejs_20.19.1-1nodesource1_amd64.deb
+Size: 31989552
+MD5sum: ad820044ffe0d9bcd3ccf65e4edf6e13
+SHA1: 74050137d997230b9bf96b88800baf4e2e53f893
+SHA256: e091b24b9156760640b43969f9f479a1a4514ae5fae21187df27fe4cc5589c20
+SHA512: d851821538f860da555f3586472845ccf473eef10ceef02c81ae2fa735649003bd978f5ddace747cdf219581b3ffd2cf12636c803e4b1c9a138f18d7283f2bea
+Description: Node.js event-based server-side javascript engine
+ Node.js is similar in design to and influenced by systems like
+ Ruby's Event Machine or Python's Twisted.
+ .
+ It takes the event model a bit further - it presents the event
+ loop as a language construct instead of as a library.
+ .
+ Node.js is bundled with several useful libraries to handle server tasks :
+ System, Events, Standard I/O, Modules, Timers, Child Processes, POSIX,
+ HTTP, Multipart Parsing, TCP, DNS, Assert, Path, URL, Query Strings.
+Homepage: https://nodejs.org
+
+Package: nodejs
+Priority: optional
+Section: web
+Installed-Size: 194275
+Maintainer: NodeSource Support <support@nodesource.com>
+Architecture: amd64
+Version: 20.19.0-1nodesource1
+Replaces: nodejs-dev (<= 0.8.22), nodejs-legacy, npm (<= 1.2.14)
+Provides: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Depends: libc6 (>= 2.28), libgcc1 (>= 1:3.4), libstdc++6 (>= 5.2), python3, ca-certificates
+Conflicts: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Filename: pool/main/n/nodejs/nodejs_20.19.0-1nodesource1_amd64.deb
+Size: 31984932
+MD5sum: 1ee55a9ce170bf90bf30bdf195ff7720
+SHA1: fc520016e8a43fb16f21cc33f6cd2a2fc4c910b9
+SHA256: 137bf42154866ea1fa4df6b61c1c72d9cf58dcfd7c788fab012ead0cdedda972
+SHA512: 41f95c9e28ea50680761d1907ef5d6fb72adf27047beac3973678fc81b3a7ac096cc3a2492b0c596adc2e6d52b8152ac44d7c8664ef7616a513082090abd7015
+Description: Node.js event-based server-side javascript engine
+ Node.js is similar in design to and influenced by systems like
+ Ruby's Event Machine or Python's Twisted.
+ .
+ It takes the event model a bit further - it presents the event
+ loop as a language construct instead of as a library.
+ .
+ Node.js is bundled with several useful libraries to handle server tasks :
+ System, Events, Standard I/O, Modules, Timers, Child Processes, POSIX,
+ HTTP, Multipart Parsing, TCP, DNS, Assert, Path, URL, Query Strings.
+Homepage: https://nodejs.org
+
+Package: nodejs
+Priority: optional
+Section: web
+Installed-Size: 193016
+Maintainer: NodeSource Support <support@nodesource.com>
+Architecture: amd64
+Version: 20.18.3-1nodesource1
+Replaces: nodejs-dev (<= 0.8.22), nodejs-legacy, npm (<= 1.2.14)
+Provides: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Depends: libc6 (>= 2.28), libgcc1 (>= 1:3.4), libstdc++6 (>= 5.2), python3, ca-certificates
+Conflicts: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Filename: pool/main/n/nodejs/nodejs_20.18.3-1nodesource1_amd64.deb
+Size: 31865076
+MD5sum: 329009bfc9f4179a6b8b04e5b915d1f2
+SHA1: f79d4234305b1b5631bfebbdaf3ba90f709da7eb
+SHA256: 5ca8dda65890dfb4aa8eb060c3a502aa3e5775d7362ed741b2613fa5cc58ba55
+SHA512: be41273924d2efef21dba990d9e8a7c4c58e775d395063ed1fa8598635cf9ed7142f0cd207ab3d1bde6b0fa001cf97de9f1f4764fb1109fa3971b873aa1f6a85
+Description: Node.js event-based server-side javascript engine
+ Node.js is similar in design to and influenced by systems like
+ Ruby's Event Machine or Python's Twisted.
+ .
+ It takes the event model a bit further - it presents the event
+ loop as a language construct instead of as a library.
+ .
+ Node.js is bundled with several useful libraries to handle server tasks :
+ System, Events, Standard I/O, Modules, Timers, Child Processes, POSIX,
+ HTTP, Multipart Parsing, TCP, DNS, Assert, Path, URL, Query Strings.
+Homepage: https://nodejs.org
+
+Package: nodejs
+Priority: optional
+Section: web
+Installed-Size: 192604
+Maintainer: NodeSource Support <support@nodesource.com>
+Architecture: amd64
+Version: 20.18.2-1nodesource1
+Replaces: nodejs-dev (<= 0.8.22), nodejs-legacy, npm (<= 1.2.14)
+Provides: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Depends: libc6 (>= 2.28), libgcc1 (>= 1:3.4), libstdc++6 (>= 5.2), python3, ca-certificates
+Conflicts: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Filename: pool/main/n/nodejs/nodejs_20.18.2-1nodesource1_amd64.deb
+Size: 31793312
+MD5sum: 3754117c558f08fd6c86b2700e334ea1
+SHA1: 99a597d07924793d9b088c10dc90540842627807
+SHA256: dce969ec371365e285f9a9182b818a8605e631db9ef0da54c206a8bb7febe2f7
+SHA512: 6199198861b884a1ede4c22fb36575dda218e5ed0affefd98ba423ca4f203d24187f72f1d91f68c885120943f6ceedb7e768e406d017bc90d5610fd8b41c87be
+Description: Node.js event-based server-side javascript engine
+ Node.js is similar in design to and influenced by systems like
+ Ruby's Event Machine or Python's Twisted.
+ .
+ It takes the event model a bit further - it presents the event
+ loop as a language construct instead of as a library.
+ .
+ Node.js is bundled with several useful libraries to handle server tasks :
+ System, Events, Standard I/O, Modules, Timers, Child Processes, POSIX,
+ HTTP, Multipart Parsing, TCP, DNS, Assert, Path, URL, Query Strings.
+Homepage: https://nodejs.org
+
+Package: nodejs
+Priority: optional
+Section: web
+Installed-Size: 192598
+Maintainer: NodeSource Support <support@nodesource.com>
+Architecture: amd64
+Version: 20.18.1-1nodesource1
+Replaces: nodejs-dev (<= 0.8.22), nodejs-legacy, npm (<= 1.2.14)
+Provides: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Depends: libc6 (>= 2.28), libgcc1 (>= 1:3.4), libstdc++6 (>= 5.2), python3, ca-certificates
+Conflicts: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Filename: pool/main/n/nodejs/nodejs_20.18.1-1nodesource1_amd64.deb
+Size: 31799748
+MD5sum: 34b092c5bcbc57bbcb7ac07c212836aa
+SHA1: 07fd7648f4d686fe7afb0ea5c327c517adee8cb5
+SHA256: 76bc1810ca6277d33e6500916de42be206d020572574d55bc5f62366a067068e
+SHA512: 3311404e103f594416c68e0c00153af6d140291c202a0d706ae2cb39b562fe5560f633ef2d21eb5bbff4b315adb46a9b33912c6c81597e9d39db447543a76aa5
+Description: Node.js event-based server-side javascript engine
+ Node.js is similar in design to and influenced by systems like
+ Ruby's Event Machine or Python's Twisted.
+ .
+ It takes the event model a bit further - it presents the event
+ loop as a language construct instead of as a library.
+ .
+ Node.js is bundled with several useful libraries to handle server tasks :
+ System, Events, Standard I/O, Modules, Timers, Child Processes, POSIX,
+ HTTP, Multipart Parsing, TCP, DNS, Assert, Path, URL, Query Strings.
+Homepage: https://nodejs.org
+
+Package: nodejs
+Priority: optional
+Section: web
+Installed-Size: 192552
+Maintainer: NodeSource Support <support@nodesource.com>
+Architecture: amd64
+Version: 20.18.0-1nodesource1
+Replaces: nodejs-dev (<= 0.8.22), nodejs-legacy, npm (<= 1.2.14)
+Provides: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Depends: libc6 (>= 2.28), libgcc1 (>= 1:3.4), libstdc++6 (>= 5.2), python3, ca-certificates
+Conflicts: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Filename: pool/main/n/nodejs/nodejs_20.18.0-1nodesource1_amd64.deb
+Size: 31791400
+MD5sum: ac96c0bcfe0e1835c52721cb083e5dbb
+SHA1: 08ef39967a3cc566e824de16f3bac3e4f250443f
+SHA256: b63bf3bd26a5858571f49a2327d20ecc23ee11a4c4ce544f1813621c1fc8216e
+SHA512: 360c7a45a6b32006172ec2d6035a793619b8e36edbb05ee5241a1ceda2dc45f3edde8128bcd783342b1206bc94a488810046b19d6ddbfd906424e645a8e1f72d
+Description: Node.js event-based server-side javascript engine
+ Node.js is similar in design to and influenced by systems like
+ Ruby's Event Machine or Python's Twisted.
+ .
+ It takes the event model a bit further - it presents the event
+ loop as a language construct instead of as a library.
+ .
+ Node.js is bundled with several useful libraries to handle server tasks :
+ System, Events, Standard I/O, Modules, Timers, Child Processes, POSIX,
+ HTTP, Multipart Parsing, TCP, DNS, Assert, Path, URL, Query Strings.
+Homepage: https://nodejs.org
+
+Package: nodejs
+Priority: optional
+Section: web
+Installed-Size: 191955
+Maintainer: NodeSource Support <support@nodesource.com>
+Architecture: amd64
+Version: 20.17.0-1nodesource1
+Replaces: nodejs-dev (<= 0.8.22), nodejs-legacy, npm (<= 1.2.14)
+Provides: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Depends: libc6 (>= 2.28), libgcc1 (>= 1:3.4), libstdc++6 (>= 5.2), python3, ca-certificates
+Conflicts: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Filename: pool/main/n/nodejs/nodejs_20.17.0-1nodesource1_amd64.deb
+Size: 31696236
+MD5sum: 131d85f1af742d485180a47f692d2fe4
+SHA1: 318e037f03a8c5455d4255f3a7358884317080df
+SHA256: b8c16a4f871660d9ef70228b9946aac6cfe27efc6bd839dd8b9ebd6bddf7b694
+SHA512: 340a9a17cb5c72c0b15a38544c9d050971b7c11c17f0dad6c8f075ffd0289d968cee5bb5fe708d082332a6dbddac794cd4cb335787c332cb83c395e645ac6a9d
+Description: Node.js event-based server-side javascript engine
+ Node.js is similar in design to and influenced by systems like
+ Ruby's Event Machine or Python's Twisted.
+ .
+ It takes the event model a bit further - it presents the event
+ loop as a language construct instead of as a library.
+ .
+ Node.js is bundled with several useful libraries to handle server tasks :
+ System, Events, Standard I/O, Modules, Timers, Child Processes, POSIX,
+ HTTP, Multipart Parsing, TCP, DNS, Assert, Path, URL, Query Strings.
+Homepage: https://nodejs.org
+
+Package: nodejs
+Priority: optional
+Section: web
+Installed-Size: 191726
+Maintainer: NodeSource Support <support@nodesource.com>
+Architecture: amd64
+Version: 20.16.0-1nodesource1
+Replaces: nodejs-dev (<= 0.8.22), nodejs-legacy, npm (<= 1.2.14)
+Provides: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Depends: libc6 (>= 2.28), libgcc1 (>= 1:3.4), libstdc++6 (>= 5.2), python3, ca-certificates
+Conflicts: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Filename: pool/main/n/nodejs/nodejs_20.16.0-1nodesource1_amd64.deb
+Size: 31630668
+MD5sum: c4222d285ba2b8ec6afeaffb44a9cc04
+SHA1: 1617abb8a939e38159935026fb9f9013fbf7d445
+SHA256: a78c0997f37bf41e7b8e999ecec49da0a2d46b7db874e6f74932e75e1b9616ed
+SHA512: 6f19420f1a1a0f05add103ee921b4148c8d0e2bbeb31630f84d4b5e5d8f79a5466de323d89234fdc30323664e0dfce5f50c138bb3fb1393a709579ec920ceaf4
+Description: Node.js event-based server-side javascript engine
+ Node.js is similar in design to and influenced by systems like
+ Ruby's Event Machine or Python's Twisted.
+ .
+ It takes the event model a bit further - it presents the event
+ loop as a language construct instead of as a library.
+ .
+ Node.js is bundled with several useful libraries to handle server tasks :
+ System, Events, Standard I/O, Modules, Timers, Child Processes, POSIX,
+ HTTP, Multipart Parsing, TCP, DNS, Assert, Path, URL, Query Strings.
+Homepage: https://nodejs.org
+
+Package: nodejs
+Priority: optional
+Section: web
+Installed-Size: 191485
+Maintainer: NodeSource Support <support@nodesource.com>
+Architecture: amd64
+Version: 20.15.1-1nodesource1
+Replaces: nodejs-dev (<= 0.8.22), nodejs-legacy, npm (<= 1.2.14)
+Provides: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Depends: libc6 (>= 2.28), libgcc1 (>= 1:3.4), libstdc++6 (>= 5.2), python3, ca-certificates
+Conflicts: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Filename: pool/main/n/nodejs/nodejs_20.15.1-1nodesource1_amd64.deb
+Size: 31618760
+MD5sum: 1ecdc15bf2e46866e54773779e47ef39
+SHA1: 46ed0aa0e935f9f9cce9fa4320390f43764cf917
+SHA256: 00fb04fa7fd977140ec6a7badcc0dd28a0dfb70431cb3f0833cd6fc65962bb36
+SHA512: 3974a7fae74bb42d6cae7d97709b6198f7e60f1110a0bec1dbaaf4857f403dcbbdd7d78d47580e5673c8a99feb1a5facfce7ca6f6f6bd0bb57a3e299ca607ae2
+Description: Node.js event-based server-side javascript engine
+ Node.js is similar in design to and influenced by systems like
+ Ruby's Event Machine or Python's Twisted.
+ .
+ It takes the event model a bit further - it presents the event
+ loop as a language construct instead of as a library.
+ .
+ Node.js is bundled with several useful libraries to handle server tasks :
+ System, Events, Standard I/O, Modules, Timers, Child Processes, POSIX,
+ HTTP, Multipart Parsing, TCP, DNS, Assert, Path, URL, Query Strings.
+Homepage: https://nodejs.org
+
+Package: nodejs
+Priority: optional
+Section: web
+Installed-Size: 191484
+Maintainer: NodeSource Support <support@nodesource.com>
+Architecture: amd64
+Version: 20.15.0-1nodesource1
+Replaces: nodejs-dev (<= 0.8.22), nodejs-legacy, npm (<= 1.2.14)
+Provides: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Depends: libc6 (>= 2.28), libgcc1 (>= 1:3.4), libstdc++6 (>= 5.2), python3, ca-certificates
+Conflicts: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Filename: pool/main/n/nodejs/nodejs_20.15.0-1nodesource1_amd64.deb
+Size: 31625360
+MD5sum: 2a159131bc302179688f2bf12121f4a9
+SHA1: 5d3766d87b425d51ed8f18c1d4b9096ad2573d1a
+SHA256: 9fd6bc3754cfc5960ce9c08640dbefa4093c274cff4f15065f754849f275c5b8
+SHA512: 3465ab9bd71e2bf7176caa26172ee56e8ae2a528974581fb49d54b4192a036b70f5e3662db1d2846b4aed212f2dab0e8d98361f1c9dadfbb58c8a4fce3cb740f
+Description: Node.js event-based server-side javascript engine
+ Node.js is similar in design to and influenced by systems like
+ Ruby's Event Machine or Python's Twisted.
+ .
+ It takes the event model a bit further - it presents the event
+ loop as a language construct instead of as a library.
+ .
+ Node.js is bundled with several useful libraries to handle server tasks :
+ System, Events, Standard I/O, Modules, Timers, Child Processes, POSIX,
+ HTTP, Multipart Parsing, TCP, DNS, Assert, Path, URL, Query Strings.
+Homepage: https://nodejs.org
+
+Package: nodejs
+Priority: optional
+Section: web
+Installed-Size: 191311
+Maintainer: NodeSource Support <support@nodesource.com>
+Architecture: amd64
+Version: 20.14.0-1nodesource1
+Replaces: nodejs-dev (<= 0.8.22), nodejs-legacy, npm (<= 1.2.14)
+Provides: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Depends: libc6 (>= 2.28), libgcc1 (>= 1:3.4), libstdc++6 (>= 5.2), python3, ca-certificates
+Conflicts: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Filename: pool/main/n/nodejs/nodejs_20.14.0-1nodesource1_amd64.deb
+Size: 31590252
+MD5sum: ef90f3204c7c74eff374edea8d7090c7
+SHA1: 52f0ce088f7388da395f4529e79932a38bf9446c
+SHA256: c300ef81463f7a7c032339bfe0b3e0f4bf2f1957b87439a64003c7f232b8336e
+SHA512: f10866b6c85392457dab4c86af2d191fd30b337e06c0f2fe28ad1282691cae8625a0f327eda4370133640526b6048bab8d64a995c76c6f307dcf7d9b1b512540
+Description: Node.js event-based server-side javascript engine
+ Node.js is similar in design to and influenced by systems like
+ Ruby's Event Machine or Python's Twisted.
+ .
+ It takes the event model a bit further - it presents the event
+ loop as a language construct instead of as a library.
+ .
+ Node.js is bundled with several useful libraries to handle server tasks :
+ System, Events, Standard I/O, Modules, Timers, Child Processes, POSIX,
+ HTTP, Multipart Parsing, TCP, DNS, Assert, Path, URL, Query Strings.
+Homepage: https://nodejs.org
+
+Package: nodejs
+Priority: optional
+Section: web
+Installed-Size: 191491
+Maintainer: NodeSource Support <support@nodesource.com>
+Architecture: amd64
+Version: 20.13.1-1nodesource1
+Replaces: nodejs-dev (<= 0.8.22), nodejs-legacy, npm (<= 1.2.14)
+Provides: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Depends: libc6 (>= 2.28), libgcc1 (>= 1:3.4), libstdc++6 (>= 5.2), python3, ca-certificates
+Conflicts: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Filename: pool/main/n/nodejs/nodejs_20.13.1-1nodesource1_amd64.deb
+Size: 31611820
+MD5sum: e32b4ef7a2db740fe3f03ebdd3048e88
+SHA1: c47bd221db1f19a68120cb5e8c0df1a36e8cfc51
+SHA256: 1bea9629aadba1896e86cca70ee6f8c542f58ed97ea7b0c325c64e9cb64d2053
+SHA512: cbad499406b386d7d82f5e0bb5499b1ed0e5789f2c02514569057947fa7772eb418d186e2c91237f093324428243815f84024060f1639f349151a81c164fe916
+Description: Node.js event-based server-side javascript engine
+ Node.js is similar in design to and influenced by systems like
+ Ruby's Event Machine or Python's Twisted.
+ .
+ It takes the event model a bit further - it presents the event
+ loop as a language construct instead of as a library.
+ .
+ Node.js is bundled with several useful libraries to handle server tasks :
+ System, Events, Standard I/O, Modules, Timers, Child Processes, POSIX,
+ HTTP, Multipart Parsing, TCP, DNS, Assert, Path, URL, Query Strings.
+Homepage: https://nodejs.org
+
+Package: nodejs
+Priority: optional
+Section: web
+Installed-Size: 191490
+Maintainer: NodeSource Support <support@nodesource.com>
+Architecture: amd64
+Version: 20.13.0-1nodesource1
+Replaces: nodejs-dev (<= 0.8.22), nodejs-legacy, npm (<= 1.2.14)
+Provides: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Depends: libc6 (>= 2.28), libgcc1 (>= 1:3.4), libstdc++6 (>= 5.2), python3, ca-certificates
+Conflicts: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Filename: pool/main/n/nodejs/nodejs_20.13.0-1nodesource1_amd64.deb
+Size: 31606824
+MD5sum: c94867f46e6d7ba2bcf9730d865abf68
+SHA1: 0395ad8b228d4178b3397566e086c824358053c0
+SHA256: 308d92b19f845bfe14aff8109ce7068ccb3b8b94d1d5bcc471e33989bbb014f3
+SHA512: 764e02f39fbf4a96848593959c33268aef5abfbe20127facdbfb7123155920e39230b009678be7ac5b94376870302e582d7891fba6a1266a74a692e95259d4e7
+Description: Node.js event-based server-side javascript engine
+ Node.js is similar in design to and influenced by systems like
+ Ruby's Event Machine or Python's Twisted.
+ .
+ It takes the event model a bit further - it presents the event
+ loop as a language construct instead of as a library.
+ .
+ Node.js is bundled with several useful libraries to handle server tasks :
+ System, Events, Standard I/O, Modules, Timers, Child Processes, POSIX,
+ HTTP, Multipart Parsing, TCP, DNS, Assert, Path, URL, Query Strings.
+Homepage: https://nodejs.org
+
+Package: nodejs
+Priority: optional
+Section: web
+Installed-Size: 191199
+Maintainer: NodeSource Support <support@nodesource.com>
+Architecture: amd64
+Version: 20.12.2-1nodesource1
+Replaces: nodejs-dev (<= 0.8.22), nodejs-legacy, npm (<= 1.2.14)
+Provides: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Depends: libc6 (>= 2.28), libgcc1 (>= 1:3.4), libstdc++6 (>= 5.2), python3, ca-certificates
+Conflicts: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Filename: pool/main/n/nodejs/nodejs_20.12.2-1nodesource1_amd64.deb
+Size: 31574788
+MD5sum: c48cd20cfe1fa8dec721b6530a4d5edf
+SHA1: 315e5ad18eaf1cb6f4b770d2c89b18120e67b517
+SHA256: 05c3270fa647d575f608db503dbb5b7e2758d3fa95f77e851949304957807a4c
+SHA512: 2f7e95b5eca09f9a9162600c805d5fd877dbe858ec45f33a6df06cc640b8205259f8b79c27a16f056c39cff3d5513f8f3ca236f61082bbc240c0828a285da32f
+Description: Node.js event-based server-side javascript engine
+ Node.js is similar in design to and influenced by systems like
+ Ruby's Event Machine or Python's Twisted.
+ .
+ It takes the event model a bit further - it presents the event
+ loop as a language construct instead of as a library.
+ .
+ Node.js is bundled with several useful libraries to handle server tasks :
+ System, Events, Standard I/O, Modules, Timers, Child Processes, POSIX,
+ HTTP, Multipart Parsing, TCP, DNS, Assert, Path, URL, Query Strings.
+Homepage: https://nodejs.org
+
+Package: nodejs
+Priority: optional
+Section: web
+Installed-Size: 191199
+Maintainer: NodeSource Support <support@nodesource.com>
+Architecture: amd64
+Version: 20.12.1-1nodesource1
+Replaces: nodejs-dev (<= 0.8.22), nodejs-legacy, npm (<= 1.2.14)
+Provides: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Depends: libc6 (>= 2.28), libgcc1 (>= 1:3.4), libstdc++6 (>= 5.2), python3, ca-certificates
+Conflicts: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Filename: pool/main/n/nodejs/nodejs_20.12.1-1nodesource1_amd64.deb
+Size: 31583072
+MD5sum: d5078cd2c7efee346708ee0787699ab4
+SHA1: 3b5d01350db86b5e8882914ae091d6faeef5f12b
+SHA256: c1aeb19c5a88983a9c4e2a3ebc46c69a0c1cd9f6195cedfe95e6a593be73a1fa
+SHA512: 2fd8a0879d34298d853d001d6405a40244dd9ee6aaf9c8b38345a8e3d551b75d75588499d674f2811c6128f1cc6d12e7eed8f45d48fb8bc50ed29cbc203e32c6
+Description: Node.js event-based server-side javascript engine
+ Node.js is similar in design to and influenced by systems like
+ Ruby's Event Machine or Python's Twisted.
+ .
+ It takes the event model a bit further - it presents the event
+ loop as a language construct instead of as a library.
+ .
+ Node.js is bundled with several useful libraries to handle server tasks :
+ System, Events, Standard I/O, Modules, Timers, Child Processes, POSIX,
+ HTTP, Multipart Parsing, TCP, DNS, Assert, Path, URL, Query Strings.
+Homepage: https://nodejs.org
+
+Package: nodejs
+Priority: optional
+Section: web
+Installed-Size: 191190
+Maintainer: NodeSource Support <support@nodesource.com>
+Architecture: amd64
+Version: 20.12.0-1nodesource1
+Replaces: nodejs-dev (<= 0.8.22), nodejs-legacy, npm (<= 1.2.14)
+Provides: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Depends: libc6 (>= 2.28), libgcc1 (>= 1:3.4), libstdc++6 (>= 5.2), python3, ca-certificates
+Conflicts: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Filename: pool/main/n/nodejs/nodejs_20.12.0-1nodesource1_amd64.deb
+Size: 31573748
+MD5sum: 044ade64c66a930ccba9ba6f604ced1f
+SHA1: fe4145af9f82537472bc960b873220f015d9f77a
+SHA256: aa30b2f6868bdf288026f850cb8f9f239222727f0670d6640016feb2b5e93a57
+SHA512: befca97e0d0cb38cd54e37298689632020dfc0579f21f743d21c4b71002ab7a3187af8b4db435c4da93957321eb8dca9c9a783f8f10bbf905973e149a128897c
+Description: Node.js event-based server-side javascript engine
+ Node.js is similar in design to and influenced by systems like
+ Ruby's Event Machine or Python's Twisted.
+ .
+ It takes the event model a bit further - it presents the event
+ loop as a language construct instead of as a library.
+ .
+ Node.js is bundled with several useful libraries to handle server tasks :
+ System, Events, Standard I/O, Modules, Timers, Child Processes, POSIX,
+ HTTP, Multipart Parsing, TCP, DNS, Assert, Path, URL, Query Strings.
+Homepage: https://nodejs.org
+
+Package: nodejs
+Priority: optional
+Section: web
+Installed-Size: 190916
+Maintainer: NodeSource Support <support@nodesource.com>
+Architecture: amd64
+Version: 20.11.1-1nodesource1
+Replaces: nodejs-dev (<= 0.8.22), nodejs-legacy, npm (<= 1.2.14)
+Provides: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Depends: libc6 (>= 2.28), libgcc1 (>= 1:3.4), libstdc++6 (>= 5.2), python3, ca-certificates
+Conflicts: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Filename: pool/main/n/nodejs/nodejs_20.11.1-1nodesource1_amd64.deb
+Size: 31449848
+MD5sum: 3d92537bfbbf787f6b2f760a7e239190
+SHA1: daedf8ac7964bcfb9eb9bfd80907b6ef73b2d7c2
+SHA256: 1e1d4a14fe24a105e0d745c3b807c770c1520eedc6891dcb1269c020d08ac12e
+SHA512: 3a2f704433166915086118cfd64b1685ec36d0dece460acf56d620cc974139571e84c71b12d846cfd74f5ec0cb8c241570cf820130fde1abff6aea2db93a86db
+Description: Node.js event-based server-side javascript engine
+ Node.js is similar in design to and influenced by systems like
+ Ruby's Event Machine or Python's Twisted.
+ .
+ It takes the event model a bit further - it presents the event
+ loop as a language construct instead of as a library.
+ .
+ Node.js is bundled with several useful libraries to handle server tasks :
+ System, Events, Standard I/O, Modules, Timers, Child Processes, POSIX,
+ HTTP, Multipart Parsing, TCP, DNS, Assert, Path, URL, Query Strings.
+Homepage: https://nodejs.org
+
+Package: nodejs
+Priority: optional
+Section: web
+Installed-Size: 158701
+Maintainer: NodeSource Support <support@nodesource.com>
+Architecture: amd64
+Version: 20.11.0-1nodesource1
+Replaces: nodejs-dev (<= 0.8.22), nodejs-legacy, npm (<= 1.2.14)
+Provides: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Depends: libc6 (>= 2.28), python3, ca-certificates
+Conflicts: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Filename: pool/main/n/nodejs/nodejs_20.11.0-1nodesource1_amd64.deb
+Size: 26085608
+MD5sum: ec7fd62153a42959373686a79015829f
+SHA1: 18928183e948577de8038e37b5fb55240b60d522
+SHA256: 225be1b8173e9aa6c40cc65a387a79093d0a4e9f8c5471f980bd6a4ed0cc3b3f
+SHA512: ad9872e7da2bb1eefdae545f8d18d823248b5adfa1c7c1a27c983040022f3ca4d698571e43dfa8b60d658a86471f429679ed78a4bf550a391038cb596fda5b5d
+Description: Node.js event-based server-side javascript engine
+ Node.js is similar in design to and influenced by systems like
+ Ruby's Event Machine or Python's Twisted.
+ .
+ It takes the event model a bit further - it presents the event
+ loop as a language construct instead of as a library.
+ .
+ Node.js is bundled with several useful libraries to handle server tasks :
+ System, Events, Standard I/O, Modules, Timers, Child Processes, POSIX,
+ HTTP, Multipart Parsing, TCP, DNS, Assert, Path, URL, Query Strings.
+Homepage: https://nodejs.org
+
+Package: nodejs
+Priority: optional
+Section: web
+Installed-Size: 190511
+Maintainer: NodeSource Support <support@nodesource.com>
+Architecture: amd64
+Version: 20.10.0-1nodesource1
+Replaces: nodejs-dev (<= 0.8.22), nodejs-legacy, npm (<= 1.2.14)
+Provides: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Depends: libc6 (>= 2.28), python3, ca-certificates
+Conflicts: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Filename: pool/main/n/nodejs/nodejs_20.10.0-1nodesource1_amd64.deb
+Size: 31344296
+MD5sum: fa842dca54852f1a72f68944c3350485
+SHA1: 6409643e95c309bbd12d12e8104face21f755e5e
+SHA256: 592109803504a941bf68f13a9c7db153c1c98d9bd91049d827793c5a887cdc4f
+SHA512: ec17d92992a3075fde22402438301a46b6f049b8224bd2887573214c80ba494d45a1f7d450e86ba3593cbaa7ffef37d9dd4b31dba3cfbfb979431e9200ffeee4
+Description: Node.js event-based server-side javascript engine
+ Node.js is similar in design to and influenced by systems like
+ Ruby's Event Machine or Python's Twisted.
+ .
+ It takes the event model a bit further - it presents the event
+ loop as a language construct instead of as a library.
+ .
+ Node.js is bundled with several useful libraries to handle server tasks :
+ System, Events, Standard I/O, Modules, Timers, Child Processes, POSIX,
+ HTTP, Multipart Parsing, TCP, DNS, Assert, Path, URL, Query Strings.
+Homepage: https://nodejs.org
+
+Package: nodejs
+Priority: optional
+Section: web
+Installed-Size: 190797
+Maintainer: NodeSource Support <support@nodesource.com>
+Architecture: amd64
+Version: 20.9.0-1nodesource1
+Replaces: nodejs-dev (<= 0.8.22), nodejs-legacy, npm (<= 1.2.14)
+Provides: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Depends: libc6 (>= 2.28), python3, ca-certificates
+Conflicts: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Filename: pool/main/n/nodejs/nodejs_20.9.0-1nodesource1_amd64.deb
+Size: 31081544
+MD5sum: 75113bc78abaad41e541b9aea73111bc
+SHA1: c776799496fd3a26e6da81773ed13f9f3887a1ed
+SHA256: f96ac79d251344c9b63609073ccafc7e761245616206bea909536551c451d764
+SHA512: c19d2e55ca57e215f1a5084003aa38beba8e32bf8e415cfdaf5f00c41a076b006ab0306fe7af7b92c5bfea335c6928ffa39f912753690200298236cd39e252bd
+Description: Node.js event-based server-side javascript engine
+ Node.js is similar in design to and influenced by systems like
+ Ruby's Event Machine or Python's Twisted.
+ .
+ It takes the event model a bit further - it presents the event
+ loop as a language construct instead of as a library.
+ .
+ Node.js is bundled with several useful libraries to handle server tasks :
+ System, Events, Standard I/O, Modules, Timers, Child Processes, POSIX,
+ HTTP, Multipart Parsing, TCP, DNS, Assert, Path, URL, Query Strings.
+Homepage: https://nodejs.org
+
+Package: nodejs
+Priority: optional
+Section: web
+Installed-Size: 190793
+Maintainer: NodeSource Support <support@nodesource.com>
+Architecture: amd64
+Version: 20.8.1-1nodesource1
+Replaces: nodejs-dev (<= 0.8.22), nodejs-legacy, npm (<= 1.2.14)
+Provides: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Depends: libc6 (>= 2.28), python3, ca-certificates
+Conflicts: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Filename: pool/main/n/nodejs/nodejs_20.8.1-1nodesource1_amd64.deb
+Size: 31077036
+MD5sum: 6c289d64b47a2d3cdb265925cdce2a25
+SHA1: a2f20af1f973ac5211606309b8ce4ca9ca3677b0
+SHA256: 9e2c7fe2e95c20a24025b1f254c47958a80c7b4ec053245347f0944e3c168c91
+SHA512: 19c5cef88c5e67b9d40a5532c6647ed3bbc4621d72496dced667afbc5a3750d0c7f4c23c011e0e68cba65ec882a1803bf0765bf15f593ad88c30ad0b1b0c014f
+Description: Node.js event-based server-side javascript engine
+ Node.js is similar in design to and influenced by systems like
+ Ruby's Event Machine or Python's Twisted.
+ .
+ It takes the event model a bit further - it presents the event
+ loop as a language construct instead of as a library.
+ .
+ Node.js is bundled with several useful libraries to handle server tasks :
+ System, Events, Standard I/O, Modules, Timers, Child Processes, POSIX,
+ HTTP, Multipart Parsing, TCP, DNS, Assert, Path, URL, Query Strings.
+Homepage: https://nodejs.org
+
+Package: nodejs
+Priority: optional
+Section: web
+Installed-Size: 190813
+Maintainer: NodeSource Support <support@nodesource.com>
+Architecture: amd64
+Version: 20.8.0-1nodesource1
+Replaces: nodejs-dev (<= 0.8.22), nodejs-legacy, npm (<= 1.2.14)
+Provides: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Depends: libc6 (>= 2.28), python3, ca-certificates
+Conflicts: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Filename: pool/main/n/nodejs/nodejs_20.8.0-1nodesource1_amd64.deb
+Size: 31072640
+MD5sum: 1911852a3b60a3fd0b85f669e181c2b1
+SHA1: 6dc0f711d14a120b11ceb37ef7d091dc22ed845b
+SHA256: 37897fc87bc35214a0dc0c0f801db5d8127f57dfa3e821c6ffd610efe2584ca1
+SHA512: c045f6a7a8d350eca29e13ed3fcc282d85b02429bd1697ad613d8de50c2e87d896367718a445e0ae39ab39f1022bd4a27bdaafd274ad9732b365acf7d3fa966d
+Description: Node.js event-based server-side javascript engine
+ Node.js is similar in design to and influenced by systems like
+ Ruby's Event Machine or Python's Twisted.
+ .
+ It takes the event model a bit further - it presents the event
+ loop as a language construct instead of as a library.
+ .
+ Node.js is bundled with several useful libraries to handle server tasks :
+ System, Events, Standard I/O, Modules, Timers, Child Processes, POSIX,
+ HTTP, Multipart Parsing, TCP, DNS, Assert, Path, URL, Query Strings.
+Homepage: https://nodejs.org
+
+Package: nodejs
+Priority: optional
+Section: web
+Installed-Size: 190580
+Maintainer: NodeSource Support <support@nodesource.com>
+Architecture: amd64
+Version: 20.7.0-1nodesource1
+Replaces: nodejs-dev (<= 0.8.22), nodejs-legacy, npm (<= 1.2.14)
+Provides: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Depends: libc6 (>= 2.28), python3, ca-certificates
+Conflicts: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Filename: pool/main/n/nodejs/nodejs_20.7.0-1nodesource1_amd64.deb
+Size: 31050336
+MD5sum: 35f4578d0145abc1aa955a87ece5cf79
+SHA1: 3010b14cac9f382e8774fc5f02170615afc52762
+SHA256: edb91b2bc131efb1c6a9d7757aeac3943a344b6aff47a5c20acc0464b430f81f
+SHA512: e2f9644e0d8f4b84817e75cb22d6851892221a283911648730fb2cbbdbf045b7c3631d0494f47a412a9bcfa1485e6c96d619234023b8744adff8244d865c4bc9
+Description: Node.js event-based server-side javascript engine
+ Node.js is similar in design to and influenced by systems like
+ Ruby's Event Machine or Python's Twisted.
+ .
+ It takes the event model a bit further - it presents the event
+ loop as a language construct instead of as a library.
+ .
+ Node.js is bundled with several useful libraries to handle server tasks :
+ System, Events, Standard I/O, Modules, Timers, Child Processes, POSIX,
+ HTTP, Multipart Parsing, TCP, DNS, Assert, Path, URL, Query Strings.
+Homepage: https://nodejs.org
+
+Package: nodejs
+Priority: optional
+Section: web
+Installed-Size: 189529
+Maintainer: NodeSource Support <support@nodesource.com>
+Architecture: amd64
+Version: 20.6.1-1nodesource1
+Replaces: nodejs-dev (<= 0.8.22), nodejs-legacy, npm (<= 1.2.14)
+Provides: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Depends: libc6 (>= 2.28), python3, ca-certificates
+Conflicts: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Filename: pool/main/n/nodejs/nodejs_20.6.1-1nodesource1_amd64.deb
+Size: 31010088
+MD5sum: e355e40e8f1aa76e9bde560aff3f5332
+SHA1: e0521d8003fd28d4886ddfa91de8c43d0c4a5542
+SHA256: 0363b5ff3f79e90e8753c95dfd6582296a4f5dc30e4034989d617c123c2ee6fe
+SHA512: 81c01734cc61e071854aa4b08f0f10f0685d91ca3bf192e84c1e45a7c1522c6174ab911517e1dd01ff7aeb82d7c6bf74cc03088eeb5c99ed116beca03cbb8fc4
+Description: Node.js event-based server-side javascript engine
+ Node.js is similar in design to and influenced by systems like
+ Ruby's Event Machine or Python's Twisted.
+ .
+ It takes the event model a bit further - it presents the event
+ loop as a language construct instead of as a library.
+ .
+ Node.js is bundled with several useful libraries to handle server tasks :
+ System, Events, Standard I/O, Modules, Timers, Child Processes, POSIX,
+ HTTP, Multipart Parsing, TCP, DNS, Assert, Path, URL, Query Strings.
+Homepage: https://nodejs.org
+
+Package: nodejs
+Priority: optional
+Section: web
+Installed-Size: 189529
+Maintainer: NodeSource Support <support@nodesource.com>
+Architecture: amd64
+Version: 20.6.0-1nodesource1
+Replaces: nodejs-dev (<= 0.8.22), nodejs-legacy, npm (<= 1.2.14)
+Provides: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Depends: libc6 (>= 2.28), python3, ca-certificates
+Conflicts: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Filename: pool/main/n/nodejs/nodejs_20.6.0-1nodesource1_amd64.deb
+Size: 31015140
+MD5sum: 9b741c5ee1583c34016b3f065cc0c762
+SHA1: 20b741009fe6fc0c6e4ebb08472f6a5b9c4e58c1
+SHA256: cab3039ba6539443c2f55d22b37fbcfa69656445b48a451a0b59bab42c47eed5
+SHA512: 4cc13318b8c176252d0e949f3b3fe1854035fba5c2a88dfead4151a79446b0be17b012b7b757ff72d5f24face640bcd9b69face995ceabc3051c575339a23c0b
+Description: Node.js event-based server-side javascript engine
+ Node.js is similar in design to and influenced by systems like
+ Ruby's Event Machine or Python's Twisted.
+ .
+ It takes the event model a bit further - it presents the event
+ loop as a language construct instead of as a library.
+ .
+ Node.js is bundled with several useful libraries to handle server tasks :
+ System, Events, Standard I/O, Modules, Timers, Child Processes, POSIX,
+ HTTP, Multipart Parsing, TCP, DNS, Assert, Path, URL, Query Strings.
+Homepage: https://nodejs.org
+
+Package: nodejs
+Priority: optional
+Section: web
+Installed-Size: 189037
+Maintainer: NodeSource Support <support@nodesource.com>
+Architecture: amd64
+Version: 20.5.1-1nodesource1
+Replaces: nodejs-dev (<= 0.8.22), nodejs-legacy, npm (<= 1.2.14)
+Provides: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Depends: libc6 (>= 2.28), python3, ca-certificates
+Conflicts: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Filename: pool/main/n/nodejs/nodejs_20.5.1-1nodesource1_amd64.deb
+Size: 30923620
+MD5sum: 335bc51b829cd30687e2435b75777862
+SHA1: 943376060f7c274ccb0e456db228af81292ef240
+SHA256: d6ab4a279f0d8912a9f429a89046c063107a8d2d992e56637c63163627b18ed8
+SHA512: b3689cf6caa1aadea2dcb6b97c3480dfb830711eeaa7fa7e24efa261afdb7cad5815cbe3e87f8f30546baa49915de78a7d00a385abfeaec3a7ebfffb3ac1ccad
+Description: Node.js event-based server-side javascript engine
+ Node.js is similar in design to and influenced by systems like
+ Ruby's Event Machine or Python's Twisted.
+ .
+ It takes the event model a bit further - it presents the event
+ loop as a language construct instead of as a library.
+ .
+ Node.js is bundled with several useful libraries to handle server tasks :
+ System, Events, Standard I/O, Modules, Timers, Child Processes, POSIX,
+ HTTP, Multipart Parsing, TCP, DNS, Assert, Path, URL, Query Strings.
+Homepage: https://nodejs.org
+
+Package: nodejs
+Priority: optional
+Section: web
+Installed-Size: 189027
+Maintainer: NodeSource Support <support@nodesource.com>
+Architecture: amd64
+Version: 20.5.0-1nodesource1
+Replaces: nodejs-dev (<= 0.8.22), nodejs-legacy, npm (<= 1.2.14)
+Provides: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Depends: libc6 (>= 2.28), python3, ca-certificates
+Conflicts: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Filename: pool/main/n/nodejs/nodejs_20.5.0-1nodesource1_amd64.deb
+Size: 30914600
+MD5sum: 6b9b3af1f1c01788aad38c0293505ead
+SHA1: 5e472a04922dc42dbe3fdc4bcddd00fdc310a127
+SHA256: 58560c1a0d8d0635ab321d98ea3f62d70ed443812cf68a8c48220efacbca5efe
+SHA512: 04ef41c1d079a096d684f2efbeb57cfd9b160d2599303a5ce11439b3f5341602f1349a0b4f82f97aba8c1ba4596fef0a4d022b97e6750b5688561e5d6a1f0ee1
+Description: Node.js event-based server-side javascript engine
+ Node.js is similar in design to and influenced by systems like
+ Ruby's Event Machine or Python's Twisted.
+ .
+ It takes the event model a bit further - it presents the event
+ loop as a language construct instead of as a library.
+ .
+ Node.js is bundled with several useful libraries to handle server tasks :
+ System, Events, Standard I/O, Modules, Timers, Child Processes, POSIX,
+ HTTP, Multipart Parsing, TCP, DNS, Assert, Path, URL, Query Strings.
+Homepage: https://nodejs.org
+
+Package: nodejs
+Priority: optional
+Section: web
+Installed-Size: 188965
+Maintainer: NodeSource Support <support@nodesource.com>
+Architecture: amd64
+Version: 20.4.0-1nodesource1
+Replaces: nodejs-dev (<= 0.8.22), nodejs-legacy, npm (<= 1.2.14)
+Provides: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Depends: libc6 (>= 2.28), python3, ca-certificates
+Conflicts: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Filename: pool/main/n/nodejs/nodejs_20.4.0-1nodesource1_amd64.deb
+Size: 30893584
+MD5sum: 45f56430a8750a6628e6e756dfa8cae8
+SHA1: 85a649950e7709c98723af1dfadf70007c620562
+SHA256: 2a8f4a86068bad2e2f783836d7904782eba28a4b6f6887a6af090b62d860b3b9
+SHA512: c4ad72d51f4c5dc88044dee373052417d2b2c2ebef7cae17e8e09ff87342b2e234c227345837b1261b3379832cc02583d87d96247a4b2bde8328acdf518b140b
+Description: Node.js event-based server-side javascript engine
+ Node.js is similar in design to and influenced by systems like
+ Ruby's Event Machine or Python's Twisted.
+ .
+ It takes the event model a bit further - it presents the event
+ loop as a language construct instead of as a library.
+ .
+ Node.js is bundled with several useful libraries to handle server tasks :
+ System, Events, Standard I/O, Modules, Timers, Child Processes, POSIX,
+ HTTP, Multipart Parsing, TCP, DNS, Assert, Path, URL, Query Strings.
+Homepage: https://nodejs.org
+
+Package: nodejs
+Priority: optional
+Section: web
+Installed-Size: 188940
+Maintainer: NodeSource Support <support@nodesource.com>
+Architecture: amd64
+Version: 20.3.1-1nodesource1
+Replaces: nodejs-dev (<= 0.8.22), nodejs-legacy, npm (<= 1.2.14)
+Provides: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Depends: libc6 (>= 2.28), python3, ca-certificates
+Conflicts: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Filename: pool/main/n/nodejs/nodejs_20.3.1-1nodesource1_amd64.deb
+Size: 30849868
+MD5sum: f9ed5749e3b6e8a03a9405f271974eb6
+SHA1: a80d2cff03c8362a9376b35f0bb7b2969f07a82f
+SHA256: 78ae6782d5c028db9f4349d722ebca46f70bdb0b2f46c1d9f1fe805929321867
+SHA512: c3fdeada4acd8562a29d0119b39d6db74f7bfe24a3ea74041966ddbb6f45021ded47a3ebb3bed6010ccd5227a689d70d0249e8fb2aed47e62410b5b2b8278ca0
+Description: Node.js event-based server-side javascript engine
+ Node.js is similar in design to and influenced by systems like
+ Ruby's Event Machine or Python's Twisted.
+ .
+ It takes the event model a bit further - it presents the event
+ loop as a language construct instead of as a library.
+ .
+ Node.js is bundled with several useful libraries to handle server tasks :
+ System, Events, Standard I/O, Modules, Timers, Child Processes, POSIX,
+ HTTP, Multipart Parsing, TCP, DNS, Assert, Path, URL, Query Strings.
+Homepage: https://nodejs.org
+
+Package: nodejs
+Priority: optional
+Section: web
+Installed-Size: 188928
+Maintainer: NodeSource Support <support@nodesource.com>
+Architecture: amd64
+Version: 20.3.0-1nodesource1
+Replaces: nodejs-dev (<= 0.8.22), nodejs-legacy, npm (<= 1.2.14)
+Provides: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Depends: libc6 (>= 2.28), python3, ca-certificates
+Conflicts: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Filename: pool/main/n/nodejs/nodejs_20.3.0-1nodesource1_amd64.deb
+Size: 30833368
+MD5sum: 6a2069e30419022db149eb75b341137e
+SHA1: 57ff8b905661052baf52b51a2d3c0c580837493d
+SHA256: 5df9bbce8e319510e62da0312b19dddcec623c3177ee2d72d04770fc25a4d2ff
+SHA512: 8f5a9d21cf94bdf846acedd03959c32457a98ed538b20ce4b220a95b3f0fec660d593d4e0c2b33ef1efd2b8f78b666cffb3e16ce8733acc6e227e0cafbb250f6
+Description: Node.js event-based server-side javascript engine
+ Node.js is similar in design to and influenced by systems like
+ Ruby's Event Machine or Python's Twisted.
+ .
+ It takes the event model a bit further - it presents the event
+ loop as a language construct instead of as a library.
+ .
+ Node.js is bundled with several useful libraries to handle server tasks :
+ System, Events, Standard I/O, Modules, Timers, Child Processes, POSIX,
+ HTTP, Multipart Parsing, TCP, DNS, Assert, Path, URL, Query Strings.
+Homepage: https://nodejs.org
+
+Package: nodejs
+Priority: optional
+Section: web
+Installed-Size: 188563
+Maintainer: NodeSource Support <support@nodesource.com>
+Architecture: amd64
+Version: 20.2.0-1nodesource1
+Replaces: nodejs-dev (<= 0.8.22), nodejs-legacy, npm (<= 1.2.14)
+Provides: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Depends: libc6 (>= 2.28), python3, ca-certificates
+Conflicts: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Filename: pool/main/n/nodejs/nodejs_20.2.0-1nodesource1_amd64.deb
+Size: 30919140
+MD5sum: 2dd6430532a5cf71e87c28125e6b9895
+SHA1: 27c33bb62a5a76925c144d8008fdd3d63eeec0f9
+SHA256: 7f4785f09b14975e29f6cd44291636759848d8074b5633c6ae38ad6e2e7e38a9
+SHA512: 924533a133d54d8e1fdeb791e0a2bc46316bba98f1cf6f1cbc25e74b3f1474424b79979ba38de64cec78fded4b7deb145a6937f3de8cda61697fce4d03d1d9bd
+Description: Node.js event-based server-side javascript engine
+ Node.js is similar in design to and influenced by systems like
+ Ruby's Event Machine or Python's Twisted.
+ .
+ It takes the event model a bit further - it presents the event
+ loop as a language construct instead of as a library.
+ .
+ Node.js is bundled with several useful libraries to handle server tasks :
+ System, Events, Standard I/O, Modules, Timers, Child Processes, POSIX,
+ HTTP, Multipart Parsing, TCP, DNS, Assert, Path, URL, Query Strings.
+Homepage: https://nodejs.org
+
+Package: nodejs
+Priority: optional
+Section: web
+Installed-Size: 188532
+Maintainer: NodeSource Support <support@nodesource.com>
+Architecture: amd64
+Version: 20.1.0-1nodesource1
+Replaces: nodejs-dev (<= 0.8.22), nodejs-legacy, npm (<= 1.2.14)
+Provides: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Depends: libc6 (>= 2.28), python3, ca-certificates
+Conflicts: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Filename: pool/main/n/nodejs/nodejs_20.1.0-1nodesource1_amd64.deb
+Size: 30808404
+MD5sum: 479f4de853f229cd5110302c6c96ab98
+SHA1: 33216a949f78728632c1f99398b279d43153c6d6
+SHA256: 06b2ccefe2a466193cf9ced43023da6bdb60a76f83bb89ae66ab6ff33f7e66df
+SHA512: 65af1c97a25a99c4d5715322b2b2620e6ea4f6776f4a89dafc4848b82da91ccffee405ad89d4788cd1340d3ae00d52e649c3948afefefb39ea54ce0f52acb59c
+Description: Node.js event-based server-side javascript engine
+ Node.js is similar in design to and influenced by systems like
+ Ruby's Event Machine or Python's Twisted.
+ .
+ It takes the event model a bit further - it presents the event
+ loop as a language construct instead of as a library.
+ .
+ Node.js is bundled with several useful libraries to handle server tasks :
+ System, Events, Standard I/O, Modules, Timers, Child Processes, POSIX,
+ HTTP, Multipart Parsing, TCP, DNS, Assert, Path, URL, Query Strings.
+Homepage: https://nodejs.org
+
+Package: nodejs
+Priority: optional
+Section: web
+Installed-Size: 187565
+Maintainer: NodeSource Support <support@nodesource.com>
+Architecture: amd64
+Version: 20.0.0-1nodesource1
+Replaces: nodejs-dev (<= 0.8.22), nodejs-legacy, npm (<= 1.2.14)
+Provides: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Depends: libc6 (>= 2.28), python3, ca-certificates
+Conflicts: nodejs-dev, nodejs-doc, nodejs-legacy, npm
+Filename: pool/main/n/nodejs/nodejs_20.0.0-1nodesource1_amd64.deb
+Size: 30698824
+MD5sum: d5c4cc71b631216651e6b1aef24612b6
+SHA1: 03fc51193797ff613cef15232dd712c6ff591535
+SHA256: 9d39b2317bb02c565e3d50ab9b53d0ba72ac6800bf80a9a84795f28d29424112
+SHA512: b1a2d21a236398a72c6ab980720c3e3a4434b113b32e0f5b189dffad87a874c71270eeec06b569f8b9c8678daebe475284f18e02c7a9a6185c1aa3a25187386f
+Description: Node.js event-based server-side javascript engine
+ Node.js is similar in design to and influenced by systems like
+ Ruby's Event Machine or Python's Twisted.
+ .
+ It takes the event model a bit further - it presents the event
+ loop as a language construct instead of as a library.
+ .
+ Node.js is bundled with several useful libraries to handle server tasks :
+ System, Events, Standard I/O, Modules, Timers, Child Processes, POSIX,
+ HTTP, Multipart Parsing, TCP, DNS, Assert, Path, URL, Query Strings.
+Homepage: https://nodejs.org
+
+Package: nsolid
+Priority: optional
+Section: web
+Installed-Size: 168865
+Maintainer: NodeSource Support <support@nodesource.com>
+Architecture: amd64
+Version: 20.18.2-ns5.7.0
+Replaces: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Provides: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Depends: libc6 (>= 2.27), libgcc1 (>= 1:3.4), libstdc++6 (>= 7), python3-minimal
+Conflicts: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Filename: pool/main/n/nsolid/nsolid_20.18.2-ns5.7.0_amd64.deb
+Size: 29653624
+MD5sum: d39c174e647676d15e16190608a2764c
+SHA1: cac323ab1b363ffabbd79f25456fca621bec8a4e
+SHA256: 29f187ca7ab49146833ab2c4bbb647032a351cc8e5f1f1d82882617544c84c57
+SHA512: 6d49f868ce40ca57dcfa4ce2b27f906e5dd49d72c505199ac73b6127f964d59f717c888ffd9da6517bc9875db5ba6a7a2bf845812ffd46f9cfc250b4342ea424
+Description: Enterprise Node
+ N|Solid (TM) is the premier Enterprise-grade Node.js (R) platform.
+ It extends the capabilities of Node.js to provide increased developer
+ productivity, protection of critical applications, and peak application
+ performance.
+Homepage: https://nodesource.com/products/nsolid
+
+Package: nsolid
+Priority: optional
+Section: web
+Installed-Size: 168813
+Maintainer: NodeSource Support <support@nodesource.com>
+Architecture: amd64
+Version: 20.18.2-ns5.6.1
+Replaces: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Provides: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Depends: libc6 (>= 2.27), libgcc1 (>= 1:3.4), libstdc++6 (>= 7), python3-minimal
+Conflicts: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Filename: pool/main/n/nsolid/nsolid_20.18.2-ns5.6.1_amd64.deb
+Size: 29641616
+MD5sum: ecfe11736a603ae38f1a5039ddba3599
+SHA1: 78fd0e35db40ed60b11d404b3333c2a232b8e18d
+SHA256: f8e79bf00c24343f792cee89b2a23805ff7f17bbc3b9e63972d22c288c11204b
+SHA512: 658158fc82743548d9f917e30657bb1537d1fd487e3feaf3e3b2a435cc01ee14b7e330d6658650de123c56d6277281fc8544616c4d32eb2cc8dbe522d7a228bd
+Description: Enterprise Node
+ N|Solid (TM) is the premier Enterprise-grade Node.js (R) platform.
+ It extends the capabilities of Node.js to provide increased developer
+ productivity, protection of critical applications, and peak application
+ performance.
+Homepage: https://nodesource.com/products/nsolid
+
+Package: nsolid
+Priority: optional
+Section: web
+Installed-Size: 168805
+Maintainer: NodeSource Support <support@nodesource.com>
+Architecture: amd64
+Version: 20.18.1-ns5.6.0
+Replaces: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Provides: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Depends: libc6 (>= 2.27), libgcc1 (>= 1:3.4), libstdc++6 (>= 7), python3-minimal
+Conflicts: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Filename: pool/main/n/nsolid/nsolid_20.18.1-ns5.6.0_amd64.deb
+Size: 29638188
+MD5sum: ef7ad72e3212a312a64bed956d504b13
+SHA1: 047833773139d38dfd3a470284857952ac617c87
+SHA256: 6b7634f8829ae3ed583c1079231d180a5f43ccc00284114c2a1a819a25fa2fe2
+SHA512: 4df70e562e30268d8ff13e25fedc29df9c9b425ccf053516ae6db489de74ac656d6a97968bceb87ea7fd2dc34d18d4c72e5880f200ca56367341a882b0c0e4b2
+Description: Enterprise Node
+ N|Solid (TM) is the premier Enterprise-grade Node.js (R) platform.
+ It extends the capabilities of Node.js to provide increased developer
+ productivity, protection of critical applications, and peak application
+ performance.
+Homepage: https://nodesource.com/products/nsolid
+
+Package: nsolid
+Priority: optional
+Section: web
+Installed-Size: 168721
+Maintainer: NodeSource Support <support@nodesource.com>
+Architecture: amd64
+Version: 20.18.1-ns5.5.0
+Replaces: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Provides: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Depends: libc6 (>= 2.27), libgcc1 (>= 1:3.4), libstdc++6 (>= 7), python3-minimal
+Conflicts: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Filename: pool/main/n/nsolid/nsolid_20.18.1-ns5.5.0_amd64.deb
+Size: 29616292
+MD5sum: bf1a38fad47bbb4748bdff508b18be05
+SHA1: d8cab41bef66b436cd38254f81c0ba5b70ee5a11
+SHA256: bbdc6c1aea1076965134d1a24284c3f5a62ab22b7a41417b7d1c52b3cc23f07d
+SHA512: 5112d69422cb09964a58cf2bdedb2cce21a2893a70bad8f151f75869136d0de8ec5a4562b3c954a7a4fa871d31e00b738fa4f9f7f3840622e43766f473a7d660
+Description: Enterprise Node
+ N|Solid (TM) is the premier Enterprise-grade Node.js (R) platform.
+ It extends the capabilities of Node.js to provide increased developer
+ productivity, protection of critical applications, and peak application
+ performance.
+Homepage: https://nodesource.com/products/nsolid
+
+Package: nsolid
+Priority: optional
+Section: web
+Installed-Size: 168259
+Maintainer: NodeSource Support <support@nodesource.com>
+Architecture: amd64
+Version: 20.18.0-ns5.4.0
+Replaces: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Provides: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Depends: libc6 (>= 2.27), libgcc1 (>= 1:3.4), libstdc++6 (>= 7), python3-minimal
+Conflicts: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Filename: pool/main/n/nsolid/nsolid_20.18.0-ns5.4.0_amd64.deb
+Size: 29473368
+MD5sum: eafddb0501d3a6c5c064904be82f3fc6
+SHA1: 0b6e8a290b0dcda44aa29cb7d068b4b9ab9b9da4
+SHA256: 97f7064f0c39de14d83c5e10cef8220f6c905177d990a4ec11ea16587d05de20
+SHA512: c110dad631caf13ea46aabe498c26a9874de215471b02eac80155482096868ecbc1666486c49bb907f994982ae0eeb033ecef011a88be4a932c8a913373386a8
+Description: Enterprise Node
+ N|Solid (TM) is the premier Enterprise-grade Node.js (R) platform.
+ It extends the capabilities of Node.js to provide increased developer
+ productivity, protection of critical applications, and peak application
+ performance.
+Homepage: https://nodesource.com/products/nsolid
+
+Package: nsolid
+Priority: optional
+Section: web
+Installed-Size: 167511
+Maintainer: NodeSource Support <support@nodesource.com>
+Architecture: amd64
+Version: 20.18.0-ns5.3.4
+Replaces: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Provides: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Depends: libc6 (>= 2.27), libgcc1 (>= 1:3.4), libstdc++6 (>= 7), python3-minimal
+Conflicts: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Filename: pool/main/n/nsolid/nsolid_20.18.0-ns5.3.4_amd64.deb
+Size: 29360352
+MD5sum: 73f190667250406454679f505794b10a
+SHA1: c3d71ea51b17957ebf6c592d402940c0874ee027
+SHA256: f3da1647b849ec311fc729c0de67209084898a5b5116c8811d61426a72cc5435
+SHA512: bef6c32dd777c5588af9f70ae9a2124b394bc37cf223cec4a3e4a022841c3749a763dfe1b2073bded8cbd61497b3673af6c69a09c3c31f96db95b8bbecf86497
+Description: Enterprise Node
+ N|Solid (TM) is the premier Enterprise-grade Node.js (R) platform.
+ It extends the capabilities of Node.js to provide increased developer
+ productivity, protection of critical applications, and peak application
+ performance.
+Homepage: https://nodesource.com/products/nsolid
+
+Package: nsolid
+Priority: optional
+Section: web
+Installed-Size: 167285
+Maintainer: NodeSource Support <support@nodesource.com>
+Architecture: amd64
+Version: 20.17.0-ns5.3.3
+Replaces: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Provides: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Depends: libc6 (>= 2.27), libgcc1 (>= 1:3.4), libstdc++6 (>= 7), python3-minimal
+Conflicts: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Filename: pool/main/n/nsolid/nsolid_20.17.0-ns5.3.3_amd64.deb
+Size: 29362676
+MD5sum: bf6ed31396ed4ba32a7652790a7d2044
+SHA1: 325d71f14a7d15a8d7764dcf27baf3d2de24e133
+SHA256: 234764a32f51440258855d261bd97021221844e9a6368292ecf56df34b4f745b
+SHA512: e95330508af44c7bd42c37fe7ef311e17f6bcb443e28efb2d1b89aeaf29ee8fcf659624eeede9e61eab2f48030f264913c36064a3f9e3d9eb202d827c1d92da3
+Description: Enterprise Node
+ N|Solid (TM) is the premier Enterprise-grade Node.js (R) platform.
+ It extends the capabilities of Node.js to provide increased developer
+ productivity, protection of critical applications, and peak application
+ performance.
+Homepage: https://nodesource.com/products/nsolid
+
+Package: nsolid
+Priority: optional
+Section: web
+Installed-Size: 164561
+Maintainer: NodeSource Support <support@nodesource.com>
+Architecture: amd64
+Version: 20.16.0-ns5.3.2
+Replaces: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Provides: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Depends: libc6 (>= 2.27), libgcc1 (>= 1:3.4), libstdc++6 (>= 6), python3-minimal
+Conflicts: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Filename: pool/main/n/nsolid/nsolid_20.16.0-ns5.3.2_amd64.deb
+Size: 28475836
+MD5sum: 5a560b27505f2c8e233843563d511c62
+SHA1: 46992460138fae4e6317a90cf25e86c98ebe759d
+SHA256: d4af41c257778e2513088f88a38fc865cc5469c5a757ca5998c3a3b024b93aa4
+SHA512: 61360770133031e23de9aac84ba00af113ae511577dc7f19f58aa38fc223de499ba2ce8440e1921be1054510e82343947831de4656922252a33ce92129cb8f64
+Description: Enterprise Node
+ N|Solid (TM) is the premier Enterprise-grade Node.js (R) platform.
+ It extends the capabilities of Node.js to provide increased developer
+ productivity, protection of critical applications, and peak application
+ performance.
+Homepage: https://nodesource.com/products/nsolid
+
+Package: nsolid
+Priority: optional
+Section: web
+Installed-Size: 164438
+Maintainer: NodeSource Support <support@nodesource.com>
+Architecture: amd64
+Version: 20.15.1-ns5.3.1
+Replaces: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Provides: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Depends: libc6 (>= 2.27), libgcc1 (>= 1:3.4), libstdc++6 (>= 6), python3-minimal
+Conflicts: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Filename: pool/main/n/nsolid/nsolid_20.15.1-ns5.3.1_amd64.deb
+Size: 28468288
+MD5sum: d0247e5f5c58272fe85c0650753d5afc
+SHA1: f9f6bc2c1ac7ca6a47dd008eabd9b6d0a34fc203
+SHA256: ea47b56c37ad4af7d445adb718c6280620655abe877555a57fa58a1bd23be544
+SHA512: 6a81f0ac9da2b090ea10595b20e89e2313740df3490d392ab7309c3eee143da06fb60be06a25a98260831adac4252d3cf49558bb546f3106da00dcdd29f73ae2
+Description: Enterprise Node
+ N|Solid (TM) is the premier Enterprise-grade Node.js (R) platform.
+ It extends the capabilities of Node.js to provide increased developer
+ productivity, protection of critical applications, and peak application
+ performance.
+Homepage: https://nodesource.com/products/nsolid
+
+Package: nsolid
+Priority: optional
+Section: web
+Installed-Size: 164438
+Maintainer: NodeSource Support <support@nodesource.com>
+Architecture: amd64
+Version: 20.15.0-ns5.3.0
+Replaces: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Provides: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Depends: libc6 (>= 2.27), libgcc1 (>= 1:3.4), libstdc++6 (>= 6), python3-minimal
+Conflicts: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Filename: pool/main/n/nsolid/nsolid_20.15.0-ns5.3.0_amd64.deb
+Size: 28468280
+MD5sum: f725a19adb84b1d6e65ae02985a4329d
+SHA1: 43191f2f44b9f7f2759fff83dcb6fc32557c7afb
+SHA256: d839a9cfcc526ec4729c9354a7ba7478d67412f5a3c8dfdd0f96cfa5ec61a83f
+SHA512: b46814a328e7acbaed6b6a29e442396c76d1b890b76f41762adac669207bb88fd31060726a211c189a7ab7ee0cccc5cb3f57976be0169266e0c8bc2e443b745d
+Description: Enterprise Node
+ N|Solid (TM) is the premier Enterprise-grade Node.js (R) platform.
+ It extends the capabilities of Node.js to provide increased developer
+ productivity, protection of critical applications, and peak application
+ performance.
+Homepage: https://nodesource.com/products/nsolid
+
+Package: nsolid
+Priority: optional
+Section: web
+Installed-Size: 164392
+Maintainer: NodeSource Support <support@nodesource.com>
+Architecture: amd64
+Version: 20.14.0-ns5.2.3
+Replaces: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Provides: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Depends: libc6 (>= 2.27), libgcc1 (>= 1:3.4), libstdc++6 (>= 6), python3-minimal
+Conflicts: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Filename: pool/main/n/nsolid/nsolid_20.14.0-ns5.2.3_amd64.deb
+Size: 28441120
+MD5sum: b3aeef246a705a72edd8a00cd35c752e
+SHA1: 5de7c6c67059eff87f113671ff2704469f329f8e
+SHA256: 54f3c98947e42b0f33ceb52aa2ff898acaa77a6e217ea41cd069adf9c8b42cdf
+SHA512: 5c36819fd62a1bccea0e9e3befd16e8c8c1e21cacc2a9fa97f216f9f22b876063ead48d4abbd4cb5e81f3e8f345b7fcbe35c1872bc1bb5cb41ce72c874035d51
+Description: Enterprise Node
+ N|Solid (TM) is the premier Enterprise-grade Node.js (R) platform.
+ It extends the capabilities of Node.js to provide increased developer
+ productivity, protection of critical applications, and peak application
+ performance.
+Homepage: https://nodesource.com/products/nsolid
+
+Package: nsolid
+Priority: optional
+Section: web
+Installed-Size: 157553
+Maintainer: NodeSource Support <support@nodesource.com>
+Architecture: amd64
+Version: 20.13.1-ns5.2.2
+Replaces: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Provides: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Depends: libc6 (>= 2.27), libgcc1 (>= 1:3.4), libstdc++6 (>= 6), python3-minimal
+Conflicts: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Filename: pool/main/n/nsolid/nsolid_20.13.1-ns5.2.2_amd64.deb
+Size: 26447724
+MD5sum: 41b1c59d01e1b027edac51db39ad11d8
+SHA1: 7e1747ab1faf556b6a24cf1053a33775ef1e0872
+SHA256: d2bc349573612650d82eee4ececf7d2e736ad067cea7841838f85c086e998469
+SHA512: 0ebfd1ddf71d3cfa580e384e9fcace5e14cf91c336261021c8e4de9acc0c1512b7b839298844e29da7600338c4ca4ce96703f1ab848e827957e8c3ad30b58044
+Description: Enterprise Node
+ N|Solid (TM) is the premier Enterprise-grade Node.js (R) platform.
+ It extends the capabilities of Node.js to provide increased developer
+ productivity, protection of critical applications, and peak application
+ performance.
+Homepage: https://nodesource.com/products/nsolid
+
+Package: nsolid
+Priority: optional
+Section: web
+Installed-Size: 157553
+Maintainer: NodeSource Support <support@nodesource.com>
+Architecture: amd64
+Version: 20.13.1-ns5.2.1
+Replaces: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Provides: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Depends: libc6 (>= 2.27), libgcc1 (>= 1:3.4), libstdc++6 (>= 6), python3-minimal
+Conflicts: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Filename: pool/main/n/nsolid/nsolid_20.13.1-ns5.2.1_amd64.deb
+Size: 26448560
+MD5sum: e8a11456624d65dd04ce610a446e2b48
+SHA1: d89e7d37653c613e1a23677e557fa9f4bde88aa9
+SHA256: f7d7c0d584bf5e886f15a0c3a4025298e47c8242e32d7e0a5d14f821c69b7302
+SHA512: d96020d285628ce5e3a2e5d96fef060196c160803d130816249ee4a6f40e509062a20b26ccb4a4d24048cc4c8eeb8ec3b55ecd5300fc6cb5a1f3c2dbda8dca1c
+Description: Enterprise Node
+ N|Solid (TM) is the premier Enterprise-grade Node.js (R) platform.
+ It extends the capabilities of Node.js to provide increased developer
+ productivity, protection of critical applications, and peak application
+ performance.
+Homepage: https://nodesource.com/products/nsolid
+
+Package: nsolid
+Priority: optional
+Section: web
+Installed-Size: 157149
+Maintainer: NodeSource Support <support@nodesource.com>
+Architecture: amd64
+Version: 20.12.2-ns5.2.0
+Replaces: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Provides: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Depends: libc6 (>= 2.27), libgcc1 (>= 1:3.4), libstdc++6 (>= 6), python3-minimal
+Conflicts: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Filename: pool/main/n/nsolid/nsolid_20.12.2-ns5.2.0_amd64.deb
+Size: 26349916
+MD5sum: 8632935dfcf5539f55577af2f355b8db
+SHA1: fa88a2beafccaca0e907ac95ede29def3062f140
+SHA256: 9287ec3b4b198b9d5ac8cbab85058a6291e439371798e19c15240ef323e0b327
+SHA512: edbdef93870d9c60ad29d49f80c31e7ce8a0dca5cfc27e59a9021739af685a38c4fb3e6f9ba67ed756e678248846e5be07a55dffc8cd4b83a24cbac2eaf6f79a
+Description: Enterprise Node
+ N|Solid (TM) is the premier Enterprise-grade Node.js (R) platform.
+ It extends the capabilities of Node.js to provide increased developer
+ productivity, protection of critical applications, and peak application
+ performance.
+Homepage: https://nodesource.com/products/nsolid
+
+Package: nsolid
+Priority: optional
+Section: web
+Installed-Size: 157149
+Maintainer: NodeSource Support <support@nodesource.com>
+Architecture: amd64
+Version: 20.12.2-ns5.1.2
+Replaces: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Provides: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Depends: libc6 (>= 2.27), libgcc1 (>= 1:3.4), libstdc++6 (>= 6), python3-minimal
+Conflicts: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Filename: pool/main/n/nsolid/nsolid_20.12.2-ns5.1.2_amd64.deb
+Size: 26346648
+MD5sum: af46e3a9e6aa802215c6c102cc580d41
+SHA1: 33898ee2f10062a2cd6a3bb4ab1d801b3ac1fe9f
+SHA256: 26c1d5b3eab9711d47934eb33fe94f1a5c6ee9b5521a38f3cf119a32a4f152c5
+SHA512: 2ef3bf5af2b580b1d3e921c81249bd7ed5ea061dbc0cd1129c065d692ae004c6d2a04062ee0fd97ce582f3d108b4498fe68a2a48063f928b529dcd00ae7103d1
+Description: Enterprise Node
+ N|Solid (TM) is the premier Enterprise-grade Node.js (R) platform.
+ It extends the capabilities of Node.js to provide increased developer
+ productivity, protection of critical applications, and peak application
+ performance.
+Homepage: https://nodesource.com/products/nsolid
+
+Package: nsolid
+Priority: optional
+Section: web
+Installed-Size: 157075
+Maintainer: NodeSource Support <support@nodesource.com>
+Architecture: amd64
+Version: 20.12.1-ns5.1.1
+Replaces: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Provides: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Depends: libc6 (>= 2.27), libgcc1 (>= 1:3.4), libstdc++6 (>= 6), python3-minimal
+Conflicts: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Filename: pool/main/n/nsolid/nsolid_20.12.1-ns5.1.1_amd64.deb
+Size: 26327936
+MD5sum: 7344cd63dfecb3df47dd8284d759a9b6
+SHA1: 7902e3ae5f1c7f47de3eeb5d62d6177b6c267b15
+SHA256: e5db908b8097e517674b80f0724465f2049af689b69c05f4cdade439e4e0676a
+SHA512: 58b6cd1ad69073482e9f5bb1698d673676762cdac3f397ccc3e561337d574c369e2afcc0396ebd47330bd83e61e9794a079212ed554b38ab494bd9f4bfcddd28
+Description: Enterprise Node
+ N|Solid (TM) is the premier Enterprise-grade Node.js (R) platform.
+ It extends the capabilities of Node.js to provide increased developer
+ productivity, protection of critical applications, and peak application
+ performance.
+Homepage: https://nodesource.com/products/nsolid
+
+Package: nsolid
+Priority: optional
+Section: web
+Installed-Size: 157067
+Maintainer: NodeSource Support <support@nodesource.com>
+Architecture: amd64
+Version: 20.12.0-ns5.1.0
+Replaces: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Provides: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Depends: libc6 (>= 2.27), libgcc1 (>= 1:3.4), libstdc++6 (>= 6), python3-minimal
+Conflicts: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Filename: pool/main/n/nsolid/nsolid_20.12.0-ns5.1.0_amd64.deb
+Size: 26337600
+MD5sum: be3a4fb6452a75bbd7df97b2cb99adc6
+SHA1: 582fb8bbca21aba181579fe18e28043d6aecb85e
+SHA256: d28045f2447220b02613ddf0db7928c26db6df64022a03f3df22c9465793a3a3
+SHA512: 863c5f26ad8e2a7f3ac057c916c656afde0063937551b37db682e017143e62be332d54e4d7a53e39d08bde40ec7dd9dccdbbf3a9b09973aff8e306496701e754
+Description: Enterprise Node
+ N|Solid (TM) is the premier Enterprise-grade Node.js (R) platform.
+ It extends the capabilities of Node.js to provide increased developer
+ productivity, protection of critical applications, and peak application
+ performance.
+Homepage: https://nodesource.com/products/nsolid
+
+Package: nsolid
+Priority: optional
+Section: web
+Installed-Size: 159443
+Maintainer: NodeSource Support <support@nodesource.com>
+Architecture: amd64
+Version: 20.11.1-ns5.0.5
+Replaces: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Provides: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Depends: libc6 (>= 2.27), libgcc1 (>= 1:3.4), libstdc++6 (>= 6), python3-minimal
+Conflicts: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Filename: pool/main/n/nsolid/nsolid_20.11.1-ns5.0.5_amd64.deb
+Size: 26292412
+MD5sum: 46cc824dcaec772fc231dd8e68ee4a4c
+SHA1: d2dada4496237a7b868b6e0eb41a03a49e53e80d
+SHA256: 6ed3636bbd94955e449e5be7d93a37e03ae138dce686963fd9c8f4d840bf8d3e
+SHA512: ff834bfbfa5b1cbbd792b8f5051f9bbb53e46981c6436f970af9a34731dead68b8454e79f42e9b13116965473ca6cd66c4af6e9a430fe69f75c73282304b7de8
+Description: Enterprise Node
+ N|Solid (TM) is the premier Enterprise-grade Node.js (R) platform.
+ It extends the capabilities of Node.js to provide increased developer
+ productivity, protection of critical applications, and peak application
+ performance.
+Homepage: https://nodesource.com/products/nsolid
+
+Package: nsolid
+Priority: optional
+Section: web
+Installed-Size: 159431
+Maintainer: NodeSource Support <support@nodesource.com>
+Architecture: amd64
+Version: 20.11.0-ns5.0.4
+Replaces: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Provides: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Depends: libc6 (>= 2.27), libgcc1 (>= 1:3.4), libstdc++6 (>= 6), python3-minimal
+Conflicts: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Filename: pool/main/n/nsolid/nsolid_20.11.0-ns5.0.4_amd64.deb
+Size: 26287284
+MD5sum: 3768d617c0b095a9e090f6ac1ec14407
+SHA1: b98758548ce6ff702216aa6261dff9fc334be2bc
+SHA256: 6872e303f082ec03495d4c9d634751e516210a7494c696a64d697d4b3434846d
+SHA512: 0b847c704b2b7c05855202efd37a99a47eb8115ff18029e8bb87b0c25d99603d2fd2f092670ae8cd66f4e8610781009715a234ccdf97d04b628c1b20d103e538
+Description: Enterprise Node
+ N|Solid (TM) is the premier Enterprise-grade Node.js (R) platform.
+ It extends the capabilities of Node.js to provide increased developer
+ productivity, protection of critical applications, and peak application
+ performance.
+Homepage: https://nodesource.com/products/nsolid
+
+Package: nsolid
+Priority: optional
+Section: web
+Installed-Size: 159427
+Maintainer: NodeSource Support <support@nodesource.com>
+Architecture: amd64
+Version: 20.11.0-ns5.0.3
+Replaces: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Provides: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Depends: libc6 (>= 2.27), libgcc1 (>= 1:3.4), libstdc++6 (>= 6), python3-minimal
+Conflicts: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Filename: pool/main/n/nsolid/nsolid_20.11.0-ns5.0.3_amd64.deb
+Size: 26275872
+MD5sum: 37355069203e45f736ae970d5bea537f
+SHA1: f32be775761141e4cd8dd5557b1803aef5c87205
+SHA256: 8d86bdd6d4eb01d84e47041a0b93dc59fb3efdea312cf73f6a81b2500f140797
+SHA512: f7a29fcbbb755efd5cecdb21bdd8a53872f1c69519a6e9777265ee8f99d31fb9f8eebe284f338967a0475fbdc7e8ddcdb240a6fc712fed1d05efdfa7f1e3d30b
+Description: Enterprise Node
+ N|Solid (TM) is the premier Enterprise-grade Node.js (R) platform.
+ It extends the capabilities of Node.js to provide increased developer
+ productivity, protection of critical applications, and peak application
+ performance.
+Homepage: https://nodesource.com/products/nsolid
+
+Package: nsolid
+Priority: optional
+Section: web
+Installed-Size: 159211
+Maintainer: NodeSource Support <support@nodesource.com>
+Architecture: amd64
+Version: 20.10.0-ns5.0.2
+Replaces: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Provides: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Depends: libc6 (>= 2.27), libgcc1 (>= 1:3.4), libstdc++6 (>= 6), python3-minimal
+Conflicts: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Filename: pool/main/n/nsolid/nsolid_20.10.0-ns5.0.2_amd64.deb
+Size: 26235160
+MD5sum: beefc21f23a36d4d5c5ff939065d0d35
+SHA1: c3b8c091d71cebf1b8676f3a24f3d015626f6f30
+SHA256: c483fff70324c9a12099e4d1884d2449ddef0a62bc23bce25fcdf6204f548432
+SHA512: f20bbddd117d873cd82f7cb71f6234fad918641f957cfa8b105a7325504adee1ba2377d7361e6ca92d54b9ce0b24a1e3e2105d64160ae31fb851f179ef1ec738
+Description: Enterprise Node
+ N|Solid (TM) is the premier Enterprise-grade Node.js (R) platform.
+ It extends the capabilities of Node.js to provide increased developer
+ productivity, protection of critical applications, and peak application
+ performance.
+Homepage: https://nodesource.com/products/nsolid
+
+Package: nsolid
+Priority: optional
+Section: web
+Installed-Size: 159191
+Maintainer: NodeSource Support <support@nodesource.com>
+Architecture: amd64
+Version: 20.10.0-ns5.0.1
+Replaces: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Provides: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Depends: libc6 (>= 2.27), libgcc1 (>= 1:3.4), libstdc++6 (>= 6), python3-minimal
+Conflicts: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Filename: pool/main/n/nsolid/nsolid_20.10.0-ns5.0.1_amd64.deb
+Size: 26227204
+MD5sum: 90826011c8b870cc634d1b32d8240ad0
+SHA1: 1daf706e22de5314d37141fd1f77d9cb02921d77
+SHA256: 758ffcd8c14684875a49708265a91a11549c08fe3d35f24780497342aa67161f
+SHA512: 4860d4635f323644e5e30828db03c1315bcabfe842175633abcc063e243a4a3cba62aa95ce41f18c8b90678ff307811ce6bb0200d567017c928508201f8491dc
+Description: Enterprise Node
+ N|Solid (TM) is the premier Enterprise-grade Node.js (R) platform.
+ It extends the capabilities of Node.js to provide increased developer
+ productivity, protection of critical applications, and peak application
+ performance.
+Homepage: https://nodesource.com/products/nsolid
+
+Package: nsolid
+Priority: optional
+Section: web
+Installed-Size: 159649
+Maintainer: NodeSource Support <support@nodesource.com>
+Architecture: amd64
+Version: 20.9.0-ns5.0.0
+Replaces: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Provides: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Depends: libc6 (>= 2.27), libgcc1 (>= 1:3.4), libstdc++6 (>= 6), python3-minimal
+Conflicts: nodejs, nodejs-legacy, npm, nsolid-argon, nsolid-boron, nsolid-carbon, nsolid-dubnium, nsolid-erbium, nsolid-gallium, nsolid-hydrogen
+Filename: pool/main/n/nsolid/nsolid_20.9.0-ns5.0.0_amd64.deb
+Size: 26023616
+MD5sum: ce06cdded2f28ee3b73e2f2086727a07
+SHA1: c6e1b0ded8314f9eecf558bb5477a4e691f8553d
+SHA256: 2283e31f484f47b7cca6814f8f0eb81457a194ff2bd27f7346ed0e31308a7456
+SHA512: ed173abd2b1b0b18f84c48af34b42dc53b3eb7400eeb8348913ac447171d4398d25d86d9d644edf83aa8d5eb206057c1235a5d10d3bd6738ac12544f0e991d06
+Description: Enterprise Node
+ N|Solid (TM) is the premier Enterprise-grade Node.js (R) platform.
+ It extends the capabilities of Node.js to provide increased developer
+ productivity, protection of critical applications, and peak application
+ performance.
+Homepage: https://nodesource.com/products/nsolid
+

@@ -1,0 +1,16 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/node-depd
+/usr/share/doc/node-depd/Readme.md.gz
+/usr/share/doc/node-depd/changelog.Debian.gz
+/usr/share/doc/node-depd/copyright
+/usr/share/nodejs
+/usr/share/nodejs/depd
+/usr/share/nodejs/depd/index.js
+/usr/share/nodejs/depd/lib
+/usr/share/nodejs/depd/lib/browser
+/usr/share/nodejs/depd/lib/browser/index.js
+/usr/share/nodejs/depd/package.json
+/usr/share/doc/node-depd/History.md.gz

@@ -1,0 +1,9 @@
+355294486850d8f6b25507b6e4cf5a65  usr/share/doc/php-composer-xdebug-handler/README.md.gz
+d430148b19d224755acf50ad65c72b46  usr/share/doc/php-composer-xdebug-handler/UPGRADE.md
+81c14365ed0c3e257241fe9690fb2c7c  usr/share/doc/php-composer-xdebug-handler/changelog.Debian.gz
+71641f68ef5875681374f47fe8187383  usr/share/doc/php-composer-xdebug-handler/copyright
+649e74ff4e370d5b34ef5537d79f97b4  usr/share/php/Composer/XdebugHandler/PhpConfig.php
+f35de9c93f33c4750e1f3299e298259a  usr/share/php/Composer/XdebugHandler/Process.php
+4833d5a3016968228de4ab304ed5c805  usr/share/php/Composer/XdebugHandler/Status.php
+961fe889969454986f95c6284d87f90e  usr/share/php/Composer/XdebugHandler/XdebugHandler.php
+581917b63ad730c49ce997c5450edced  usr/share/php/Composer/XdebugHandler/autoload.php

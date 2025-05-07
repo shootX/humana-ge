@@ -1,0 +1,7 @@
+2bcd6461530077461a5ea7f1e90dfae2  usr/share/doc/node-mute-stream/README.md
+bbce15ca383ed9aa940adb5f2336b7f1  usr/share/doc/node-mute-stream/changelog.Debian.gz
+e8b057ce08e9e2e1140b3a7d23c9614e  usr/share/doc/node-mute-stream/copyright
+9ed7bed87131182565c6222414f009cd  usr/share/nodejs/@types/mute-stream/index.d.ts
+63804bde5a36fc5d408a415ae551e065  usr/share/nodejs/@types/mute-stream/package.json
+65f41ee65fb71f30771af5ec8d840127  usr/share/nodejs/mute-stream/mute.js
+f0b94d5a5b779036f9166f972adfe48b  usr/share/nodejs/mute-stream/package.json

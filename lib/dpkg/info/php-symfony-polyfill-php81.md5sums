@@ -1,0 +1,7 @@
+36f3d677ac7b2f92006700e594aafd53  usr/share/doc/php-symfony-polyfill-php81/changelog.Debian.gz
+adc052889bb7e194773f0b293dea4f26  usr/share/doc/php-symfony-polyfill-php81/copyright
+907c5e142a4f3c15922efc5a6f0571c6  usr/share/php/Symfony/Polyfill/Php81/Php81.php
+bb435e8403f63a11881fcc0e97a0c52c  usr/share/php/Symfony/Polyfill/Php81/Resources/stubs/ReturnTypeWillChange.php
+0d53b4c4cd6b978b316688de94ee49ed  usr/share/php/Symfony/Polyfill/Php81/autoload.php
+620b1e05ab7a0ed4e6effc5c4cb444c3  usr/share/php/Symfony/Polyfill/Php81/bootstrap.php
+03bd648bcbe1a7d885baedd7e2485f32  usr/share/pkg-php-tools/autoloaders/php-symfony-polyfill-php81

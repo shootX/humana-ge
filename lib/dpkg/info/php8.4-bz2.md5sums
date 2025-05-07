@@ -1,0 +1,5 @@
+819f63a2bb3e42c4fd71bce3b9f62eb4  usr/lib/php/20240924/bz2.so
+66b5f6b35300421054d4979cbc492779  usr/share/bug/php8.4-bz2/control
+3f3de9eb599ac3ad115e83682e188e87  usr/share/bug/php8.4-bz2/script
+ab92dfbe4b1bcc1d92db2a13fa5bce67  usr/share/lintian/overrides/php8.4-bz2
+f0447aac70671077e32a8f2366e5c351  usr/share/php8.4-bz2/bz2/bz2.ini

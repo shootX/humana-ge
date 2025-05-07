@@ -1,0 +1,10 @@
+bf83c24109e0cfb1844217011e78088a  usr/share/doc/php-mariadb-mysql-kbs/changelog.Debian.gz
+422e2e09a5aeabdc04b560ea33ec8222  usr/share/doc/php-mariadb-mysql-kbs/copyright
+fcc1051d5afbccb435cef75c0b31c55a  usr/share/php/Williamdes/MariaDBMySQLKBS/KBDocumentation.php
+70b02d991edafd0fdf23fa49f9c98273  usr/share/php/Williamdes/MariaDBMySQLKBS/KBEntry.php
+cf7e6a4f44f1252fd49aa626dfb0b9d1  usr/share/php/Williamdes/MariaDBMySQLKBS/KBException.php
+a81fc1a624217701272262f579c2d2ab  usr/share/php/Williamdes/MariaDBMySQLKBS/Search.php
+b67eaa6c003c04c592259c9e235ff074  usr/share/php/Williamdes/MariaDBMySQLKBS/SlimData.php
+ef5587208da2b63d898447b33432778d  usr/share/php/Williamdes/MariaDBMySQLKBS/autoload.php
+ccce7cf8b1addc94f2d1656c1ed75af1  usr/share/php/data/Williamdes/MariaDBMySQLKBS/merged-ultraslim.json
+b241e905b678cec735355cba88e5175a  usr/share/pkg-php-tools/overrides/mariadb-mysql-kbs

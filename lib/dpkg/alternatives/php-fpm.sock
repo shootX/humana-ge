@@ -1,0 +1,8 @@
+auto
+/run/php/php-fpm.sock
+
+/run/php/php8.2-fpm.sock
+82
+/run/php/php8.3-fpm.sock
+83
+

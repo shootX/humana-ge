@@ -1,0 +1,16 @@
+/.
+/etc
+/etc/php
+/etc/php/8.4
+/etc/php/8.4/mods-available
+/etc/php/8.4/mods-available/mcrypt.ini
+/usr
+/usr/lib
+/usr/lib/php
+/usr/lib/php/20240924
+/usr/lib/php/20240924/mcrypt.so
+/usr/share
+/usr/share/doc
+/usr/share/doc/php8.4-mcrypt
+/usr/share/doc/php8.4-mcrypt/changelog.Debian.gz
+/usr/share/doc/php8.4-mcrypt/copyright

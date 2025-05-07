@@ -1,0 +1,13 @@
+c2f8fdac4d413b8d5e726117925ca6ce  usr/share/doc/node-slice-ansi/changelog.Debian.gz
+87724d4243b5abed1ffa6299d73186a9  usr/share/doc/node-slice-ansi/copyright
+f230d986916d3905e4a615ebc57ebde7  usr/share/doc/node-slice-ansi/readme.md
+938931a92ac9f5e800348b48a84cb52b  usr/share/nodejs/@types/slice-ansi/index.d.ts
+2447558949237a05710f43aff5431904  usr/share/nodejs/@types/slice-ansi/package.json
+5610fff5e1263b4ab56a332d83a5a09f  usr/share/nodejs/is-fullwidth-code-point/index.cjs
+478a27a348ee487b07f6ed586ba5ab33  usr/share/nodejs/is-fullwidth-code-point/index.d.ts
+40c4af25293a913c4f237746c694b271  usr/share/nodejs/is-fullwidth-code-point/index.js
+721057fefc643d5b82d5058d3cca1885  usr/share/nodejs/is-fullwidth-code-point/package.json
+48e7f6f2325ccc1b8d30e979e43afa4a  usr/share/nodejs/slice-ansi/index.cjs
+8eca8aeb4a03cba71ebcc2d0c0f53f6a  usr/share/nodejs/slice-ansi/index.js
+90b379eb47b6b64529c87ba898d05acd  usr/share/nodejs/slice-ansi/package.json
+cbc5f57e792de7bb1cb47910817fe4cc  usr/share/nodejs/slice-ansi/pkgjs-lock.json

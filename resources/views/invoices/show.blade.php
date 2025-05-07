@@ -325,6 +325,9 @@
                                     @if ($invoice->tax)
                                         <tr>
                                             <th>{{ __('Tax') }}{{ $invoice->tax->name }}({{ $invoice->tax->rate }}%):
+                                                @if ($invoice->tax_type == 'inclusive')
+                                                <small class="text-muted">({{ __('Included in total') }})</small>
+                                                @endif
                                             </th>
                                             <td>{{ $currentWorkspace->priceFormat($invoice->getTaxTotal()) }}</td>
                                         </tr>

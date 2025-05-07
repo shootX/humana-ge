@@ -61,6 +61,8 @@ use App\Http\Controllers\GoogleAuthenticationController;
 use App\Http\Controllers\PayHerePaymentController;
 use App\Http\Controllers\PayUController;
 use App\Http\Controllers\PowertranzPaymentController;
+use App\Http\Controllers\InventoryController;
+use App\Http\Controllers\InventoryCategoryController;
 
 
 /*
@@ -1035,6 +1037,20 @@ Route::group(['middleware' => ['verified']], function () {
     //=============================================Webhook===================================================
     Route::resource('/{slug}/webhook', WebhookController::class)->middleware(['auth', 'XSS']);
     Route::post('webhooks/response/get', [WebhookController::class, 'WebhookResponse'])->name('webhooks.response.get');
+
+    //=============================================Inventory===================================================
+    Route::get('/{slug}/inventory', [InventoryController::class, 'index'])->name('inventory.index')->middleware(['auth', 'XSS']);
+    Route::get('/{slug}/inventory/create', [InventoryController::class, 'create'])->name('inventory.create')->middleware(['auth', 'XSS']);
+    Route::post('/{slug}/inventory/store', [InventoryController::class, 'store'])->name('inventory.store')->middleware(['auth', 'XSS']);
+    Route::get('/{slug}/inventory/{item}/edit', [InventoryController::class, 'edit'])->name('inventory.edit')->middleware(['auth', 'XSS']);
+    Route::post('/{slug}/inventory/{item}/update', [InventoryController::class, 'update'])->name('inventory.update')->middleware(['auth', 'XSS']);
+    Route::delete('/{slug}/inventory/{item}', [InventoryController::class, 'destroy'])->name('inventory.destroy')->middleware(['auth', 'XSS']);
+    Route::post('/{slug}/inventory/get-data', [InventoryController::class, 'getInventoryData'])->name('inventory.get.data')->middleware(['auth', 'XSS']);
+    
+    // Inventory Categories
+    Route::get('/{slug}/inventory-categories', [InventoryCategoryController::class, 'index'])->name('inventory.categories.index')->middleware(['auth', 'XSS']);
+    Route::post('/{slug}/inventory-categories/store', [InventoryCategoryController::class, 'store'])->name('inventory.categories.store')->middleware(['auth', 'XSS']);
+    Route::delete('/{slug}/inventory-categories/{category}', [InventoryCategoryController::class, 'destroy'])->name('inventory.categories.destroy')->middleware(['auth', 'XSS']);
 });
 
 Route::get('/{slug}/projects/{id}/task-board/{tid}/{cid?}', [ProjectController::class, 'taskShow'])->name('tasks.show');

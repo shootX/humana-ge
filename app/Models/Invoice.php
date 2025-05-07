@@ -18,6 +18,7 @@ class Invoice extends Model
         'due_date',
         'discount',
         'tax_id',
+        'tax_type',
         'client_id',
         'workspace_id',
     ];
@@ -48,7 +49,15 @@ class Invoice extends Model
         $sub_total = $this->getSubTotal();
         $discount = $this->discount;
         $tax = $this->getTaxTotal();
-        $total = $sub_total + $tax - $discount;
+        
+        if ($this->tax_type == 'inclusive' && $tax > 0) {
+            // თუ გადასახადი შედის თანხაში, მაშინ საბოლოო ჯამი არის უბრალოდ: სუბტოტალი - ფასდაკლება
+            $total = $sub_total - $discount;
+        } else {
+            // გადასახადი ემატება
+            $total = $sub_total + $tax - $discount;
+        }
+        
         return $total;
     }
 
@@ -69,7 +78,15 @@ class Invoice extends Model
         $tax = 0;
         if ($objTax = $this->tax) {
             $sub_total = $this->getSubTotal() - $this->discount;
-            $tax = ($sub_total * $objTax->rate) / 100;
+            
+            if ($this->tax_type == 'inclusive' && $sub_total > 0) {
+                // გადასახადი შედის თანხაში (გამოითვლება უკუგზით)
+                // მაგ.: თუ თანხა არის 100 და გადასახადი 18%, მაშინ გადასახადის თანხაა 15.25 (100 / 1.18 * 0.18)
+                $tax = $sub_total - ($sub_total / (1 + ($objTax->rate / 100)));
+            } else {
+                // გადასახადი ემატება თანხას (ჩვეულებრივი გამოთვლა)
+                $tax = ($sub_total * $objTax->rate) / 100;
+            }
         }
         return $tax;
     }
@@ -185,6 +202,16 @@ class Invoice extends Model
             }
         }
         return $this->getTotal() - $total;
+    }
+
+    public static function getPaidSumByProject($project_id)
+    {
+        return self::where('project_id', $project_id)
+            ->where('status', 'paid')
+            ->get()
+            ->sum(function($invoice) {
+                return $invoice->getTotal();
+            });
     }
 
 }

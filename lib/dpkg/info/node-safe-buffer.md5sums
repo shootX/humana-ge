@@ -1,0 +1,10 @@
+2ce678fd8f93a3b29a76f63d2c2446a3  usr/share/doc/node-safe-buffer/README.md.gz
+c3f4f2168930cd7ea9f495997aca40f0  usr/share/doc/node-safe-buffer/changelog.Debian.gz
+151fe8b8c89fd8ec3449f527a20b0116  usr/share/doc/node-safe-buffer/copyright
+372fa012d04e945ab97c27e000f8df78  usr/share/nodejs/safe-buffer/index.d.ts
+970c550fff6fd0a98f843f135caa6511  usr/share/nodejs/safe-buffer/index.js
+91a1f1e02501d8e80c0f3f13b2d72d7c  usr/share/nodejs/safe-buffer/package.json
+7557e84f2db56a79916613053f9297d6  usr/share/nodejs/safer-buffer/dangerous.js
+274d956f400350c9f6cf96d22cdda227  usr/share/nodejs/safer-buffer/package.json
+b548fa7365e81d472250949a6b4ccc69  usr/share/nodejs/safer-buffer/safer.js
+373f9327325c35bb109038dc3b8e5a14  usr/share/nodejs/safer-buffer/tests.js

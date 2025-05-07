@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/node-time-stamp
+/usr/share/doc/node-time-stamp/README.md.gz
+/usr/share/doc/node-time-stamp/changelog.Debian.gz
+/usr/share/doc/node-time-stamp/copyright
+/usr/share/nodejs
+/usr/share/nodejs/time-stamp
+/usr/share/nodejs/time-stamp/index.d.ts
+/usr/share/nodejs/time-stamp/index.js
+/usr/share/nodejs/time-stamp/package.json

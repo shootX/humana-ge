@@ -1,0 +1,11 @@
+51b8bc362bb8bae4c44ef228cca46d8f  usr/share/doc/node-asap/README.md.gz
+fc4c18b8fd180c0a87da22f28cf3dee1  usr/share/doc/node-asap/changelog.Debian.gz
+2d7538888c82ebecf19ea0ab31383b28  usr/share/doc/node-asap/copyright
+565bcfffc05d432d5104b97bdd03958c  usr/share/nodejs/@types/asap/index.d.ts
+13c5059b97973fc752cfabde0f932917  usr/share/nodejs/@types/asap/package.json
+5f4185e536dcaead36ba0b280a7b631c  usr/share/nodejs/@types/asap/raw.d.ts
+1b67be9b86461fb48a78fafdafad51f1  usr/share/nodejs/asap/asap.js
+d1aae8aee421c3d7f0237aeef23d78a0  usr/share/nodejs/asap/browser-asap.js
+39579bf0bea3aff5ee4ff20c8663777b  usr/share/nodejs/asap/browser-raw.js
+4c974dfa11d66358b3f8610ffcad5478  usr/share/nodejs/asap/package.json
+f090a2664fa25dc68dec672f3a6ea5f3  usr/share/nodejs/asap/raw.js

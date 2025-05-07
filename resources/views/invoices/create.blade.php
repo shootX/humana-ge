@@ -56,6 +56,15 @@
                     @endforeach
                 </select>
             </div>
+
+            <div class="form-group col-md-6">
+                <label for="tax_type" class="col-form-label">{{ __('Tax Type') }}</label>
+                <select class="form-control" name="tax_type" id="tax_type">
+                    <option value="exclusive">{{ __('Exclusive (Add to Total)') }}</option>
+                    <option value="inclusive">{{ __('Inclusive (Already in Total)') }}</option>
+                </select>
+            </div>
+
             <div class="form-group col-md-6">
                 <label for="client_id" class="col-form-label">{{ __('Client') }}</label><x-required></x-required>
                 <select class="form-control" name="client_id" id="client_id" required>

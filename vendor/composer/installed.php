@@ -1,11 +1,11 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => NULL,
+        'reference' => 'c38a73dbe974cf87cde1d649d9288eec7c9cbeca',
         'name' => 'laravel/laravel',
         'dev' => true,
     ),
@@ -800,12 +800,12 @@
             'dev_requirement' => false,
         ),
         'laravel/laravel' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => NULL,
+            'reference' => 'c38a73dbe974cf87cde1d649d9288eec7c9cbeca',
             'dev_requirement' => false,
         ),
         'laravel/pint' => array(
@@ -2173,6 +2173,15 @@
             'install_path' => __DIR__ . '/../wikimedia/composer-merge-plugin',
             'aliases' => array(),
             'reference' => 'a03d426c8e9fb2c9c569d9deeb31a083292788bc',
+            'dev_requirement' => false,
+        ),
+        'yajra/laravel-datatables-oracle' => array(
+            'pretty_version' => 'v11.1.6',
+            'version' => '11.1.6.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../yajra/laravel-datatables-oracle',
+            'aliases' => array(),
+            'reference' => 'b48eb614d0474c23a9c8041563beef9dda39656d',
             'dev_requirement' => false,
         ),
         'yoomoney/yookassa-sdk-php' => array(

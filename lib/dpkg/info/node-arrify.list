@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/node-arrify
+/usr/share/doc/node-arrify/changelog.Debian.gz
+/usr/share/doc/node-arrify/copyright
+/usr/share/doc/node-arrify/readme.md
+/usr/share/nodejs
+/usr/share/nodejs/arrify
+/usr/share/nodejs/arrify/index.d.ts
+/usr/share/nodejs/arrify/index.js
+/usr/share/nodejs/arrify/package.json

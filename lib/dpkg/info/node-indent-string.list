@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/node-indent-string
+/usr/share/doc/node-indent-string/changelog.Debian.gz
+/usr/share/doc/node-indent-string/copyright
+/usr/share/doc/node-indent-string/readme.md
+/usr/share/nodejs
+/usr/share/nodejs/indent-string
+/usr/share/nodejs/indent-string/index.d.ts
+/usr/share/nodejs/indent-string/index.js
+/usr/share/nodejs/indent-string/package.json

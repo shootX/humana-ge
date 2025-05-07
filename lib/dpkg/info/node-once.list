@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/node-once
+/usr/share/doc/node-once/README.md
+/usr/share/doc/node-once/changelog.Debian.gz
+/usr/share/doc/node-once/copyright
+/usr/share/nodejs
+/usr/share/nodejs/once
+/usr/share/nodejs/once/once.js
+/usr/share/nodejs/once/package.json

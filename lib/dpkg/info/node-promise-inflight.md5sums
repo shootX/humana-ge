@@ -1,0 +1,7 @@
+217d7ed95c6df41a20016b702a030341  usr/share/doc/node-promise-inflight/README.md
+8123434c6620f9a913bee60a5ffd1c3a  usr/share/doc/node-promise-inflight/changelog.Debian.gz
+523b75ded163ed76cebe861db99633f2  usr/share/doc/node-promise-inflight/copyright
+fe92318c6c8cdfbde0e9dcd01837543f  usr/share/nodejs/@types/promise-inflight/index.d.ts
+4c0b3efb769d4170232f0eaf777b8ee2  usr/share/nodejs/@types/promise-inflight/package.json
+0ce81d5e3069c97383c25bd77af0a7da  usr/share/nodejs/promise-inflight/inflight.js
+3a21697372dae2f10c45f32f045e079f  usr/share/nodejs/promise-inflight/package.json

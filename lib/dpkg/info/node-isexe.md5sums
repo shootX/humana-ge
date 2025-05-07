@@ -1,0 +1,9 @@
+e20cc7a8815fa01cdc32e08409ed778c  usr/share/doc/node-isexe/README.md
+4b22364de4c23d899038b73a426c7fcd  usr/share/doc/node-isexe/changelog.Debian.gz
+e5fe226f95eb80e479ff8558c6c5281a  usr/share/doc/node-isexe/copyright
+b507b4300fc0ea62f9b27e25ca150b72  usr/share/nodejs/@types/isexe/index.d.ts
+a65a1596fb1e59ac9e8c2e05b12728b5  usr/share/nodejs/@types/isexe/package.json
+1a5f173769c2c3b82a211ab81ebb13b9  usr/share/nodejs/isexe/index.js
+e4ae002fd14a8bf3666fe9b2c811e8bb  usr/share/nodejs/isexe/mode.js
+b7340828ee0e123814f9b855953de714  usr/share/nodejs/isexe/package.json
+2a44bcc05f54dddeb33a1776ee7e481a  usr/share/nodejs/isexe/windows.js

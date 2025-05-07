@@ -105,6 +105,7 @@ class InvoiceController extends Controller
             $invoice->due_date = $request->due_date;
             $invoice->discount = $request->discount;
             $invoice->tax_id = $request->tax_id;
+            $invoice->tax_type = $request->tax_type ? $request->tax_type : 'exclusive';
             $invoice->client_id = $request->client_id;
             $invoice->status = 'sent';
             $invoice->workspace_id = $currentWorkspace->id;
@@ -231,6 +232,7 @@ class InvoiceController extends Controller
             $invoice->due_date = $request->due_date;
             $invoice->discount = $request->discount;
             $invoice->tax_id = $request->tax_id;
+            $invoice->tax_type = $request->tax_type ? $request->tax_type : 'exclusive';
             $invoice->status = $request->status;
             $invoice->client_id = $request->client_id;
             $invoice->save();

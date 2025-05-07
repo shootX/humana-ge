@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/node-is-buffer
+/usr/share/doc/node-is-buffer/README.md
+/usr/share/doc/node-is-buffer/changelog.Debian.gz
+/usr/share/doc/node-is-buffer/copyright
+/usr/share/nodejs
+/usr/share/nodejs/is-buffer
+/usr/share/nodejs/is-buffer/index.d.ts
+/usr/share/nodejs/is-buffer/index.js
+/usr/share/nodejs/is-buffer/package.json

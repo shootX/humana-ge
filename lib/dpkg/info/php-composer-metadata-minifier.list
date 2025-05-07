@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/php-composer-metadata-minifier
+/usr/share/doc/php-composer-metadata-minifier/README.md
+/usr/share/doc/php-composer-metadata-minifier/changelog.Debian.gz
+/usr/share/doc/php-composer-metadata-minifier/copyright
+/usr/share/php
+/usr/share/php/Composer
+/usr/share/php/Composer/MetadataMinifier
+/usr/share/php/Composer/MetadataMinifier/MetadataMinifier.php
+/usr/share/php/Composer/MetadataMinifier/autoload.php

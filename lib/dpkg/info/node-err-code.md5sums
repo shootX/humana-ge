@@ -1,0 +1,7 @@
+08b7e177c532ab406c745d2614cef90d  usr/share/doc/node-err-code/README.md
+a825b7f13d28aa82d7363e29d907c095  usr/share/doc/node-err-code/changelog.Debian.gz
+f6a059057e16339d32e4041cb3ec8488  usr/share/doc/node-err-code/copyright
+c6f194a3e474d593460a5c8e4de69748  usr/share/nodejs/err-code/index.js
+dd304bbeaf3cefbd031181125c5cf6d1  usr/share/nodejs/err-code/index.umd.js
+5932b0657d06bfc1d242a04a411abaa2  usr/share/nodejs/err-code/package.json
+ab4fa9356e22b48c8eca4d76aefcc34f  usr/share/nodejs/err-code/pkgjs-lock.json

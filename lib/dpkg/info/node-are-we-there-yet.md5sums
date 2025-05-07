@@ -1,0 +1,11 @@
+e3e4e3022e2cfd732b0b63cb5f9e0ce1  usr/share/doc/node-are-we-there-yet/README.md.gz
+941a3f04c32d51696a9906f262e9c38e  usr/share/doc/node-are-we-there-yet/changelog.Debian.gz
+534f6ee66278a0916d0276862d7955ad  usr/share/doc/node-are-we-there-yet/copyright
+f8ffba776b46707cb08379722080a9dc  usr/share/nodejs/@types/are-we-there-yet/index.d.ts
+46f11b58551203925cfc6fee2e751229  usr/share/nodejs/@types/are-we-there-yet/package.json
+a9c06e81da780a0568fa5a53e8d7e4fe  usr/share/nodejs/are-we-there-yet/lib/index.js
+be36dbda2ee54d2785109f0be5037a3d  usr/share/nodejs/are-we-there-yet/lib/tracker-base.js
+e7a965ad9a452c9d97c23a8f9ef179a7  usr/share/nodejs/are-we-there-yet/lib/tracker-group.js
+8943debcb908885a2a4840abf4a90442  usr/share/nodejs/are-we-there-yet/lib/tracker-stream.js
+4c0fb1026700373207655bf320f94c93  usr/share/nodejs/are-we-there-yet/lib/tracker.js
+89d3e5ff964ba8eda906d0d777c749ba  usr/share/nodejs/are-we-there-yet/package.json

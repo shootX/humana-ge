@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/node-wrappy
+/usr/share/doc/node-wrappy/README.md
+/usr/share/doc/node-wrappy/changelog.Debian.gz
+/usr/share/doc/node-wrappy/copyright
+/usr/share/nodejs
+/usr/share/nodejs/wrappy
+/usr/share/nodejs/wrappy/package.json
+/usr/share/nodejs/wrappy/wrappy.js

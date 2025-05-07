@@ -1,0 +1,5 @@
+6ef9957cf6c0703a34e58e03e1d1cc6d  usr/lib/tasksel/tests/default-desktop
+91a8655dcee674b8b69334a1f1711d8a  usr/lib/tasksel/tests/desktop
+62d7ccf19c6539f3f40a004416c9fb4e  usr/lib/tasksel/tests/laptop
+5720cd8cbabca493aa65e3a5fad17faa  usr/lib/tasksel/tests/server
+1395957c2f5f53650832e49c578dddf7  usr/share/tasksel/descs/debian-tasks.desc

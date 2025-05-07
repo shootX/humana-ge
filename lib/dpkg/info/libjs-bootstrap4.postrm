@@ -1,0 +1,6 @@
+#!/bin/sh
+set -e
+# Automatically added by dh_installdeb/13.5.2ubuntu1
+dpkg-maintscript-helper symlink_to_dir /usr/share/javascript/bootstrap4 ../nodejs/bootstrap/dist 4.5.2\+dfsg1-2\~ -- "$@"
+dpkg-maintscript-helper symlink_to_dir /usr/share/javascript/bootstrap4 ../../lib/nodejs/bootstrap/dist 4.5.2\+dfsg1-6\~ -- "$@"
+# End automatically added section

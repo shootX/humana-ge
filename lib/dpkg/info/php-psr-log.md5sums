@@ -1,0 +1,12 @@
+0073e95256311bd375ebe2ed5fbc95e8  usr/share/doc/php-psr-log/README.md
+aee31da034601abe4e564c573e924b0b  usr/share/doc/php-psr-log/changelog.Debian.gz
+4202d32bb78a69394b30b5cce6a40218  usr/share/doc/php-psr-log/copyright
+05a9749f208b064a6af67c32055529f3  usr/share/php/Psr/Log/AbstractLogger.php
+7d2f0bd1583524d739fff12f0507de65  usr/share/php/Psr/Log/InvalidArgumentException.php
+cc226142fd5d390d030b39c61cf97843  usr/share/php/Psr/Log/LogLevel.php
+e24df41c40ade2fca16a4ec633a04497  usr/share/php/Psr/Log/LoggerAwareInterface.php
+92456b3a37e21d536d82b990effa2b37  usr/share/php/Psr/Log/LoggerAwareTrait.php
+50bef03abe7fd3ab81f779af593b29cc  usr/share/php/Psr/Log/LoggerInterface.php
+f418adb849b212255902f80c15868b65  usr/share/php/Psr/Log/LoggerTrait.php
+bdd6aba0adffb237c428ac83ff99b8ae  usr/share/php/Psr/Log/NullLogger.php
+83126cb8fb7c01fe6eb3f2a56d6d19d9  usr/share/php/Psr/Log/autoload.php

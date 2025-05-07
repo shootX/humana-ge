@@ -1,0 +1,11 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/node-is-typedarray
+/usr/share/doc/node-is-typedarray/copyright
+/usr/share/nodejs
+/usr/share/nodejs/is-typedarray
+/usr/share/nodejs/is-typedarray/package.json
+/usr/share/doc/node-is-typedarray/changelog.Debian.gz
+/usr/share/nodejs/is-typedarray/index.js

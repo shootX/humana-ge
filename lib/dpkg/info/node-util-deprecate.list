@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/node-util-deprecate
+/usr/share/doc/node-util-deprecate/README.md
+/usr/share/doc/node-util-deprecate/changelog.Debian.gz
+/usr/share/doc/node-util-deprecate/copyright
+/usr/share/nodejs
+/usr/share/nodejs/util-deprecate
+/usr/share/nodejs/util-deprecate/browser.js
+/usr/share/nodejs/util-deprecate/node.js
+/usr/share/nodejs/util-deprecate/package.json
+/usr/share/doc/node-util-deprecate/History.md.gz

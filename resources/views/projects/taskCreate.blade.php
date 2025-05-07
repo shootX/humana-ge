@@ -24,9 +24,9 @@
                     </select>
                 </div>
                 <div class="form-group col-md-4">
-                    <label class="col-form-label">{{ __('Milestone') }}</label><x-required></x-required>
-                    <select class="form-control form-control-light" name="milestone_id" id="task-milestone" required>
-                        <option value="">{{ __('Select Milestone') }}</option>
+                    <label class="col-form-label">{{ __('Milestone') }}</label>
+                    <select class="form-control form-control-light" name="milestone_id" id="task-milestone">
+                        <option value="">-- {{ __('არჩევითი') }} --</option>
                         @foreach ($project->milestones as $milestone)
                             <option value="{{ $milestone->id }}">{{ $milestone->title }}</option>
                         @endforeach

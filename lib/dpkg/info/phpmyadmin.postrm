@@ -1,0 +1,124 @@
+#!/bin/sh
+# postrm script for phpmyadmin
+
+set -e
+
+avahi_remove() {
+	rm -f /etc/avahi/services/phpmyadmin.service
+	if [ -d /etc/avahi/services ]; then
+		rmdir -p --ignore-fail-on-non-empty /etc/avahi/services
+	fi
+}
+
+desktop_remove() {
+	rm -f /usr/share/applications/phpmyadmin.desktop
+	if [ -d /usr/share/applications ]; then
+		rmdir -p --ignore-fail-on-non-empty /usr/share/applications
+	fi
+}
+
+lighttpd_remove() {
+	if [ -f /etc/lighttpd/conf-available/50-phpmyadmin.conf ] ; then
+		rm -f /etc/lighttpd/conf-available/50-phpmyadmin.conf
+		if which lighty-enable-mod >/dev/null 2>&1 ; then
+			lighty-disable-mod phpmyadmin
+			# We also enabled auth in postinst, but I think it's safer to keep it there
+		else
+			echo "Lighttpd not installed, skipping"
+		fi
+		# See bug #448682
+		if [ -h /etc/lighttpd/conf-enabled/50-phpmyadmin.conf ] ; then
+		    echo 'Manually deleting lighttpd/phpMyAdmin configuration link'
+		    rm /etc/lighttpd/conf-enabled/50-phpmyadmin.conf
+		fi
+	fi
+	avahi_remove
+	desktop_remove
+}
+
+apache_remove() {
+        COMMON_STATE=$(dpkg-query -f '${Status}' -W 'apache2-data' 2>/dev/null | awk '{print $3}' || true)
+
+        if [ -e /usr/share/apache2/apache2-maintscript-helper ] ; then
+                . /usr/share/apache2/apache2-maintscript-helper
+                apache2_invoke disconf phpmyadmin
+        elif [ "$COMMON_STATE" = "installed" ] || [ "$COMMON_STATE" = "unpacked" ] ; then
+                rm -f /etc/apache2/conf.d/phpmyadmin.conf
+        fi
+
+	rm -f /etc/apache2/conf-available/phpmyadmin.conf
+	avahi_remove
+	desktop_remove
+}
+
+
+if [ -f /usr/share/debconf/confmodule ]; then
+    . /usr/share/debconf/confmodule
+fi
+if [ -f /usr/share/dbconfig-common/dpkg/postrm.mysql ]; then
+    . /usr/share/dbconfig-common/dpkg/postrm.mysql
+    dbc_go phpmyadmin $@
+fi
+
+if [ "$1" = "purge" ]; then
+    rm -f /etc/phpmyadmin/config-db.php
+    if which ucf >/dev/null 2>&1; then
+	ucf --debconf-ok --purge /etc/phpmyadmin/config-db.php
+    fi
+fi
+
+if [ "$1" = "remove" ] || [ "$1" = "purge" ]; then
+
+	if [ -f /usr/share/debconf/confmodule ]; then
+		db_version 2.0
+
+		db_get phpmyadmin/reconfigure-webserver
+
+		webservers="$RET"
+
+		for webserver in $webservers; do
+			webserver=${webserver%,}
+			if [ "$webserver" = "lighttpd" ] ; then
+				lighttpd_remove
+			else
+				apache_remove $1
+			fi
+			# Redirection of 3 is needed because Debconf uses it and it might
+			# be inherited by webserver. See bug #446324.
+			if [ -f /etc/init.d/$webserver ] ; then
+				if which invoke-rc.d > /dev/null ; then
+					if invoke-rc.d $webserver status > /dev/null 2>&1 ; then
+						invoke-rc.d $webserver reload 3>/dev/null || true
+					fi
+				else
+					if /etc/init.d/$webserver status > /dev/null 2>&1 ; then
+						/etc/init.d/$webserver reload 3>/dev/null || true
+					fi
+				fi
+			fi
+		done
+	fi
+
+
+	if [ "$1" = "purge" ]; then
+		rm -rf /etc/phpmyadmin /var/lib/phpmyadmin
+	fi
+fi
+
+# Automatically added by dh_installdeb/13.5.2ubuntu1
+dpkg-maintscript-helper dir_to_symlink /usr/share/phpmyadmin/js/vendor/codemirror/addon/hint ../../../../../javascript/codemirror/addon/hint 4:5.0.4\+dfsg2-2\~ -- "$@"
+dpkg-maintscript-helper dir_to_symlink /usr/share/phpmyadmin/js/vendor/codemirror/addon/lint ../../../../../javascript/codemirror/addon/lint 4:5.0.4\+dfsg2-2\~ -- "$@"
+dpkg-maintscript-helper dir_to_symlink /usr/share/phpmyadmin/js/vendor/codemirror/lib ../../../../javascript/codemirror/lib 4:5.0.4\+dfsg2-2\~ -- "$@"
+dpkg-maintscript-helper dir_to_symlink /usr/share/phpmyadmin/themes/original/jquery/images ../../../../javascript/jquery-ui/themes/base/images 4:5.0.4\+dfsg2-2\~ -- "$@"
+dpkg-maintscript-helper dir_to_symlink /usr/share/phpmyadmin/themes/pmahomme/jquery/images ../../../../javascript/jquery-ui/themes/base/images 4:5.0.4\+dfsg2-2\~ -- "$@"
+dpkg-maintscript-helper symlink_to_dir /usr/share/phpmyadmin/js/vendor/openlayers ../../../javascript/openlayers 4:5.1.1\+dfsg2-1\~ -- "$@"
+# End automatically added section
+# Automatically added by dh_installdebconf/13.5.2ubuntu1
+if [ "$1" = purge ] && [ -e /usr/share/debconf/confmodule ]; then
+	. /usr/share/debconf/confmodule
+	db_purge
+fi
+# End automatically added section
+
+
+exit 0

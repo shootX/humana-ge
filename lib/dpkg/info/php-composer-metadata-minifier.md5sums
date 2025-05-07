@@ -1,0 +1,5 @@
+740f6a52a07ecd81025115f81099fe89  usr/share/doc/php-composer-metadata-minifier/README.md
+e85a57ea7e25cba3be383d27ab867fb7  usr/share/doc/php-composer-metadata-minifier/changelog.Debian.gz
+54eef06d9068db743f927b4a24880e91  usr/share/doc/php-composer-metadata-minifier/copyright
+f1e95c276f3c65a469b73e93b243d61b  usr/share/php/Composer/MetadataMinifier/MetadataMinifier.php
+f86bf567d7a0a6ef4ba964f22791fd98  usr/share/php/Composer/MetadataMinifier/autoload.php

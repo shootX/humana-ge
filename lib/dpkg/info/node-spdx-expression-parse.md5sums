@@ -1,0 +1,11 @@
+2552e806f703ad3996dff0761d77c02c  usr/share/doc/node-spdx-expression-parse/README.md
+faaa606b8d58fd4b7eaaafe8b2896b4c  usr/share/doc/node-spdx-expression-parse/changelog.Debian.gz
+dd45858c3813c5de49c4ad8c6de79ba0  usr/share/doc/node-spdx-expression-parse/copyright
+0fab56102bcd62f8306f22e7ea9d4384  usr/share/nodejs/@types/spdx-expression-parse/index.d.ts
+dd58d4783ae6f4711779fbfd845a6299  usr/share/nodejs/@types/spdx-expression-parse/package.json
+e9b39d4afcbbafc304887795e02a5859  usr/share/nodejs/@types/spdx-expression-parse/parse.d.ts
+15f8f184dbf37102b986d501e59ab682  usr/share/nodejs/@types/spdx-expression-parse/scan.d.ts
+40825d7f343919005e5809025c14876b  usr/share/nodejs/spdx-expression-parse/index.js
+9da13b6bbcd9c2ec5782fe1b0c0d795e  usr/share/nodejs/spdx-expression-parse/package.json
+bf8b106d12f806ea2dafb4410ade5001  usr/share/nodejs/spdx-expression-parse/parse.js
+38b1f87b7693b050f073300839b4e553  usr/share/nodejs/spdx-expression-parse/scan.js

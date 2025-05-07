@@ -1,0 +1,6 @@
+ba9bb43b59aac51eacc3251cc10737b0  usr/bin/phpdbg8.4
+d41d8cd98f00b204e9800998ecf8427e  usr/lib/php/8.4/sapi/phpdbg
+f416814ce2602e70f72b231143d5ead9  usr/share/bug/php8.4-phpdbg/control
+41c5539db66a849c80180605ce4254f3  usr/share/bug/php8.4-phpdbg/script
+c98a301118e9b079e9b1a940eb9a4009  usr/share/lintian/overrides/php8.4-phpdbg
+01a7f36f56d165e238df81f6efda8cdb  usr/share/man/man1/phpdbg8.4.1.gz

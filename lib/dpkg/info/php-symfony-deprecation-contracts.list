@@ -1,0 +1,16 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/php-symfony-deprecation-contracts
+/usr/share/doc/php-symfony-deprecation-contracts/changelog.Debian.gz
+/usr/share/doc/php-symfony-deprecation-contracts/copyright
+/usr/share/php
+/usr/share/php/Symfony
+/usr/share/php/Symfony/Contracts
+/usr/share/php/Symfony/Contracts/Deprecation
+/usr/share/php/Symfony/Contracts/Deprecation/autoload.php
+/usr/share/php/Symfony/Contracts/Deprecation/function.php
+/usr/share/pkg-php-tools
+/usr/share/pkg-php-tools/autoloaders
+/usr/share/pkg-php-tools/autoloaders/php-symfony-deprecation-contracts

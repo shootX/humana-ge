@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/node-clean-yaml-object
+/usr/share/doc/node-clean-yaml-object/changelog.Debian.gz
+/usr/share/doc/node-clean-yaml-object/copyright
+/usr/share/doc/node-clean-yaml-object/readme.md
+/usr/share/nodejs
+/usr/share/nodejs/clean-yaml-object
+/usr/share/nodejs/clean-yaml-object/index.js
+/usr/share/nodejs/clean-yaml-object/package.json

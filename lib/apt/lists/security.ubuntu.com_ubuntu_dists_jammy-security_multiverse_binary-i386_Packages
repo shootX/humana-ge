@@ -1,0 +1,107 @@
+Package: libclamunrar
+Architecture: all
+Version: 0.103.11-0ubuntu0.22.04.1
+Priority: optional
+Section: multiverse/libs
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: ClamAV Team <pkg-clamav-devel@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 20
+Depends: libclamunrar9
+Filename: pool/multiverse/libc/libclamunrar/libclamunrar_0.103.11-0ubuntu0.22.04.1_all.deb
+Size: 4842
+MD5sum: 300e2781a682100f9a06d49bf79a392b
+SHA1: c7fdeaebbc51830f3bece458eef2f918186b6b51
+SHA256: 39683dd0ce8bd9ff7901bd0575c3221e8dcc5b515cd6cb5df85154938e375c5a
+SHA512: e7f82433c10b8e9f168a3470d880754606dfb8eb608aae1efba38c7a86a501fbf6f3d611c3d4f98f428bddd57996d9b778dce6791d9babb8324c6c7128ccaba3
+Homepage: https://www.clamav.net/
+Description: anti-virus utility for Unix - unrar support
+Description-md5: 838276738daaffecf22ce5427760f59c
+
+Package: libcuda1-384
+Architecture: i386
+Version: 390.157-0ubuntu0.22.04.2
+Priority: optional
+Section: multiverse/misc
+Source: nvidia-graphics-drivers-390
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 24
+Depends: nvidia-headless-390
+Filename: pool/multiverse/n/nvidia-graphics-drivers-390/libcuda1-384_390.157-0ubuntu0.22.04.2_i386.deb
+Size: 6462
+MD5sum: 4c36975c602f3046d2b7905b793cc894
+SHA1: 48d4b774b291104b1f868ea775cb82adc1c0f020
+SHA256: 80e0ab2ef493ff93369d858746006248ff20955e2b6aa5755ca3e029576dcdd8
+SHA512: 48180e9e19ad1a27d1ecc8ce3fd61746b81f5e56637e077f6e03fa233d132d918f77dca9feb16f152303f639e9ba39c854783f74ebf042c9035cf006055458d2
+Homepage: http://www.nvidia.com
+Description: Transitional package for nvidia-headless-390
+Description-md5: c6dbe40660b5059827bb841b3e8d47a1
+
+Package: libunrar-headers
+Architecture: all
+Version: 1:6.1.5-1ubuntu0.1
+Multi-Arch: foreign
+Priority: optional
+Section: multiverse/libdevel
+Source: unrar-nonfree
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: UnRar maintainer team <team+unrar-nonfree@tracker.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 206
+Breaks: libunrar-dev (<= 1:5.9.4-1)
+Filename: pool/multiverse/u/unrar-nonfree/libunrar-headers_6.1.5-1ubuntu0.1_all.deb
+Size: 49324
+MD5sum: e6ab7728cab065f8665e295cdb854153
+SHA1: 4e14616287ebab4f8293bd9248c3e0a1d08ca607
+SHA256: db27247403a28cd6d8c6371dc7d7f47b7e35d273b5b917f919cc0c403d8e5eff
+SHA512: 9906eb48168f1a54480cc8938af99520ebd3cc22b4205c11a36aea9514379a84a41e7a17a77b88e518654c7e49764bbfcad0139a6a859e9d51ece7d07253a1f4
+Homepage: https://www.rarlab.com/
+Description: Unarchiver for .rar files (non-free version) - development header files
+Description-md5: dae68737a7d31b0a99862e68ad5a7c3a
+
+Package: nvidia-libopencl1-384
+Architecture: i386
+Version: 390.157-0ubuntu0.22.04.2
+Priority: optional
+Section: multiverse/misc
+Source: nvidia-graphics-drivers-390
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 24
+Depends: nvidia-headless-390
+Filename: pool/multiverse/n/nvidia-graphics-drivers-390/nvidia-libopencl1-384_390.157-0ubuntu0.22.04.2_i386.deb
+Size: 6472
+MD5sum: 3f8efa29ef6b801a05750a10f36d936e
+SHA1: 50dbe318cef5f89a2da1953d4b06531fc56cf0ac
+SHA256: 343268ad542a0ab59438f63f0392d6ca9fd7e014da2f9c7ee1108c174c2bd4da
+SHA512: cef8edd45062105ffeda58bd286bf06443dcb4581c29af648c46d5c3dba9172e902f9c9c7343ed787b0255212b9e6af0ee53ed0d7ae3846d07d9bd088b802bfd
+Homepage: http://www.nvidia.com
+Description: Transitional package for nvidia-headless-390
+Description-md5: c6dbe40660b5059827bb841b3e8d47a1
+
+Package: nvidia-opencl-icd-384
+Architecture: i386
+Version: 390.157-0ubuntu0.22.04.2
+Priority: optional
+Section: multiverse/misc
+Source: nvidia-graphics-drivers-390
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 24
+Depends: nvidia-headless-390
+Filename: pool/multiverse/n/nvidia-graphics-drivers-390/nvidia-opencl-icd-384_390.157-0ubuntu0.22.04.2_i386.deb
+Size: 6474
+MD5sum: 0fd5df5f3f6a748d5337c197dc9ff801
+SHA1: 5b9c37e7600789546ced3bac5529980914a2ed1c
+SHA256: 1a2a304fe7005109114f95d9ec26a3e44a62610411181efa95f58e6b9f33154b
+SHA512: ebc6cc226f31c3910c4df9c638b5ba3f53eb1480207c31d27b50d90ff5f0f4546de93b75dd02026a388464b1eb698ec4fbd01e50c5d3a31ed16d11799f514fc9
+Homepage: http://www.nvidia.com
+Description: Transitional package for nvidia-headless-390
+Description-md5: c6dbe40660b5059827bb841b3e8d47a1
+

@@ -418,9 +418,12 @@ class ProjectController extends Controller
 
                 $daysleft = round((((strtotime($project->end_date) - strtotime(date('Y-m-d'))) / 24) / 60) / 60);
 
+                // გადახდილი ინვოისების ჯამი
+                $paidInvoicesSum = \App\Models\Invoice::getPaidSumByProject($project->id);
+
                 //$permissions = Auth::user()->getPermission($project->id);
 
-                return view('projects.show', compact('currentWorkspace', 'project', 'chartData', 'daysleft'));
+                return view('projects.show', compact('currentWorkspace', 'project', 'chartData', 'daysleft', 'paidInvoicesSum'));
             } else {
                 return redirect()->back()->with('error', __("Project Not Found."));
             }
@@ -759,7 +762,7 @@ class ProjectController extends Controller
                 'project_id' => 'required',
                 'title' => 'required',
                 'priority' => 'required',
-                'milestone_id' => 'required',
+                'milestone_id' => 'nullable',
                 'assign_to' => 'required',
                 'start_date' => 'required',
                 'due_date' => 'required',

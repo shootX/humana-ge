@@ -1,0 +1,12 @@
+02412385aed836c0c25beb05df6c45c9  usr/share/doc/node-jquery/changelog.Debian.gz
+b50b9385340163508c522a224902d8d1  usr/share/doc/node-jquery/copyright
+10fb276c01884dd3eedaf5a901b0db96  usr/share/lintian/overrides/node-jquery
+7e2d0a4acc31f1f4b9124eeedd0388de  usr/share/nodejs/@types/jquery/JQuery.d.ts
+948f1c14bd1d2d39b35a1a927192d116  usr/share/nodejs/@types/jquery/JQueryStatic.d.ts
+16da9143fa7d00e535850c5f48be523a  usr/share/nodejs/@types/jquery/dist/jquery.slim.d.ts
+70a3f6afa64127d2f75d0bf5054696ec  usr/share/nodejs/@types/jquery/index.d.ts
+5f88e2273e35a828c5c9525a02789595  usr/share/nodejs/@types/jquery/legacy.d.ts
+308b694354aaa9a970c8c28a67264d0a  usr/share/nodejs/@types/jquery/misc.d.ts
+736d2317380ed5d826e5e083f52b9dd6  usr/share/nodejs/@types/jquery/package.json
+1838bf69a4153490d01f39f51f4e79c5  usr/share/nodejs/jquery/dist/jquery.js
+f23b6751a7878eab172a294e95699695  usr/share/nodejs/jquery/package.json

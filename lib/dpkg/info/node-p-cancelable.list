@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/node-p-cancelable
+/usr/share/doc/node-p-cancelable/changelog.Debian.gz
+/usr/share/doc/node-p-cancelable/copyright
+/usr/share/doc/node-p-cancelable/readme.md.gz
+/usr/share/nodejs
+/usr/share/nodejs/p-cancelable
+/usr/share/nodejs/p-cancelable/index.d.ts
+/usr/share/nodejs/p-cancelable/index.js
+/usr/share/nodejs/p-cancelable/package.json

@@ -1,0 +1,7 @@
+59e34836314dbf24528fdbca0bed7987  usr/share/doc/node-lru-cache/README.md.gz
+c583a4424e7ed909ad4233e2d526dc5e  usr/share/doc/node-lru-cache/changelog.Debian.gz
+d1cdf69605598c66b6cf6836c4a3ca72  usr/share/doc/node-lru-cache/copyright
+eb790c1ae0dc84899f56929abf20b213  usr/share/nodejs/@types/lru-cache/index.d.ts
+117683bd30f98701edcd66dbfeebf1ce  usr/share/nodejs/@types/lru-cache/package.json
+48445c2c358dbffce2099aaf18f5a645  usr/share/nodejs/lru-cache/index.js
+5facce3b29b46c909e27bd642d950a3f  usr/share/nodejs/lru-cache/package.json

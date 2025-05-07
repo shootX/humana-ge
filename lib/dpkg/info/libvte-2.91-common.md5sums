@@ -1,0 +1,6 @@
+ab81e60df09998b45b9cea3a4b174f8a  usr/lib/systemd/user/vte-spawn-.scope.d/defaults.conf
+b44341d5b9ac82cc1fd8ca8e1a650ff6  usr/libexec/vte-urlencode-cwd
+d13aa6ddf2a0f4412761148eb51de885  usr/share/doc/libvte-2.91-common/changelog.Debian.gz
+7a8d1708bec69d5e6b24a161a7fadfd0  usr/share/doc/libvte-2.91-common/copyright
+ad71e38244ad469b3860ef4f0952863a  usr/share/glade/pixmaps/hicolor/16x16/actions/widget-vte-terminal.png
+7e51c54cb72334f2637813c2d90e891e  usr/share/glade/pixmaps/hicolor/22x22/actions/widget-vte-terminal.png

@@ -1,0 +1,12 @@
+1247ab47b807b33e84c0530353a1d248  usr/share/doc/php-composer-pcre/README.md.gz
+2d1862880c8d251c3719442167233cdf  usr/share/doc/php-composer-pcre/changelog.Debian.gz
+1d2a9f1a1f6f3447e0a973267f492b07  usr/share/doc/php-composer-pcre/copyright
+55b561ea841da03ba7b46e2003315bbe  usr/share/php/Composer/Pcre/MatchAllResult.php
+1afd5f2ed5c078c4717131140c25b309  usr/share/php/Composer/Pcre/MatchAllWithOffsetsResult.php
+74a278c0afef2d05e4e0e1a4ab25e5ed  usr/share/php/Composer/Pcre/MatchResult.php
+52c1bf4b808902fa698d006418eb2eb6  usr/share/php/Composer/Pcre/MatchWithOffsetsResult.php
+a564160c97471b41c2ee2ea36da1d6e1  usr/share/php/Composer/Pcre/PcreException.php
+89d7e61eecf7c794c5fc0e0afa2566c5  usr/share/php/Composer/Pcre/Preg.php
+51457ed6311cbe530aa9fb2209c07d13  usr/share/php/Composer/Pcre/Regex.php
+eb817c1ed4e2e415c2f40c6a774c0119  usr/share/php/Composer/Pcre/ReplaceResult.php
+f9c4e94fc92fe76f1954f0e9cab335d7  usr/share/php/Composer/Pcre/autoload.php

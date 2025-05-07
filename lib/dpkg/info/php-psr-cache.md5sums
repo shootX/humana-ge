@@ -1,0 +1,7 @@
+37365209afc222487f7903cbb30aefa4  usr/share/doc/php-psr-cache/changelog.Debian.gz
+434e48aeb3d14f6fecdf287fdd3d61ed  usr/share/doc/php-psr-cache/copyright
+d887d14bf7cb327b2f823fd8f6e80149  usr/share/php/Psr/Cache/CacheException.php
+5ec09783d799d45a9e9ac71e28c49ed5  usr/share/php/Psr/Cache/CacheItemInterface.php
+ef5af58be396258d31bc3429f89b07dd  usr/share/php/Psr/Cache/CacheItemPoolInterface.php
+a91bb63c56eb83de54f58917ac62970e  usr/share/php/Psr/Cache/InvalidArgumentException.php
+f71bdb3d6831bac882ecd10fc8cbe3c3  usr/share/php/Psr/Cache/autoload.php

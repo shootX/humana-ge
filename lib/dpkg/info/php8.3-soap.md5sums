@@ -1,0 +1,5 @@
+1f88ac80a02baa0fad77cc375881dfd6  usr/lib/php/20230831/soap.so
+df11103a63de394d6a375b1a02e8d0df  usr/share/bug/php8.3-soap/control
+11725a9213153d453e9279a3d2269d0c  usr/share/bug/php8.3-soap/script
+6689ead261140f92c43fd1cd40d8bf44  usr/share/lintian/overrides/php8.3-soap
+18195911708014f1a66ec2fa22c1fcef  usr/share/php8.3-soap/soap/soap.ini

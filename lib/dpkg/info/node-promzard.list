@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/node-promzard
+/usr/share/doc/node-promzard/README.md.gz
+/usr/share/doc/node-promzard/changelog.Debian.gz
+/usr/share/doc/node-promzard/copyright
+/usr/share/nodejs
+/usr/share/nodejs/promzard
+/usr/share/nodejs/promzard/package.json
+/usr/share/nodejs/promzard/promzard.js

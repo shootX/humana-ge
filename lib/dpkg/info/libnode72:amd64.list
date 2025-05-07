@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/lib
+/usr/lib/x86_64-linux-gnu
+/usr/lib/x86_64-linux-gnu/libnode.so.72
+/usr/share
+/usr/share/doc
+/usr/share/doc/libnode72
+/usr/share/doc/libnode72/changelog.Debian.gz
+/usr/share/doc/libnode72/copyright
+/usr/share/systemtap
+/usr/share/systemtap/tapset
+/usr/share/systemtap/tapset/node.stp
