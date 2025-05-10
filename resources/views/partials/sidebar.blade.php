@@ -166,22 +166,22 @@
                         @endif
 
                         {{-- Add Inventory Menu Item --}}
-                        <li class="dash-item {{ Request::route()->getName() == 'inventory.index' ? ' active' : '' }}">
-                            <a href="{{ route('inventory.index', $currentWorkspace->slug) }}" class="dash-link">
+                        <li class="dash-item dash-hasmenu {{ Request::route()->getName() == 'inventory.index' || Request::route()->getName() == 'suppliers.index' ? ' active' : '' }}">
+                            <a href="#!" class="dash-link">
                                 <span class="dash-micon"><i data-feather="archive"></i></span>
                                 <span class="dash-mtext">{{ __('Inventory') }}</span>
+                                <span class="dash-arrow"><i data-feather="chevron-right"></i></span>
                             </a>
+                            <ul class="dash-submenu">
+                                <li class="{{ Request::route()->getName() == 'inventory.index' ? ' active' : '' }}">
+                                    <a class="dash-link" href="{{ route('inventory.index', $currentWorkspace->slug) }}">{{ __('Inventory Items') }}</a>
+                                </li>
+                                <li class="{{ Request::route()->getName() == 'suppliers.index' ? ' active' : '' }}">
+                                    <a class="dash-link" href="{{ route('suppliers.index', $currentWorkspace->slug) }}">{{ __('Suppliers') }}</a>
+                                </li>
+                            </ul>
                         </li>
                         {{-- End Inventory Menu Item --}}
-
-                        {{-- Add Suppliers Menu Item --}}
-                        <li class="dash-item {{ Request::route()->getName() == 'suppliers.index' ? ' active' : '' }}">
-                            <a href="{{ route('suppliers.index', $currentWorkspace->slug) }}" class="dash-link">
-                                <span class="dash-micon"><i data-feather="truck"></i></span>
-                                <span class="dash-mtext">{{ __('Suppliers') }}</span>
-                            </a>
-                        </li>
-                        {{-- End Suppliers Menu Item --}}
 
                         @elseauth
 
