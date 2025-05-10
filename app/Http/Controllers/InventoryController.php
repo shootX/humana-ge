@@ -44,6 +44,9 @@ class InventoryController extends Controller
         if ($request->filled('category_id')) {
             $query->where('category_id', $request->input('category_id'));
         }
+        if ($request->filled('supplier_id')) {
+            $query->where('supplier_id', $request->input('supplier_id'));
+        }
         if ($request->filled('status_filter')) {
             $query->where('status', $request->input('status_filter'));
         }
@@ -130,6 +133,12 @@ class InventoryController extends Controller
                 
                 return isset($units[$item->unit]) ? $units[$item->unit] : $item->unit;
             })
+            ->editColumn('supplier_id', function ($item) {
+                if ($item->supplier) {
+                    return $item->supplier->name;
+                }
+                return '-';
+            })
             ->editColumn('category_id', function ($item) {
                 if ($item->category) {
                     return $item->category->name;
@@ -175,7 +184,12 @@ class InventoryController extends Controller
             ->orderBy('name')
             ->get(['id', 'name']);
             
-        return view('inventory.create', compact('currentWorkspace', 'categories'));
+        // Load suppliers for the dropdown
+        $suppliers = \App\Models\Supplier::where('workspace_id', $currentWorkspace->id)
+            ->orderBy('name')
+            ->get(['id', 'name']);
+            
+        return view('inventory.create', compact('currentWorkspace', 'categories', 'suppliers'));
     }
 
     /**
@@ -197,6 +211,7 @@ class InventoryController extends Controller
                                'quantity' => 'required|integer|min:0',
                                'unit' => 'required|string|in:piece,kilogram,liter,meter,square_meter',
                                'unit_price' => 'nullable|numeric|min:0',
+                               'supplier_id' => 'nullable|exists:suppliers,id',
                                'category_id' => 'nullable|exists:inventory_categories,id',
                                'barcode' => 'nullable|string|max:255',
                                'description' => 'nullable|string',
@@ -213,6 +228,7 @@ class InventoryController extends Controller
         $item->name = $request->input('name');
         $item->description = $request->input('description');
         $item->category_id = $request->input('category_id');
+        $item->supplier_id = $request->input('supplier_id');
         $item->barcode = $request->input('barcode');
         $item->quantity = $request->input('quantity');
         $item->unit = $request->input('unit');
@@ -243,9 +259,14 @@ class InventoryController extends Controller
         $categories = InventoryCategory::where('workspace_id', $currentWorkspace->id)
             ->orderBy('name')
             ->get(['id', 'name']);
+            
+        // Load suppliers for the dropdown
+        $suppliers = \App\Models\Supplier::where('workspace_id', $currentWorkspace->id)
+            ->orderBy('name')
+            ->get(['id', 'name']);
 
         // Reuse the create view for editing, passing the item data
-        return view('inventory.create', compact('currentWorkspace', 'item', 'categories'));
+        return view('inventory.create', compact('currentWorkspace', 'item', 'categories', 'suppliers'));
     }
 
     public function update(Request $request, $slug, InventoryItem $item)
@@ -267,6 +288,7 @@ class InventoryController extends Controller
                                'quantity' => 'required|integer|min:0',
                                'unit' => 'required|string|in:piece,kilogram,liter,meter,square_meter',
                                'unit_price' => 'nullable|numeric|min:0',
+                               'supplier_id' => 'nullable|exists:suppliers,id',
                                'category_id' => 'nullable|exists:inventory_categories,id',
                                'barcode' => 'nullable|string|max:255',
                                'description' => 'nullable|string',
@@ -288,6 +310,7 @@ class InventoryController extends Controller
         $item->name = $request->input('name');
         $item->description = $request->input('description');
         $item->category_id = $request->input('category_id');
+        $item->supplier_id = $request->input('supplier_id');
         $item->barcode = $request->input('barcode');
         $item->quantity = $request->input('quantity');
         $item->unit = $request->input('unit');

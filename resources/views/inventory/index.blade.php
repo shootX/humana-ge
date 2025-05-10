@@ -54,6 +54,12 @@
                     <!-- Categories will be loaded via AJAX -->
                 </select>
             </div>
+            <div class="col-sm-6 col-xl-2 m-0">
+                <select class=" form-select" name="supplier_id" id="supplier_id">
+                    <option value="">{{ __('All Suppliers') }}</option>
+                    <!-- Suppliers will be loaded via AJAX -->
+                </select>
+            </div>
              <div class="col-sm-6 col-xl-2 m-0">
                  <select class=" form-select" name="status_filter" id="status_filter">
                     <option value="">{{ __('All Statuses') }}</option>
@@ -98,6 +104,7 @@
                                 <thead>
                                     <th>{{ __('Item Name') }}</th>
                                     <th>{{ __('Category') }}</th>
+                                    <th>{{ __('Supplier') }}</th>
                                     <th>{{ __('Quantity') }}</th>
                                     <th>{{ __('Unit') }}</th>
                                     <th>{{ __('Unit Price') }}</th>
@@ -110,7 +117,7 @@
                                 </thead>
                                 <tbody>
                                     {{-- Initial loading/empty message colspan needs to be dynamic --}}
-                                    <td colspan="{{ $canManageInventory ? 8 : 7 }}" class="text-center"> {{ __("Loading...") }}</td>
+                                    <td colspan="{{ $canManageInventory ? 9 : 8 }}" class="text-center"> {{ __("Loading...") }}</td>
                                 </tbody>
                             </table>
                         </div>
@@ -183,10 +190,30 @@
                 }
             });
             
+            // Load suppliers for filter dropdown
+            $.ajax({
+                url: "{{ route('suppliers.get.data', $currentWorkspace->slug) }}",
+                type: 'GET',
+                dataType: 'json',
+                success: function(data) {
+                    let options = '<option value="">{{ __("All Suppliers") }}</option>';
+                    if (data && data.data) {
+                        $.each(data.data, function(index, supplier) {
+                            options += `<option value="${supplier.id}">${supplier.name}</option>`;
+                        });
+                    }
+                    $('#supplier_id').html(options);
+                },
+                error: function(xhr) {
+                    console.error('Error loading suppliers:', xhr);
+                }
+            });
+            
             // Columns definition
             let columns = [
                 { data: 'name', name: 'name' },
                 { data: 'category_id', name: 'category_id' },
+                { data: 'supplier_id', name: 'supplier_id' },
                 { data: 'quantity', name: 'quantity' },
                 { data: 'unit', name: 'unit' },
                 { data: 'unit_price', name: 'unit_price', searchable: false }, // unit_price might not be searchable
@@ -214,6 +241,7 @@
                     data: function(d) {
                         const dateRange = $('#duration1').val().split(' - ');
                         d.category_id = $("#category_id").val();
+                        d.supplier_id = $("#supplier_id").val();
                         d.status_filter = $("#status_filter").val();
                         d.order_by = $("#order_by").val();
                         d.start_date = dateRange[0] ? moment(dateRange[0], 'MMM D, YYYY').format('YYYY-MM-DD') : '';
@@ -227,7 +255,7 @@
                      error: function (xhr, error, thrown) {
                          console.error("AJAX Error: ", error, thrown);
                          // Update colspan dynamically based on whether action column exists
-                         const colspan = canManageInventory ? 8 : 7;
+                         const colspan = canManageInventory ? 9 : 8;
                          $("#inventory-table tbody").html('<td colspan="' + colspan + '" class="text-center text-danger"> {{ __("Error loading data.") }}</td>');
                      }
                 },
@@ -279,7 +307,7 @@
             });
 
              // Update initial empty message colspan dynamically
-             const initialColspan = canManageInventory ? 8 : 7;
+             const initialColspan = canManageInventory ? 9 : 8;
              $("#inventory-table tbody").html('<td colspan="' + initialColspan + '" class="text-center"> {{ __("Select filters and click Apply to load data.") }}</td>');
         });
     </script>

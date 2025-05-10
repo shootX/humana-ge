@@ -71,6 +71,25 @@
                 <small class="form-text text-muted">{{ __('Select a category or add a new one') }}</small>
             </div>
         </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                {{ Form::label('supplier_id', __('Supplier'), ['class' => 'col-form-label']) }}
+                <div class="input-group">
+                    <select name="supplier_id" id="supplier_id" class="form-control">
+                        <option value="">{{ __('Select Supplier') }}</option>
+                        @foreach($suppliers as $supplier)
+                            <option value="{{ $supplier->id }}" {{ isset($item) && $item->supplier_id == $supplier->id ? 'selected' : '' }}>
+                                {{ $supplier->name }}
+                            </option>
+                        @endforeach
+                    </select>
+                    <a href="{{ route('suppliers.create', $currentWorkspace->slug) }}" class="btn btn-primary" target="_blank">
+                        <i class="ti ti-plus"></i>
+                    </a>
+                </div>
+                <small class="form-text text-muted">{{ __('Select a supplier or add a new one') }}</small>
+            </div>
+        </div>
         <div class="col-md-12">
             <div class="form-group">
                 {{ Form::label('barcode', __('Barcode'), ['class' => 'col-form-label']) }}

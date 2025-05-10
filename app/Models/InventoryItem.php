@@ -10,6 +10,7 @@ class InventoryItem extends Model
         'name',
         'description',
         'category_id',
+        'supplier_id',
         'barcode',
         'quantity',
         'unit',
@@ -22,6 +23,11 @@ class InventoryItem extends Model
     public function category()
     {
         return $this->belongsTo(InventoryCategory::class, 'category_id');
+    }
+
+    public function supplier()
+    {
+        return $this->belongsTo(Supplier::class, 'supplier_id');
     }
 
     public function workspace()
