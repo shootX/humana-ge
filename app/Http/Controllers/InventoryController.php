@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Auth;
 use Yajra\DataTables\Facades\DataTables;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Log;
+use App\Models\InventoryCategory;
 
 class InventoryController extends Controller
 {
@@ -40,8 +41,8 @@ class InventoryController extends Controller
         $query = InventoryItem::where('workspace_id', $currentWorkspace->id);
 
         // Apply filters from the request
-        if ($request->filled('category')) {
-            $query->where('category', $request->input('category'));
+        if ($request->filled('category_id')) {
+            $query->where('category_id', $request->input('category_id'));
         }
         if ($request->filled('status_filter')) {
             $query->where('status', $request->input('status_filter'));
@@ -117,7 +118,25 @@ class InventoryController extends Controller
                 // return Utility::priceFormat($item->unit_price);
                  return $item->unit_price ? number_format($item->unit_price, 2) : '-'; // Simple formatting for now
             })
-             ->editColumn('status', function ($item) {
+            ->editColumn('unit', function ($item) {
+                // Format unit for display
+                $units = [
+                    'piece' => __('Piece'),
+                    'kilogram' => __('Kilogram'),
+                    'liter' => __('Liter'),
+                    'meter' => __('Meter'),
+                    'square_meter' => __('Square Meter'),
+                ];
+                
+                return isset($units[$item->unit]) ? $units[$item->unit] : $item->unit;
+            })
+            ->editColumn('category_id', function ($item) {
+                if ($item->category) {
+                    return $item->category->name;
+                }
+                return '-';
+            })
+            ->editColumn('status', function ($item) {
                  if($item->status == 'in_stock'){
                     return '<span class="badge bg-success p-2 px-3 rounded">' . __('In Stock') . '</span>';
                  } elseif ($item->status == 'out_of_stock') {
@@ -150,8 +169,13 @@ class InventoryController extends Controller
                  return redirect()->route('inventory.index', $slug)->with('error', __('Permission denied.'));
             }
         }
-        // Optionally load categories or other data needed for the form
-        return view('inventory.create', compact('currentWorkspace'));
+        
+        // Load categories for the dropdown
+        $categories = InventoryCategory::where('workspace_id', $currentWorkspace->id)
+            ->orderBy('name')
+            ->get(['id', 'name']);
+            
+        return view('inventory.create', compact('currentWorkspace', 'categories'));
     }
 
     /**
@@ -171,8 +195,10 @@ class InventoryController extends Controller
             $request->all(), [
                                'name' => 'required|string|max:255',
                                'quantity' => 'required|integer|min:0',
+                               'unit' => 'required|string|in:piece,kilogram,liter,meter,square_meter',
                                'unit_price' => 'nullable|numeric|min:0',
-                               'category' => 'nullable|string|max:255',
+                               'category_id' => 'nullable|exists:inventory_categories,id',
+                               'barcode' => 'nullable|string|max:255',
                                'description' => 'nullable|string',
                            ]
         );
@@ -186,8 +212,10 @@ class InventoryController extends Controller
         $item = new InventoryItem();
         $item->name = $request->input('name');
         $item->description = $request->input('description');
-        $item->category = $request->input('category');
+        $item->category_id = $request->input('category_id');
+        $item->barcode = $request->input('barcode');
         $item->quantity = $request->input('quantity');
+        $item->unit = $request->input('unit');
         $item->unit_price = $request->input('unit_price');
         $item->status = $request->input('quantity') > 0 ? 'in_stock' : 'out_of_stock'; // Auto-set status
         $item->workspace_id = $currentWorkspace->id;
@@ -211,8 +239,13 @@ class InventoryController extends Controller
              return redirect()->route('inventory.index', $slug)->with('error', __('Permission denied.'));
         }
 
+        // Get categories for the dropdown
+        $categories = InventoryCategory::where('workspace_id', $currentWorkspace->id)
+            ->orderBy('name')
+            ->get(['id', 'name']);
+
         // Reuse the create view for editing, passing the item data
-        return view('inventory.create', compact('currentWorkspace', 'item'));
+        return view('inventory.create', compact('currentWorkspace', 'item', 'categories'));
     }
 
     public function update(Request $request, $slug, InventoryItem $item)
@@ -232,10 +265,11 @@ class InventoryController extends Controller
             $request->all(), [
                                'name' => 'required|string|max:255',
                                'quantity' => 'required|integer|min:0',
+                               'unit' => 'required|string|in:piece,kilogram,liter,meter,square_meter',
                                'unit_price' => 'nullable|numeric|min:0',
-                               'category' => 'nullable|string|max:255',
+                               'category_id' => 'nullable|exists:inventory_categories,id',
+                               'barcode' => 'nullable|string|max:255',
                                'description' => 'nullable|string',
-                               // Optionally add validation for status if it becomes editable
                            ]
         );
 
@@ -250,19 +284,26 @@ class InventoryController extends Controller
             // return redirect()->back()->with('error', $messages->first()); // Original behaviour might lose context
         }
 
-        // Update item fields
+        // Update the inventory item with the validated data
         $item->name = $request->input('name');
         $item->description = $request->input('description');
-        $item->category = $request->input('category');
+        $item->category_id = $request->input('category_id');
+        $item->barcode = $request->input('barcode');
         $item->quantity = $request->input('quantity');
+        $item->unit = $request->input('unit');
         $item->unit_price = $request->input('unit_price');
-        // Automatically update status based on quantity (can be adjusted if status needs manual control)
-        $item->status = $request->input('quantity') > 0 ? 'in_stock' : 'out_of_stock';
-        // workspace_id and created_by should generally not change on update
+        
+        // Auto-update status based on quantity, unless explicitly set
+        if (!$request->has('status')) {
+            $item->status = $request->input('quantity') > 0 ? 'in_stock' : 'out_of_stock';
+        } else {
+            $item->status = $request->input('status');
+        }
+        
         $item->save();
 
+        // Return to inventory index with success message
         return redirect()->route('inventory.index', $slug)->with('success', __('Inventory item updated successfully.'));
-
     }
 
     // Add destroy method later

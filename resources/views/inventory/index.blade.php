@@ -49,8 +49,9 @@
 
         <div class="row align-items-center display-none" id="show_filter">
             <div class="col-sm-6 col-xl-2 m-0">
-                <select class=" form-select" name="category" id="category">
+                <select class=" form-select" name="category_id" id="category_id">
                     <option value="">{{ __('All Categories') }}</option>
+                    <!-- Categories will be loaded via AJAX -->
                 </select>
             </div>
              <div class="col-sm-6 col-xl-2 m-0">
@@ -98,6 +99,7 @@
                                     <th>{{ __('Item Name') }}</th>
                                     <th>{{ __('Category') }}</th>
                                     <th>{{ __('Quantity') }}</th>
+                                    <th>{{ __('Unit') }}</th>
                                     <th>{{ __('Unit Price') }}</th>
                                     <th>{{ __('Status') }}</th>
                                     <th>{{ __('Last Updated') }}</th>
@@ -108,7 +110,7 @@
                                 </thead>
                                 <tbody>
                                     {{-- Initial loading/empty message colspan needs to be dynamic --}}
-                                    <td colspan="{{ $canManageInventory ? 7 : 6 }}" class="text-center"> {{ __("Loading...") }}</td>
+                                    <td colspan="{{ $canManageInventory ? 8 : 7 }}" class="text-center"> {{ __("Loading...") }}</td>
                                 </tbody>
                             </table>
                         </div>
@@ -164,11 +166,29 @@
         });
 
         $(document).ready(function() {
+            // Load categories for filter dropdown
+            $.ajax({
+                url: "{{ route('inventory.categories.get', $currentWorkspace->slug) }}",
+                type: 'GET',
+                dataType: 'json',
+                success: function(data) {
+                    let options = '<option value="">{{ __("All Categories") }}</option>';
+                    $.each(data, function(index, category) {
+                        options += `<option value="${category.id}">${category.name}</option>`;
+                    });
+                    $('#category_id').html(options);
+                },
+                error: function(xhr) {
+                    console.error('Error loading categories:', xhr);
+                }
+            });
+            
             // Columns definition
             let columns = [
                 { data: 'name', name: 'name' },
-                { data: 'category', name: 'category' },
+                { data: 'category_id', name: 'category_id' },
                 { data: 'quantity', name: 'quantity' },
+                { data: 'unit', name: 'unit' },
                 { data: 'unit_price', name: 'unit_price', searchable: false }, // unit_price might not be searchable
                 { data: 'status', name: 'status', orderable: false, searchable: false }, // status usually isn't orderable/searchable directly
                 { data: 'updated_at', name: 'updated_at' }, // Added updated_at back
@@ -193,7 +213,7 @@
                     type: 'POST',
                     data: function(d) {
                         const dateRange = $('#duration1').val().split(' - ');
-                        d.category = $("#category").val();
+                        d.category_id = $("#category_id").val();
                         d.status_filter = $("#status_filter").val();
                         d.order_by = $("#order_by").val();
                         d.start_date = dateRange[0] ? moment(dateRange[0], 'MMM D, YYYY').format('YYYY-MM-DD') : '';
@@ -207,7 +227,7 @@
                      error: function (xhr, error, thrown) {
                          console.error("AJAX Error: ", error, thrown);
                          // Update colspan dynamically based on whether action column exists
-                         const colspan = canManageInventory ? 7 : 6;
+                         const colspan = canManageInventory ? 8 : 7;
                          $("#inventory-table tbody").html('<td colspan="' + colspan + '" class="text-center text-danger"> {{ __("Error loading data.") }}</td>');
                      }
                 },
@@ -259,7 +279,7 @@
             });
 
              // Update initial empty message colspan dynamically
-             const initialColspan = canManageInventory ? 7 : 6;
+             const initialColspan = canManageInventory ? 8 : 7;
              $("#inventory-table tbody").html('<td colspan="' + initialColspan + '" class="text-center"> {{ __("Select filters and click Apply to load data.") }}</td>');
         });
     </script>
