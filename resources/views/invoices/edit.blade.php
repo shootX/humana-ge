@@ -11,12 +11,13 @@
             </div>
             
             <div class="form-group col-md-6">
-                <label for="client_id" class="col-form-label">{{ __('Client') }}</label><x-required></x-required>
-                <select class="form-control" name="client_id" id="client_id" required>
+                <label for="client_id" class="col-form-label">{{ __('Client') }}</label>
+                <select class="form-control" name="client_id" id="client_id">
                     <option value="">{{ __('Select Client') }}</option>
                     @foreach ($clients as $p)
                         <option value="{{ $p->id }}" @if ($invoice->client_id == $p->id) selected @endif>
-                            {{ $p->name }} - {{ $p->email }}</option>
+                            {{ $p->name }}
+                        </option>
                     @endforeach
                 </select>
             </div>

@@ -88,6 +88,26 @@ return [
 
     'faker_locale' => env('APP_FAKER_LOCALE', 'en_US'),
 
+    'available_locales' => [
+        'en' => 'English',
+        'ka' => 'ქართული',
+        'ar' => 'Arabic',
+        'da' => 'Danish',
+        'de' => 'German',
+        'es' => 'Spanish',
+        'fr' => 'French',
+        'he' => 'Hebrew',
+        'it' => 'Italian',
+        'ja' => 'Japanese',
+        'nl' => 'Dutch',
+        'pl' => 'Polish',
+        'pt' => 'Portuguese',
+        'pt-br' => 'Portuguese (Brazil)',
+        'ru' => 'Russian',
+        'tr' => 'Turkish',
+        'zh' => 'Chinese',
+    ],
+
     /*
     |--------------------------------------------------------------------------
     | Encryption Key

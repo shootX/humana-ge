@@ -16,7 +16,7 @@
             {{ Form::select('client_id', $client, null, ['class' => 'form-control client_id', 'id' => 'client_id', 'data-toggle' => 'select', 'required' => 'required']) }}
         </div>
         <div class="col-md-6 form-group">
-            {{ Form::label('project', __('Project'), ['class' => 'col-form-label']) }}<x-required></x-required>
+            {{ Form::label('project', __('Branch'), ['class' => 'col-form-label']) }}<x-required></x-required>
             <div class="project-div">
                 {{ Form::select('project_id', $projects, null, ['class' => 'form-control', 'id' => 'project', 'name' => 'project']) }}
             </div>

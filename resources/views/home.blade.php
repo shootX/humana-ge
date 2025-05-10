@@ -112,7 +112,7 @@
                                     </div>
                                     <p class="text-muted text-sm"></p>
                                     <a href="{{ route($client_keyword . 'projects.index', $currentWorkspace->slug) }}">
-                                        <h6 class="">{{ __('Total Project') }}</h6>
+                                        <h6 class="">{{ __('Total Branches') }}</h6>
                                     </a>
                                     <h3 class="mb-0">{{ $totalProject }} <span class="text-success text-sm"></span></h3>
                                 </div>
@@ -137,11 +137,11 @@
                             <div class="card">
                                 <div class="card-body">
                                     <div class="theme-avtar bg-danger">
-                                        <i class="fas fa-bug bg-danger text-white"></i>
+                                        <i class="fas fa-tasks bg-danger text-white"></i>
                                     </div>
                                     <p class="text-muted text-sm"></p>
-                                    <h6 class="">{{ __('Total Bug') }}</h6>
-                                    <h3 class="mb-0">{{ $totalBugs }} <span class="text-success text-sm"></span></h3>
+                                    <h6 class="">{{ __('Unfinished Task') }}</h6>
+                                    <h3 class="mb-0">{{ $totalTask - $completeTask }} <span class="text-success text-sm"></span></h3>
                                 </div>
                             </div>
                         </div>

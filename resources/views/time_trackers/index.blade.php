@@ -61,7 +61,7 @@
                             <thead>
                                 <tr>
                                     <th> {{ __('Description') }}</th>
-                                    <th> {{ __('Project') }}</th>
+                                    <th> {{ __('Branch') }}</th>
                                     <th> {{ __('Task') }}</th>
                                     <th> {{ __('Workspace') }}</th>
                                     <th> {{ __('Start Time') }}</th>

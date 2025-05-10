@@ -367,8 +367,8 @@
                           phrase;
                   },
                   categories: [{
-                          listLocation: "Projects",
-                          header: "{{ __('Projects') }}"
+                          listLocation: "Branches",
+                          header: "{{ __('Branches') }}"
                       },
                       {
                           listLocation: "Tasks",

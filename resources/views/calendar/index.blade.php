@@ -35,7 +35,7 @@
     <div class="col-xl-12 col-lg-4 col-md-4 col-sm-6 col-8">
         <div class=" form-group col-auto m-0">
             <select class="  form-select" id="project_id" onchange="get_data()">
-                <option value="">{{ __('All Projects') }}</option>
+                <option value="">{{ __('All Branches') }}</option>
                 @foreach ($projects as $project)
                     <option value="{{ $project->id }}" @if ($project_id == $project->id) selected @endif>
                         {{ $project->name }} </option>

@@ -16,7 +16,7 @@
                     </td>
                     <td>
                         <div class="font-weight-bold">{{ $plan->max_projects }}</div>
-                        <div>{{ __('Projects') }}</div>
+                        <div>{{ __('Branches') }}</div>
                     </td>
                     <td>
                         @if ($user->plan == $plan->id)

@@ -248,7 +248,7 @@
                                         </div>
                                         <div class="col-6  mt-2">
                                             <h6 class="mb-0 px-3">{{ $user->countProject($workspace_id) }}</h6>
-                                            <p class="text-muted text-sm mb-0">{{ __('Projects') }}</p>
+                                            <p class="text-muted text-sm mb-0">{{ __('Branches') }}</p>
                                         </div>
                                         <div class="col-12 text-center Id mt-3">
                                             <a href="#" data-url="{{ route('company.info', $user->id) }}"
@@ -258,7 +258,7 @@
                                     @else
                                         <div class="col-6">
                                             <h6 class="mb-0 px-3">{{ $user->countProject($workspace_id) }}</h6>
-                                            <p class="text-muted text-sm mb-0">{{ __('Projects') }}</p>
+                                            <p class="text-muted text-sm mb-0">{{ __('Branches') }}</p>
                                         </div>
                                         <div class="col-6">
                                             <h6 class="mb-0 px-3">{{ $user->countTask($workspace_id) }}</h6>

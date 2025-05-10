@@ -88,7 +88,6 @@ class InvoiceController extends Controller
                 'issue_date' => 'required',
                 'due_date' => 'required',
                 'discount' => 'required',
-                'client_id' => 'required',
             ];
             $validator = \Validator::make($request->all(), $rules);
 
@@ -112,14 +111,20 @@ class InvoiceController extends Controller
             $invoice->save();
 
             $settings = Utility::getPaymentSetting($user1);
-            $client = Client::find($request->client_id);
+            $client = null;
+            $client_name = '';
+            
+            if($request->client_id) {
+                $client = Client::find($request->client_id);
+                $client_name = $client ? $client->name : '';
+            }
 
             $uArr = [
                 // 'user_name' => $user->name,
                 'project_name' => $project_name->name,
                 'company_name' => \Auth::user()->name,
                 'invoice_id' => Utility::invoiceNumberFormat($invoice->id),
-                'client_name' => $client->name,
+                'client_name' => $client_name,
                 'app_url' => env('APP_URL'),
                 'app_name' => $setting['app_name'],
             ];

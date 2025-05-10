@@ -1168,8 +1168,8 @@ class Utility
                         return $arReturn;
                     } else {
                         return [
-                            'is_success' => true,
-                            'error' => false,
+                            'is_success' => false,
+                            'error' => __('Mail not send, email not found'),
                         ];
                     }
                 } else {
@@ -1539,9 +1539,22 @@ class Utility
                 );
             }
 
+            if ($settings['storage_setting'] == 'local') {
+                // Check if the file exists in the public uploads directory
+                $public_path = public_path($path);
+                if (file_exists($public_path)) {
+                    return asset($path);
+                }
+            }
+
             return \Storage::disk($settings['storage_setting'])->url($path);
         } catch (\Throwable $th) {
-            return '';
+            // Fallback to direct public path if storage fails
+            try {
+                return asset($path);
+            } catch (\Throwable $e) {
+                return '';
+            }
         }
     }
 

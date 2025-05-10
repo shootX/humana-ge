@@ -63,6 +63,7 @@ use App\Http\Controllers\PayUController;
 use App\Http\Controllers\PowertranzPaymentController;
 use App\Http\Controllers\InventoryController;
 use App\Http\Controllers\InventoryCategoryController;
+use App\Http\Controllers\SupplierController;
 
 
 /*
@@ -371,7 +372,6 @@ Route::group(['middleware' => ['verified']], function () {
         Route::get('/{slug}/calendar/{id?}', [CalenderController::class, 'index'])->name('calender.index')->middleware(['auth:client', 'XSS']);
         Route::any('/{slug}/calendar/{id?}', [CalenderController::class, 'calendar'])->name('calender.google.calendar')->middleware(['auth:client', 'XSS']);
 
-        Route::any('{slug}/event/get_event_data', [ZoomMeetingController::class, 'get_event_data'])->name('event.get_event_data')->middleware(['auth:client', 'XSS']);
 
 
 
@@ -515,7 +515,6 @@ Route::group(['middleware' => ['verified']], function () {
         
         //================================= End Invoice Payment Gateways  ====================================//
 
-        Route::get('/{slug}/zoom-meeting', [ZoomMeetingController::class, 'index'])->name('zoom-meeting.index')->middleware(['auth:client']);
 
         // Expenses for client.
 
@@ -902,19 +901,6 @@ Route::group(['middleware' => ['verified']], function () {
     // ================================= Zoom Meeting ======================================//
 
 
-    Route::get('/{slug}/zoom-meeting', [ZoomMeetingController::class, 'index'])->name('zoom-meeting.index')->middleware(['auth', 'XSS']);
-    Route::get('/{slug}/zoom-meeting/create', [ZoomMeetingController::class, 'create'])->name('zoom-meeting.create')->middleware(['auth', 'XSS']);
-    Route::get('/{slug}/zoom-meeting/calendar', [ZoomMeetingController::class, 'calender'])->name('zoommeeting.Calender')->middleware(['auth', 'XSS']);
-    Route::get('/{slug}/Zoom-Meeting/calendar', [ZoomMeetingController::class, 'calender'])->name('zoommeetings.Calender')->middleware(['auth:client', 'XSS']);
-
-    Route::post('/{slug}/zoom-meeting/store', [ZoomMeetingController::class, 'store'])->name('zoom-meeting.store')->middleware(['auth', 'XSS']);
-    Route::get('/{slug}/zoom-meeting/{id}/show', [ZoomMeetingController::class, 'show'])->name('zoom_meeting.show')->middleware(['auth', 'XSS']);
-
-    Route::get('/{slug}/zoom-meetings/{id}/show', [ZoomMeetingController::class, 'show'])->name('zoom_meetings.show')->middleware(['auth:client', 'XSS']);
-
-    Route::get('/{slug}/zoom-meeting/{id}/edit', [ZoomMeetingController::class, 'edit'])->name('zoom-meeting.edit')->middleware(['auth', 'XSS']);
-    Route::post('/{slug}/zoom-meeting/{id}/update', [ZoomMeetingController::class, 'update'])->name('zoom-meeting.update')->middleware(['auth', 'XSS']);
-    Route::delete('/{slug}/zoom-meeting/{id}', [ZoomMeetingController::class, 'destroy'])->name('zoom-meeting.destroy')->middleware(['auth', 'XSS']);
     Route::get('/{slug}/projects/{id}/members', [ProjectController::class, 'members'])->name('projects.members')->middleware(['auth', 'XSS']);
 
 
@@ -926,8 +912,6 @@ Route::group(['middleware' => ['verified']], function () {
     //=================================== Google Calender===================================================//
 
     Route::post('/workspace/{slug}/google-calender', [WorkspaceController::class, 'saveGoogleCalenderSettings'])->name('google.calender.settings');
-    Route::any('{slug}/event/get_event_data', [ZoomMeetingController::class, 'get_event_data'])->name('event.get_event_data')->middleware(['auth', 'XSS']);
-    Route::any('/workspace/{slug}/event/export-event', [ZoomMeetingController::class, 'export_event'])->name('event.export-event')->middleware(['auth', 'XSS']);
 
     // ====================================telegram===============================================================//
 
@@ -1051,6 +1035,15 @@ Route::group(['middleware' => ['verified']], function () {
     Route::get('/{slug}/inventory-categories', [InventoryCategoryController::class, 'index'])->name('inventory.categories.index')->middleware(['auth', 'XSS']);
     Route::post('/{slug}/inventory-categories/store', [InventoryCategoryController::class, 'store'])->name('inventory.categories.store')->middleware(['auth', 'XSS']);
     Route::delete('/{slug}/inventory-categories/{category}', [InventoryCategoryController::class, 'destroy'])->name('inventory.categories.destroy')->middleware(['auth', 'XSS']);
+    
+    // Suppliers
+    Route::get('/{slug}/suppliers', [SupplierController::class, 'index'])->name('suppliers.index')->middleware(['auth', 'XSS']);
+    Route::get('/{slug}/suppliers/create', [SupplierController::class, 'create'])->name('suppliers.create')->middleware(['auth', 'XSS']);
+    Route::post('/{slug}/suppliers/store', [SupplierController::class, 'store'])->name('suppliers.store')->middleware(['auth', 'XSS']);
+    Route::get('/{slug}/suppliers/{supplier}/edit', [SupplierController::class, 'edit'])->name('suppliers.edit')->middleware(['auth', 'XSS']);
+    Route::put('/{slug}/suppliers/{supplier}/update', [SupplierController::class, 'update'])->name('suppliers.update')->middleware(['auth', 'XSS']);
+    Route::delete('/{slug}/suppliers/{supplier}', [SupplierController::class, 'destroy'])->name('suppliers.destroy')->middleware(['auth', 'XSS']);
+    Route::post('/{slug}/suppliers/get-data', [SupplierController::class, 'getSuppliersData'])->name('suppliers.get.data')->middleware(['auth', 'XSS']);
 });
 
 Route::get('/{slug}/projects/{id}/task-board/{tid}/{cid?}', [ProjectController::class, 'taskShow'])->name('tasks.show');

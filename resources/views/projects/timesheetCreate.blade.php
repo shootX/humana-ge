@@ -3,9 +3,9 @@
         @csrf
         <div class="modal-body">
             <div class="form-group">
-                <label for="task_id" class="col-form-label">{{ __('Project') }}</label>
+                <label for="task_id" class="col-form-label">{{ __('Branch') }}</label>
                 <select class="form-control form-control-light" name="project_id" id="project_id" required>
-                    <option value="">{{ __('Select Project') }}</option>
+                    <option value="">{{ __('Select Branch') }}</option>
                     @foreach ($projects as $project)
                         <option value="{{ $project->id }}">{{ $project->name }}</option>
                     @endforeach

@@ -106,7 +106,7 @@
                                     @if (Auth::user()->getGuard() != 'client')
                                         <th>{{ __('Client') }}</th>
                                     @endif
-                                    <th>{{ __('Project') }}</th>
+                                    <th>{{ __('Branch') }}</th>
                                     <th>{{ __('Subject') }}</th>
                                     <th>{{ __('Value') }}</th>
                                     <th>{{ __('Type') }}</th>
@@ -210,9 +210,9 @@
                 var list = '';
                 $('#project').empty();
                 if (data.length > 0) {
-                    list += "<option value=''> {{ __('Select Projects') }} </option>";
+                    list += "<option value=''> {{ __('Select Branches') }} </option>";
                 } else {
-                    list += "<option value=''> {{ __('No Projects') }} </option>";
+                    list += "<option value=''> {{ __('No Branches') }} </option>";
                 }
                 $.each(data, function(i, item) {
                     list += "<option value='" + item.id + "'>" + item.name + "</option>"

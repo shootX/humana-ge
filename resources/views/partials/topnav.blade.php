@@ -84,7 +84,7 @@
                         <div class="dropdown-menu dash-h-dropdown drp-search drp-search-custom">
                             <form class="form-inline mr-auto mb-0">
                                 <div class="search-element">
-                                    <input class="" type="type here" placeholder="Search here Project & Task. . ."
+                                    <input class="" type="type here" placeholder="Search here Branch & Task. . ."
                                         aria-label="Search">
                                     <div class="search-backdrop"></div>
                                 </div>
@@ -384,7 +384,7 @@
                                                                 ' <b>' .
                                                                 $data->title .
                                                                 '</b> ' .
-                                                                __('in project') .
+                                                                __('in branch') .
                                                                 ' <b>' .
                                                                 $project->name .
                                                                 '</b>';
@@ -405,7 +405,7 @@
                                                             $notification->data->id,
                                                         ]);
                                                         $text =
-                                                            __('New project assign') . ' <b>' . $data->title . '</b>';
+                                                            __('New branch assign') . ' <b>' . $data->title . '</b>';
                                                         $icon = 'fa fa-suitcase';
                                                     @endphp
                                                 @elseif($notification->type == 'bug_assign')
@@ -420,7 +420,7 @@
                                                                 ' <b>' .
                                                                 $data->title .
                                                                 '</b> ' .
-                                                                __('in project') .
+                                                                __('in branch') .
                                                                 ' <b>' .
                                                                 $project->name .
                                                                 '</b>';

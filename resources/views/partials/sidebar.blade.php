@@ -98,8 +98,8 @@
                         <li
                             class="dash-item {{ Request::route()->getName() == 'projects.index' || Request::segment(2) == 'projects' ? ' active' : '' }}">
                             <a href="{{ route('projects.index', $currentWorkspace->slug) }}" class="dash-link">
-                                <span class="dash-micon"> <i data-feather="briefcase"></i></span>
-                                <span class="dash-mtext">{{ __('Projects') }}</span>
+                                <span class="dash-micon"><i class="ti ti-share"></i></span>
+                                <span class="dash-mtext">{{ __('Branches') }}</span>
                             </a>
                         </li>
 
@@ -174,13 +174,22 @@
                         </li>
                         {{-- End Inventory Menu Item --}}
 
+                        {{-- Add Suppliers Menu Item --}}
+                        <li class="dash-item {{ Request::route()->getName() == 'suppliers.index' ? ' active' : '' }}">
+                            <a href="{{ route('suppliers.index', $currentWorkspace->slug) }}" class="dash-link">
+                                <span class="dash-micon"><i data-feather="truck"></i></span>
+                                <span class="dash-mtext">{{ __('Suppliers') }}</span>
+                            </a>
+                        </li>
+                        {{-- End Suppliers Menu Item --}}
+
                         @elseauth
 
                         <li
                             class="dash-item {{ Request::route()->getName() == 'client.projects.index' || Request::segment(3) == 'projects' ? ' active' : '' }}">
                             <a href="{{ route('client.projects.index', $currentWorkspace->slug) }}" class="dash-link ">
-                                <span class="dash-micon"><i data-feather="briefcase"></i></span>
-                                <span class="dash-mtext">{{ __('Projects') }}</span>
+                                <span class="dash-micon"><i class="ti ti-share"></i></span>
+                                <span class="dash-mtext">{{ __('Branches') }}</span>
                             </a>
                         </li>
 
@@ -209,7 +218,7 @@
                             <a href="{{ route('client.project_report.index', $currentWorkspace->slug) }}"
                                 class="dash-link ">
                                 <span class="dash-micon"><i class="ti ti-chart-line"></i></span>
-                                <span class="dash-mtext">{{ __('Project Report') }}</span>
+                                <span class="dash-mtext">{{ __('Branch Report') }}</span>
                             </a>
                         </li>
 
@@ -221,14 +230,16 @@
                             </a>
                         </li>
 
-                        <li
-                            class="dash-item {{ Request::route()->getName() == 'client.zoom-meeting.index' || Request::route()->getName() == 'zoommeetings.Calender' ? ' active' : '' }}">
-                            <a href="{{ route('client.zoom-meeting.index', $currentWorkspace->slug) }}"
-                                class="dash-link ">
-                                <span class="dash-micon"><i data-feather="video"></i></span>
-                                <span class="dash-mtext">{{ __('Zoom Meeting') }}</span>
-                            </a>
-                        </li>
+                        @if ($currentWorkspace->creater->id == Auth::user()->id)
+                            <li
+                                class="dash-item {{ Request::route()->getName() == 'workspace.settings' ? ' active' : '' }}">
+                                <a href="{{ route('workspace.settings', $currentWorkspace->slug) }}"
+                                    class="dash-link {{ Request::route()->getName() == 'workspace.settings' ? ' active' : '' }}">
+                                    <span class="dash-micon"><i data-feather="settings"></i></span>
+                                    <span class="dash-mtext">{{ __('Settings') }}</span>
+                                </a>
+                            </li>
+                        @endif
                     @endauth
                 @endif
 
@@ -238,15 +249,7 @@
                             class="dash-item {{ Request::route()->getName() == 'project_report.index' || Request::segment(2) == 'project_report' ? ' active' : '' }}">
                             <a href="{{ route('project_report.index', $currentWorkspace->slug) }}" class="dash-link ">
                                 <span class="dash-micon"><i class="ti ti-chart-line"></i></span>
-                                <span class="dash-mtext">{{ __('Project Report') }}</span>
-                            </a>
-                        </li>
-
-                        <li
-                            class="dash-item {{ Request::route()->getName() == 'zoom-meeting.index' || Request::route()->getName() == 'zoommeeting.Calender' ? ' active' : '' }}">
-                            <a href="{{ route('zoom-meeting.index', $currentWorkspace->slug) }}" class="dash-link ">
-                                <span class="dash-micon"><i data-feather="video"></i></span>
-                                <span class="dash-mtext">{{ __('Zoom Meeting') }}</span>
+                                <span class="dash-mtext">{{ __('Branch Report') }}</span>
                             </a>
                         </li>
                     @endauth
@@ -294,6 +297,21 @@
 
                 @if (Auth::user()->type == 'admin')
                 @endif
+            </ul>
+
+            @if (isset($currentWorkspace) && $currentWorkspace)
+                <div class="navbar-footer border-top ">
+                    <div class="d-flex align-items-center py-3 px-3 border-bottom">
+                        <div class="me-2">
+                            <img src="{{ $currentWorkspace->logo ? asset(Storage::url($currentWorkspace->logo)) : asset(Storage::url('logo/logo.png')) }}"
+                                alt="{{ config('app.name', 'WorkDo') }}" class="img-fluid" style="width: 40px;">
+                        </div>
+                        <div>
+                            <b>{{ isset($currentWorkspace->name) ? $currentWorkspace->name : config('app.name', 'WorkDo') }}</b>
+                        </div>
+                    </div>
+                </div>
+            @endif
         </div>
     </div>
 </nav>

@@ -825,6 +825,7 @@ class User extends Authenticatable implements MustVerifyEmail
             'fr' => 'French',
             'it' => 'Italian',
             'ja' => 'Japanese',
+            'ka' => 'Georgian',
             'nl' => 'Dutch',
             'pl' => 'Polish',
             'ru' => 'Russian',

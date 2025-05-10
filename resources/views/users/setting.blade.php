@@ -122,10 +122,6 @@
                                 class="list-group-item list-group-item-action border-0">{{ __('Time Tracker Settings') }}
                                 <div class="float-end"><i class="ti ti-chevron-right"></i></div>
                             </a>
-                            <a href="#zoom-meeting-settings"
-                                class="list-group-item list-group-item-action border-0">{{ __('Zoom Meeting Settings') }}
-                                <div class="float-end"><i class="ti ti-chevron-right"></i></div>
-                            </a>
                             @if (Auth::user()->type == 'user')
                                 <a href="#slack-settings"
                                     class="list-group-item list-group-item-action border-0">{{ __('Slack Settings') }}
@@ -3746,13 +3742,6 @@
                         </div>
                     </div>
 
-                    <div id="zoom-meeting-settings">
-                        <div class="row justify-content-center">
-                            <div class="col-md-12">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h5>{{ __('Zoom Meeting Settings') }}</h5>
-                                    </div>
                                     <form method="post"
                                         action="{{ route('zoom.mettings.settings.store', $currentWorkspace->slug) }}"
                                         class="payment-form">

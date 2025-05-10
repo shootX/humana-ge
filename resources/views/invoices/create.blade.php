@@ -3,9 +3,9 @@
     <div class="modal-body">
         <div class="row">
             <div class="form-group col-md-6">
-                <label for="project_id" class="col-form-label">{{ __('Projects') }}</label><x-required></x-required>
+                <label for="project_id" class="col-form-label">{{ __('Branches') }}</label><x-required></x-required>
                 <select class="form-control" name="project_id" id="project_id" required>
-                    <option value="">{{ __('Select Project') }}</option>
+                    <option value="">{{ __('Select Branch') }}</option>
                     @foreach ($projects as $p)
                         <option value="{{ $p->id }}">{{ $p->name }}</option>
                     @endforeach
@@ -66,11 +66,11 @@
             </div>
 
             <div class="form-group col-md-6">
-                <label for="client_id" class="col-form-label">{{ __('Client') }}</label><x-required></x-required>
-                <select class="form-control" name="client_id" id="client_id" required>
+                <label for="client_id" class="col-form-label">{{ __('Client') }}</label>
+                <select class="form-control" name="client_id" id="client_id">
                     <option value="">{{ __('Select Client') }}</option>
                     @foreach ($clients as $p)
-                        <option value="{{ $p->id }}">{{ $p->name }} - {{ $p->email }}</option>
+                        <option value="{{ $p->id }}">{{ $p->name }}</option>
                     @endforeach
                 </select>
             </div>
