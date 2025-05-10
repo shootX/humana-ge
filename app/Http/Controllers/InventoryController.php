@@ -213,7 +213,7 @@ class InventoryController extends Controller
                                'unit_price' => 'nullable|numeric|min:0',
                                'supplier_id' => 'nullable|exists:suppliers,id',
                                'category_id' => 'nullable|exists:inventory_categories,id',
-                               'barcode' => 'nullable|string|max:255',
+                               'barcode' => 'nullable|string|max:255|unique:inventory_items,barcode,NULL,id,workspace_id,'.$currentWorkspace->id,
                                'description' => 'nullable|string',
                            ]
         );
@@ -290,7 +290,7 @@ class InventoryController extends Controller
                                'unit_price' => 'nullable|numeric|min:0',
                                'supplier_id' => 'nullable|exists:suppliers,id',
                                'category_id' => 'nullable|exists:inventory_categories,id',
-                               'barcode' => 'nullable|string|max:255',
+                               'barcode' => 'nullable|string|max:255|unique:inventory_items,barcode,'.$item->id.',id,workspace_id,'.$currentWorkspace->id,
                                'description' => 'nullable|string',
                            ]
         );

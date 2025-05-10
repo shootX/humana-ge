@@ -94,6 +94,7 @@
             <div class="form-group">
                 {{ Form::label('barcode', __('Barcode'), ['class' => 'col-form-label']) }}
                 {{ Form::text('barcode', null, ['class' => 'form-control', 'placeholder' => __('Enter barcode (optional)')]) }}
+                <small class="form-text text-muted">{{ __('Barcode must be unique within your workspace') }}</small>
             </div>
         </div>
         <div class="col-md-12">
