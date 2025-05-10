@@ -1027,7 +1027,7 @@ Route::group(['middleware' => ['verified']], function () {
     Route::get('/{slug}/inventory/create', [InventoryController::class, 'create'])->name('inventory.create')->middleware(['auth', 'XSS']);
     Route::post('/{slug}/inventory/store', [InventoryController::class, 'store'])->name('inventory.store')->middleware(['auth', 'XSS']);
     Route::get('/{slug}/inventory/{item}/edit', [InventoryController::class, 'edit'])->name('inventory.edit')->middleware(['auth', 'XSS']);
-    Route::post('/{slug}/inventory/{item}/update', [InventoryController::class, 'update'])->name('inventory.update')->middleware(['auth', 'XSS']);
+    Route::put('/{slug}/inventory/{item}/update', [InventoryController::class, 'update'])->name('inventory.update')->middleware(['auth', 'XSS']);
     Route::delete('/{slug}/inventory/{item}', [InventoryController::class, 'destroy'])->name('inventory.destroy')->middleware(['auth', 'XSS']);
     Route::post('/{slug}/inventory/get-data', [InventoryController::class, 'getInventoryData'])->name('inventory.get.data')->middleware(['auth', 'XSS']);
     
@@ -1035,6 +1035,7 @@ Route::group(['middleware' => ['verified']], function () {
     Route::get('/{slug}/inventory-categories', [InventoryCategoryController::class, 'index'])->name('inventory.categories.index')->middleware(['auth', 'XSS']);
     Route::post('/{slug}/inventory-categories/store', [InventoryCategoryController::class, 'store'])->name('inventory.categories.store')->middleware(['auth', 'XSS']);
     Route::delete('/{slug}/inventory-categories/{category}', [InventoryCategoryController::class, 'destroy'])->name('inventory.categories.destroy')->middleware(['auth', 'XSS']);
+    Route::get('/{slug}/inventory-categories/get', [InventoryCategoryController::class, 'getCategories'])->name('inventory.categories.get')->middleware(['auth', 'XSS']);
     
     // Suppliers
     Route::get('/{slug}/suppliers', [SupplierController::class, 'index'])->name('suppliers.index')->middleware(['auth', 'XSS']);
