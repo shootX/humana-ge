@@ -73,6 +73,25 @@
         </div>
         <div class="col-md-6">
             <div class="form-group">
+                {{ Form::label('warehouse_id', __('Warehouse'), ['class' => 'col-form-label']) }}
+                <div class="input-group">
+                    <select name="warehouse_id" id="warehouse_id" class="form-control">
+                        <option value="">{{ __('Select Warehouse') }}</option>
+                        @foreach($warehouses as $warehouse)
+                            <option value="{{ $warehouse->id }}" {{ isset($item) && $item->warehouse_id == $warehouse->id ? 'selected' : '' }}>
+                                {{ $warehouse->name }}
+                            </option>
+                        @endforeach
+                    </select>
+                    <a href="{{ route('warehouses.create', $currentWorkspace->slug) }}" class="btn btn-primary" target="_blank">
+                        <i class="ti ti-plus"></i>
+                    </a>
+                </div>
+                <small class="form-text text-muted">{{ __('Select a warehouse or add a new one') }}</small>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
                 {{ Form::label('supplier_id', __('Supplier'), ['class' => 'col-form-label']) }}
                 <div class="input-group">
                     <select name="supplier_id" id="supplier_id" class="form-control">

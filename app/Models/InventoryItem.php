@@ -11,6 +11,7 @@ class InventoryItem extends Model
         'description',
         'category_id',
         'supplier_id',
+        'warehouse_id',
         'barcode',
         'quantity',
         'unit',
@@ -38,5 +39,15 @@ class InventoryItem extends Model
     public function creator()
     {
         return $this->belongsTo(User::class, 'created_by');
+    }
+
+    public function warehouse()
+    {
+        return $this->belongsTo(Warehouse::class, 'warehouse_id');
+    }
+
+    public function warehouseItems()
+    {
+        return $this->hasMany(WarehouseItem::class);
     }
 }

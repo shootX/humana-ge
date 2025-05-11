@@ -47,6 +47,9 @@ class InventoryController extends Controller
         if ($request->filled('supplier_id')) {
             $query->where('supplier_id', $request->input('supplier_id'));
         }
+        if ($request->filled('warehouse_id')) {
+            $query->where('warehouse_id', $request->input('warehouse_id'));
+        }
         if ($request->filled('status_filter')) {
             $query->where('status', $request->input('status_filter'));
         }
@@ -145,6 +148,12 @@ class InventoryController extends Controller
                 }
                 return '-';
             })
+            ->editColumn('warehouse_id', function ($item) {
+                if ($item->warehouse) {
+                    return $item->warehouse->name;
+                }
+                return '-';
+            })
             ->editColumn('status', function ($item) {
                  if($item->status == 'in_stock'){
                     return '<span class="badge bg-success p-2 px-3 rounded">' . __('In Stock') . '</span>';
@@ -189,7 +198,13 @@ class InventoryController extends Controller
             ->orderBy('name')
             ->get(['id', 'name']);
             
-        return view('inventory.create', compact('currentWorkspace', 'categories', 'suppliers'));
+        // Load warehouses for the dropdown
+        $warehouses = \App\Models\Warehouse::where('workspace_id', $currentWorkspace->id)
+            ->where('status', 'active')
+            ->orderBy('name')
+            ->get(['id', 'name']);
+            
+        return view('inventory.create', compact('currentWorkspace', 'categories', 'suppliers', 'warehouses'));
     }
 
     /**
@@ -213,6 +228,7 @@ class InventoryController extends Controller
                                'unit_price' => 'nullable|numeric|min:0',
                                'supplier_id' => 'nullable|exists:suppliers,id',
                                'category_id' => 'nullable|exists:inventory_categories,id',
+                               'warehouse_id' => 'nullable|exists:warehouses,id',
                                'barcode' => 'nullable|string|max:255|unique:inventory_items,barcode,NULL,id,workspace_id,'.$currentWorkspace->id,
                                'description' => 'nullable|string',
                            ]
@@ -229,6 +245,7 @@ class InventoryController extends Controller
         $item->description = $request->input('description');
         $item->category_id = $request->input('category_id');
         $item->supplier_id = $request->input('supplier_id');
+        $item->warehouse_id = $request->input('warehouse_id');
         $item->barcode = $request->input('barcode');
         $item->quantity = $request->input('quantity');
         $item->unit = $request->input('unit');
@@ -237,6 +254,17 @@ class InventoryController extends Controller
         $item->workspace_id = $currentWorkspace->id;
         $item->created_by = $user->id;
         $item->save();
+
+        // თუ საწყობი მითითებულია და რაოდენობა დადებითია, ასევე შევქმნათ WarehouseItem ჩანაწერი
+        if ($request->input('warehouse_id') && $request->input('quantity') > 0) {
+            $warehouseItem = new \App\Models\WarehouseItem();
+            $warehouseItem->warehouse_id = $request->input('warehouse_id');
+            $warehouseItem->inventory_item_id = $item->id;
+            $warehouseItem->quantity = $request->input('quantity');
+            $warehouseItem->workspace_id = $currentWorkspace->id;
+            $warehouseItem->created_by = $user->id;
+            $warehouseItem->save();
+        }
 
         return redirect()->route('inventory.index', $slug)->with('success', __('Inventory item created successfully.'));
     }
@@ -264,9 +292,15 @@ class InventoryController extends Controller
         $suppliers = \App\Models\Supplier::where('workspace_id', $currentWorkspace->id)
             ->orderBy('name')
             ->get(['id', 'name']);
+            
+        // Load warehouses for the dropdown
+        $warehouses = \App\Models\Warehouse::where('workspace_id', $currentWorkspace->id)
+            ->where('status', 'active')
+            ->orderBy('name')
+            ->get(['id', 'name']);
 
         // Reuse the create view for editing, passing the item data
-        return view('inventory.create', compact('currentWorkspace', 'item', 'categories', 'suppliers'));
+        return view('inventory.create', compact('currentWorkspace', 'item', 'categories', 'suppliers', 'warehouses'));
     }
 
     public function update(Request $request, $slug, InventoryItem $item)
@@ -290,6 +324,7 @@ class InventoryController extends Controller
                                'unit_price' => 'nullable|numeric|min:0',
                                'supplier_id' => 'nullable|exists:suppliers,id',
                                'category_id' => 'nullable|exists:inventory_categories,id',
+                               'warehouse_id' => 'nullable|exists:warehouses,id',
                                'barcode' => 'nullable|string|max:255|unique:inventory_items,barcode,'.$item->id.',id,workspace_id,'.$currentWorkspace->id,
                                'description' => 'nullable|string',
                            ]
@@ -298,34 +333,59 @@ class InventoryController extends Controller
         if($validator->fails())
         {
             $messages = $validator->getMessageBag();
-             // Redirect back to the edit form on validation error
-             // Important: Need to redirect back to the edit route, not just back()
-             return redirect()->route('inventory.edit', [$slug, $item->id])
-                              ->withErrors($validator)
-                              ->withInput(); // Keep old input
-            // return redirect()->back()->with('error', $messages->first()); // Original behaviour might lose context
+            return redirect()->back()->with('error', $messages->first());
         }
 
-        // Update the inventory item with the validated data
+        // შევინახოთ წინა საწყობის ID, თუ შეიცვალა საჭირო იქნება განსაკუთრებული ლოგიკა
+        $oldWarehouseId = $item->warehouse_id;
+        $newWarehouseId = $request->input('warehouse_id');
+
         $item->name = $request->input('name');
         $item->description = $request->input('description');
         $item->category_id = $request->input('category_id');
         $item->supplier_id = $request->input('supplier_id');
+        $item->warehouse_id = $newWarehouseId;
         $item->barcode = $request->input('barcode');
         $item->quantity = $request->input('quantity');
         $item->unit = $request->input('unit');
         $item->unit_price = $request->input('unit_price');
-        
-        // Auto-update status based on quantity, unless explicitly set
-        if (!$request->has('status')) {
-            $item->status = $request->input('quantity') > 0 ? 'in_stock' : 'out_of_stock';
-        } else {
-            $item->status = $request->input('status');
-        }
-        
+        $item->status = $request->input('quantity') > 0 ? 'in_stock' : 'out_of_stock'; // Auto-set status
         $item->save();
 
-        // Return to inventory index with success message
+        // საწყობის განახლების ლოგიკა
+        if ($newWarehouseId) {
+            // ვნახოთ უკვე არსებობს თუ არა ჩანაწერი ახალი საწყობისთვის
+            $warehouseItem = \App\Models\WarehouseItem::where('warehouse_id', $newWarehouseId)
+                ->where('inventory_item_id', $item->id)
+                ->where('workspace_id', $currentWorkspace->id)
+                ->first();
+
+            if (!$warehouseItem) {
+                // თუ არ არსებობს და რაოდენობა დადებითია, შევქმნათ ახალი ჩანაწერი
+                if ($request->input('quantity') > 0) {
+                    $warehouseItem = new \App\Models\WarehouseItem();
+                    $warehouseItem->warehouse_id = $newWarehouseId;
+                    $warehouseItem->inventory_item_id = $item->id;
+                    $warehouseItem->quantity = $request->input('quantity');
+                    $warehouseItem->workspace_id = $currentWorkspace->id;
+                    $warehouseItem->created_by = Auth::id();
+                    $warehouseItem->save();
+                }
+            } else {
+                // თუ უკვე არსებობს, განვაახლოთ რაოდენობა
+                $warehouseItem->quantity = $request->input('quantity');
+                $warehouseItem->save();
+            }
+        }
+
+        // თუ საწყობი შეიცვალა და ძველი საწყობი იყო განსაზღვრული, წავშალოთ ძველი ჩანაწერი
+        if ($oldWarehouseId && $oldWarehouseId != $newWarehouseId) {
+            \App\Models\WarehouseItem::where('warehouse_id', $oldWarehouseId)
+                ->where('inventory_item_id', $item->id)
+                ->where('workspace_id', $currentWorkspace->id)
+                ->delete();
+        }
+
         return redirect()->route('inventory.index', $slug)->with('success', __('Inventory item updated successfully.'));
     }
 

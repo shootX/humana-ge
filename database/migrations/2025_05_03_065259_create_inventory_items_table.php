@@ -15,7 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->text('description')->nullable();
-            $table->string('category')->nullable(); // Consider a separate categories table later if needed
+            $table->unsignedBigInteger('category_id')->nullable();
+            $table->string('barcode')->nullable();
             $table->integer('quantity')->default(0);
             $table->decimal('unit_price', 15, 2)->nullable(); // Adjust precision/scale as needed
             $table->string('status')->default('in_stock'); // e.g., in_stock, out_of_stock, low_stock
@@ -23,9 +24,10 @@ return new class extends Migration
             $table->unsignedBigInteger('created_by');
             $table->timestamps();
 
-            // Define foreign key constraints if users and workspaces tables exist
-            // $table->foreign('workspace_id')->references('id')->on('workspaces')->onDelete('cascade');
-            // $table->foreign('created_by')->references('id')->on('users')->onDelete('cascade');
+            // Define foreign key constraints
+            $table->foreign('workspace_id')->references('id')->on('workspaces')->onDelete('cascade');
+            $table->foreign('created_by')->references('id')->on('users')->onDelete('cascade');
+            $table->foreign('category_id')->references('id')->on('inventory_categories')->onDelete('set null');
         });
     }
 

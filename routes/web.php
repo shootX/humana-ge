@@ -64,6 +64,7 @@ use App\Http\Controllers\PowertranzPaymentController;
 use App\Http\Controllers\InventoryController;
 use App\Http\Controllers\InventoryCategoryController;
 use App\Http\Controllers\SupplierController;
+use App\Http\Controllers\WarehouseController;
 
 
 /*
@@ -1045,6 +1046,30 @@ Route::group(['middleware' => ['verified']], function () {
     Route::put('/{slug}/suppliers/{supplier}/update', [SupplierController::class, 'update'])->name('suppliers.update')->middleware(['auth', 'XSS']);
     Route::delete('/{slug}/suppliers/{supplier}', [SupplierController::class, 'destroy'])->name('suppliers.destroy')->middleware(['auth', 'XSS']);
     Route::post('/{slug}/suppliers/get-data', [SupplierController::class, 'getSuppliersData'])->name('suppliers.get.data')->middleware(['auth', 'XSS']);
+
+    // Warehouses
+    Route::get('/{slug}/warehouses', [WarehouseController::class, 'index'])->name('warehouses.index')->middleware(['auth', 'XSS']);
+    Route::get('/{slug}/warehouses/create', [WarehouseController::class, 'create'])->name('warehouses.create')->middleware(['auth', 'XSS']);
+    Route::post('/{slug}/warehouses', [WarehouseController::class, 'store'])->name('warehouses.store')->middleware(['auth', 'XSS']);
+    Route::get('/{slug}/warehouses/{id}/edit', [WarehouseController::class, 'edit'])->name('warehouses.edit')->middleware(['auth', 'XSS']);
+    Route::put('/{slug}/warehouses/{id}', [WarehouseController::class, 'update'])->name('warehouses.update')->middleware(['auth', 'XSS']);
+    Route::delete('/{slug}/warehouses/{id}', [WarehouseController::class, 'destroy'])->name('warehouses.destroy')->middleware(['auth', 'XSS']);
+    Route::post('/{slug}/warehouses/get-data', [WarehouseController::class, 'getWarehousesData'])->name('warehouses.get.data')->middleware(['auth', 'XSS']);
+
+    // Warehouse Items
+    Route::get('/{slug}/warehouses/{id}/items', [WarehouseController::class, 'items'])->name('warehouses.items')->middleware(['auth', 'XSS']);
+    Route::get('/{slug}/warehouses/{id}/items/create', [WarehouseController::class, 'createItem'])->name('warehouses.items.create')->middleware(['auth', 'XSS']);
+    Route::post('/{slug}/warehouses/{id}/items', [WarehouseController::class, 'storeItem'])->name('warehouses.items.store')->middleware(['auth', 'XSS']);
+    Route::get('/{slug}/warehouses/{id}/items/{item_id}/edit', [WarehouseController::class, 'editItem'])->name('warehouses.items.edit')->middleware(['auth', 'XSS']);
+    Route::put('/{slug}/warehouses/{id}/items/{item_id}', [WarehouseController::class, 'updateItem'])->name('warehouses.items.update')->middleware(['auth', 'XSS']);
+    Route::delete('/{slug}/warehouses/{id}/items/{item_id}', [WarehouseController::class, 'destroyItem'])->name('warehouses.items.destroy')->middleware(['auth', 'XSS']);
+    Route::post('/{slug}/warehouses/{id}/items/get-data', [WarehouseController::class, 'getWarehouseItemsData'])->name('warehouses.items.get.data')->middleware(['auth', 'XSS']);
+    
+    // Inventory Categories
+    Route::get('/{slug}/inventory-categories', [InventoryCategoryController::class, 'index'])->name('inventory.categories.index')->middleware(['auth', 'XSS']);
+    Route::post('/{slug}/inventory-categories/store', [InventoryCategoryController::class, 'store'])->name('inventory.categories.store')->middleware(['auth', 'XSS']);
+    Route::delete('/{slug}/inventory-categories/{category}', [InventoryCategoryController::class, 'destroy'])->name('inventory.categories.destroy')->middleware(['auth', 'XSS']);
+    Route::get('/{slug}/inventory-categories/get', [InventoryCategoryController::class, 'getCategories'])->name('inventory.categories.get')->middleware(['auth', 'XSS']);
 });
 
 Route::get('/{slug}/projects/{id}/task-board/{tid}/{cid?}', [ProjectController::class, 'taskShow'])->name('tasks.show');

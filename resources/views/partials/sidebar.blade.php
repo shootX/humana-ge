@@ -166,7 +166,7 @@
                         @endif
 
                         {{-- Add Inventory Menu Item --}}
-                        <li class="dash-item dash-hasmenu {{ Request::route()->getName() == 'inventory.index' || Request::route()->getName() == 'suppliers.index' ? ' active' : '' }}">
+                        <li class="dash-item dash-hasmenu {{ Request::route()->getName() == 'inventory.index' || Request::route()->getName() == 'suppliers.index' || Request::route()->getName() == 'warehouses.index' ? ' active' : '' }}">
                             <a href="#!" class="dash-link">
                                 <span class="dash-micon"><i data-feather="archive"></i></span>
                                 <span class="dash-mtext">{{ __('Inventory') }}</span>
@@ -175,6 +175,9 @@
                             <ul class="dash-submenu">
                                 <li class="{{ Request::route()->getName() == 'inventory.index' ? ' active' : '' }}">
                                     <a class="dash-link" href="{{ route('inventory.index', $currentWorkspace->slug) }}">{{ __('Inventory Items') }}</a>
+                                </li>
+                                <li class="{{ Request::route()->getName() == 'warehouses.index' ? ' active' : '' }}">
+                                    <a class="dash-link" href="{{ route('warehouses.index', $currentWorkspace->slug) }}">{{ __('Warehouses') }}</a>
                                 </li>
                                 <li class="{{ Request::route()->getName() == 'suppliers.index' ? ' active' : '' }}">
                                     <a class="dash-link" href="{{ route('suppliers.index', $currentWorkspace->slug) }}">{{ __('Suppliers') }}</a>

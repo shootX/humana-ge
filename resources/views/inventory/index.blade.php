@@ -60,6 +60,12 @@
                     <!-- Suppliers will be loaded via AJAX -->
                 </select>
             </div>
+            <div class="col-sm-6 col-xl-2 m-0">
+                <select class=" form-select" name="warehouse_id" id="warehouse_id">
+                    <option value="">{{ __('All Warehouses') }}</option>
+                    <!-- Warehouses will be loaded via AJAX -->
+                </select>
+            </div>
              <div class="col-sm-6 col-xl-2 m-0">
                  <select class=" form-select" name="status_filter" id="status_filter">
                     <option value="">{{ __('All Statuses') }}</option>
@@ -105,6 +111,7 @@
                                     <th>{{ __('Item Name') }}</th>
                                     <th>{{ __('Category') }}</th>
                                     <th>{{ __('Supplier') }}</th>
+                                    <th>{{ __('Warehouse') }}</th>
                                     <th>{{ __('Quantity') }}</th>
                                     <th>{{ __('Unit') }}</th>
                                     <th>{{ __('Unit Price') }}</th>
@@ -117,7 +124,7 @@
                                 </thead>
                                 <tbody>
                                     {{-- Initial loading/empty message colspan needs to be dynamic --}}
-                                    <td colspan="{{ $canManageInventory ? 9 : 8 }}" class="text-center"> {{ __("Loading...") }}</td>
+                                    <td colspan="{{ $canManageInventory ? 10 : 9 }}" class="text-center"> {{ __("Loading...") }}</td>
                                 </tbody>
                             </table>
                         </div>
@@ -130,7 +137,7 @@
 
 {{-- Define JS variable in a separate script block for clarity --}}
 <script>
-    const canManageInventory = @json($canManageInventory);
+    var canManageInventory = @json($canManageInventory);
 </script>
 
 @push('scripts')
@@ -209,11 +216,34 @@
                 }
             });
             
+            // Load warehouses for filter dropdown
+            $.ajax({
+                url: "{{ route('warehouses.get.data', $currentWorkspace->slug) }}",
+                type: 'POST',
+                data: {
+                    _token: '{{ csrf_token() }}'
+                },
+                dataType: 'json',
+                success: function(data) {
+                    let options = '<option value="">{{ __("All Warehouses") }}</option>';
+                    if (data && data.data) {
+                        $.each(data.data, function(index, warehouse) {
+                            options += `<option value="${warehouse.id}">${warehouse.name}</option>`;
+                        });
+                    }
+                    $('#warehouse_id').html(options);
+                },
+                error: function(xhr) {
+                    console.error('Error loading warehouses:', xhr);
+                }
+            });
+            
             // Columns definition
             let columns = [
                 { data: 'name', name: 'name' },
                 { data: 'category_id', name: 'category_id' },
                 { data: 'supplier_id', name: 'supplier_id' },
+                { data: 'warehouse_id', name: 'warehouse_id' },
                 { data: 'quantity', name: 'quantity' },
                 { data: 'unit', name: 'unit' },
                 { data: 'unit_price', name: 'unit_price', searchable: false }, // unit_price might not be searchable
@@ -242,6 +272,7 @@
                         const dateRange = $('#duration1').val().split(' - ');
                         d.category_id = $("#category_id").val();
                         d.supplier_id = $("#supplier_id").val();
+                        d.warehouse_id = $("#warehouse_id").val();
                         d.status_filter = $("#status_filter").val();
                         d.order_by = $("#order_by").val();
                         d.start_date = dateRange[0] ? moment(dateRange[0], 'MMM D, YYYY').format('YYYY-MM-DD') : '';
@@ -255,7 +286,7 @@
                      error: function (xhr, error, thrown) {
                          console.error("AJAX Error: ", error, thrown);
                          // Update colspan dynamically based on whether action column exists
-                         const colspan = canManageInventory ? 9 : 8;
+                         const colspan = canManageInventory ? 10 : 9;
                          $("#inventory-table tbody").html('<td colspan="' + colspan + '" class="text-center text-danger"> {{ __("Error loading data.") }}</td>');
                      }
                 },
@@ -266,7 +297,23 @@
                 }
             });
 
-            $(document).on("click", ".btn-filter", function() {
+            // Apply filter button clicked
+            $('.btn-filter').click(function(e) {
+                e.preventDefault();
+                table.ajax.reload();
+            });
+
+            // Reset button
+            $('.btn-danger').click(function(e) {
+                e.preventDefault();
+                $('#category_id').val('').trigger('change');
+                $('#supplier_id').val('').trigger('change');
+                $('#warehouse_id').val('').trigger('change');
+                $('#status_filter').val('').trigger('change');
+                $('#duration1').val('');
+                $('#start_date1').val('');
+                $('#end_date1').val('');
+                $('#order_by').val('name,asc').trigger('change');
                 table.ajax.reload();
             });
 
@@ -307,7 +354,7 @@
             });
 
              // Update initial empty message colspan dynamically
-             const initialColspan = canManageInventory ? 9 : 8;
+             const initialColspan = canManageInventory ? 10 : 9;
              $("#inventory-table tbody").html('<td colspan="' + initialColspan + '" class="text-center"> {{ __("Select filters and click Apply to load data.") }}</td>');
         });
     </script>

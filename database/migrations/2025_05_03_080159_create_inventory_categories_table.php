@@ -13,7 +13,15 @@ return new class extends Migration
     {
         Schema::create('inventory_categories', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('description')->nullable();
+            $table->unsignedBigInteger('workspace_id');
+            $table->unsignedBigInteger('created_by');
             $table->timestamps();
+            
+            // Foreign key constraints
+            $table->foreign('workspace_id')->references('id')->on('workspaces')->onDelete('cascade');
+            $table->foreign('created_by')->references('id')->on('users')->onDelete('cascade');
         });
     }
 
