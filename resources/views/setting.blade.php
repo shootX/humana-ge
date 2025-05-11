@@ -1443,29 +1443,45 @@
     <script>
         function cust_theme_bg() {
             var custthemebg = document.querySelector("#cust-theme-bg");
-            if (custthemebg.checked) {
-                document.querySelector(".dash-sidebar").classList.add("transprent-bg");
-                document
-                    .querySelector(".dash-header:not(.dash-mob-header)")
-                    .classList.add("transprent-bg");
-            } else {
-                document.querySelector(".dash-sidebar").classList.remove("transprent-bg");
-                document
-                    .querySelector(".dash-header:not(.dash-mob-header)")
-                    .classList.remove("transprent-bg");
+            if (custthemebg && custthemebg.checked) {
+                var sidebar = document.querySelector(".dash-sidebar");
+                var header = document.querySelector(".dash-header:not(.dash-mob-header)");
+                
+                if (sidebar) {
+                    sidebar.classList.add("transprent-bg");
+                }
+                
+                if (header) {
+                    header.classList.add("transprent-bg");
+                }
+            } else if (custthemebg) {
+                var sidebar = document.querySelector(".dash-sidebar");
+                var header = document.querySelector(".dash-header:not(.dash-mob-header)");
+                
+                if (sidebar) {
+                    sidebar.classList.remove("transprent-bg");
+                }
+                
+                if (header) {
+                    header.classList.remove("transprent-bg");
+                }
             }
         }
 
         function cust_darklayout() {
             var custdarklayout = document.querySelector("#cust-darklayout");
-            if (custdarklayout.checked) {
-                document
-                    .querySelector("#main-style-link")
-                    .setAttribute("href", "{{ asset('assets/css/style-dark.css') }}");
-            } else {
-                document
-                    .querySelector("#main-style-link")
-                    .setAttribute("href", "{{ asset('assets/css/style.css') }}");
+            if (custdarklayout && custdarklayout.checked) {
+                var mainStyleLink = document.querySelector("#main-style-link");
+                
+                if (mainStyleLink) {
+                    mainStyleLink.setAttribute("href", "{{ asset('assets/css/style-dark.css') }}");
+                }
+            } else if (custdarklayout) {
+                var mainStyleLink = document.querySelector("#main-style-link");
+                
+                if (mainStyleLink) {
+                    mainStyleLink.setAttribute("href", "{{ asset('assets/css/style.css') }}");
+                }
             }
         }
     </script>

@@ -573,15 +573,27 @@
         if (custthemebg) {
             custthemebg.addEventListener("click", function() {
                 if (custthemebg.checked) {
-                    document.querySelector(".dash-sidebar").classList.add("transprent-bg");
-                    document
-                        .querySelector(".dash-header:not(.dash-mob-header)")
-                        .classList.add("transprent-bg");
+                    var sidebar = document.querySelector(".dash-sidebar");
+                    var header = document.querySelector(".dash-header:not(.dash-mob-header)");
+                    
+                    if (sidebar) {
+                        sidebar.classList.add("transprent-bg");
+                    }
+                    
+                    if (header) {
+                        header.classList.add("transprent-bg");
+                    }
                 } else {
-                    document.querySelector(".dash-sidebar").classList.remove("transprent-bg");
-                    document
-                        .querySelector(".dash-header:not(.dash-mob-header)")
-                        .classList.remove("transprent-bg");
+                    var sidebar = document.querySelector(".dash-sidebar");
+                    var header = document.querySelector(".dash-header:not(.dash-mob-header)");
+                    
+                    if (sidebar) {
+                        sidebar.classList.remove("transprent-bg");
+                    }
+                    
+                    if (header) {
+                        header.classList.remove("transprent-bg");
+                    }
                 }
             });
         }
@@ -590,20 +602,27 @@
         if (custdarklayout) {
             custdarklayout.addEventListener("click", function() {
                 if (custdarklayout.checked) {
-
-                    document
-                        .querySelector("#main-style-link")
-                        .setAttribute("href", "{{ asset('assets/css/style-dark.css') }}");
-                    document
-                        .querySelector(".m-header > .b-brand > .sidebar_logo_size")
-                        .setAttribute("src", "{{ url('storage/logo/logo-dark.png') }}");
+                    var mainStyleLink = document.querySelector("#main-style-link");
+                    var logoElement = document.querySelector(".m-header > .b-brand > .sidebar_logo_size");
+                    
+                    if (mainStyleLink) {
+                        mainStyleLink.setAttribute("href", "{{ asset('assets/css/style-dark.css') }}");
+                    }
+                    
+                    if (logoElement) {
+                        logoElement.setAttribute("src", "{{ url('storage/logo/logo-dark.png') }}");
+                    }
                 } else {
-                    document
-                        .querySelector("#main-style-link")
-                        .setAttribute("href", "{{ asset('assets/css/style.css') }}");
-                    document
-                        .querySelector(".m-header > .b-brand > .sidebar_logo_size")
-                        .setAttribute("src", "{{ url('storage/logo/logo-light.png') }}");
+                    var mainStyleLink = document.querySelector("#main-style-link");
+                    var logoElement = document.querySelector(".m-header > .b-brand > .sidebar_logo_size");
+                    
+                    if (mainStyleLink) {
+                        mainStyleLink.setAttribute("href", "{{ asset('assets/css/style.css') }}");
+                    }
+                    
+                    if (logoElement) {
+                        logoElement.setAttribute("src", "{{ url('storage/logo/logo-light.png') }}");
+                    }
                 }
             });
         }
