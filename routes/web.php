@@ -65,6 +65,8 @@ use App\Http\Controllers\InventoryController;
 use App\Http\Controllers\InventoryCategoryController;
 use App\Http\Controllers\SupplierController;
 use App\Http\Controllers\WarehouseController;
+use App\Http\Controllers\FileManagerController;
+use App\Http\Controllers\TaskCategoryController;
 
 
 /*
@@ -233,7 +235,7 @@ Route::any('invoice-powertranz/response/{slug}', [PowertranzPaymentController::c
 Route::any('invoice-powertranz-status/{id}/{amt?}/{slug}', [PowertranzPaymentController::class, 'invoiceGetPowertranzStatus'])->name('invoice.powertranz.status');
 
 //payu routes
-Route::any('/payu/{pay}', [PayUController::class, 'pay'])->name('payu.pay');
+Route::any('/{slug}/payu/payment/{invoice_id}', [PayUController::class, 'pay'])->name('payu.pay');
 Route::any('/{slug}/payu/payment/{invoice_id}', [PayUController::class, 'invoicePayWithPayu'])->name('invoice.pay.with.payu');
 Route::any('invoice-payu-status/{id}', [PayUController::class, 'getPayuStatus'])->name('invoice.get.payu.status');
 
@@ -713,6 +715,12 @@ Route::group(['middleware' => ['verified']], function () {
     Route::get('/{slug}/tasks', [ProjectController::class, 'allTasks'])->name('tasks.index')->middleware(['auth', 'XSS']);
     Route::post('/{slug}/tasks', [ProjectController::class, 'ajax_tasks'])->name('tasks.ajax')->middleware(['auth', 'XSS']);
 
+    // Task Categories
+    Route::get('/{slug}/task-categories', [TaskCategoryController::class, 'index'])->name('task.categories')->middleware(['auth', 'XSS']);
+    Route::get('/{slug}/task-categories/create', [TaskCategoryController::class, 'create'])->name('task.categories.create')->middleware(['auth', 'XSS']);
+    Route::post('/{slug}/task-categories', [TaskCategoryController::class, 'store'])->name('task.categories.store')->middleware(['auth', 'XSS']);
+    Route::delete('/{slug}/task-categories/{id}', [TaskCategoryController::class, 'destroy'])->name('task.categories.destroy')->middleware(['auth', 'XSS']);
+
     // Timesheet
     Route::get('/{slug}/tasks/{id?}', [ProjectController::class, 'getTask'])->name('get.task.ajax')->middleware(['auth', 'XSS']);
     Route::get('/{slug}/timesheet', [ProjectController::class, 'timesheet'])->name('timesheet.index')->middleware(['auth', 'XSS']);
@@ -1070,6 +1078,48 @@ Route::group(['middleware' => ['verified']], function () {
     Route::post('/{slug}/inventory-categories/store', [InventoryCategoryController::class, 'store'])->name('inventory.categories.store')->middleware(['auth', 'XSS']);
     Route::delete('/{slug}/inventory-categories/{category}', [InventoryCategoryController::class, 'destroy'])->name('inventory.categories.destroy')->middleware(['auth', 'XSS']);
     Route::get('/{slug}/inventory-categories/get', [InventoryCategoryController::class, 'getCategories'])->name('inventory.categories.get')->middleware(['auth', 'XSS']);
+
+    // Task Category Routes
+    Route::post('/{slug}/task-categories', [TaskCategoryController::class, 'store'])->name('task.category.store')->middleware(['auth', 'XSS']);
+    Route::delete('/{slug}/task-categories/{id}', [TaskCategoryController::class, 'destroy'])->name('task.category.destroy')->middleware(['auth', 'XSS']);
+    Route::get('/{slug}/task-categories', [TaskCategoryController::class, 'index'])->name('task.categories')->middleware(['auth', 'XSS']);
 });
 
 Route::get('/{slug}/projects/{id}/task-board/{tid}/{cid?}', [ProjectController::class, 'taskShow'])->name('tasks.show');
+
+/*
+|--------------------------------------------------------------------------
+| ფაილ მენეჯერის მარშრუტები
+|--------------------------------------------------------------------------
+*/
+Route::group(['middleware' => ['auth']], function() {
+    Route::prefix('filemanager')->name('filemanager.')->group(function () {
+        Route::get('/upload', 'App\Http\Controllers\FileManagerController@showUploadForm')->name('upload');
+        Route::post('/upload', 'App\Http\Controllers\FileManagerController@uploadFile')->name('upload.post');
+        Route::get('/files', 'App\Http\Controllers\FileManagerController@listFiles')->name('files');
+        Route::delete('/files', 'App\Http\Controllers\FileManagerController@deleteFile')->name('files.delete');
+        Route::get('/download/{file_name}', 'App\Http\Controllers\FileManagerController@downloadFile')->name('files.download');
+    });
+});
+
+// ფაილის მენეჯერის მარშრუტები
+Route::get('filemanager/upload', [App\Http\Controllers\FileManagerController::class, 'showUploadForm'])->name('file.upload.form');
+Route::post('filemanager/upload', [App\Http\Controllers\FileManagerController::class, 'uploadFile'])->name('file.upload');
+Route::get('filemanager/files', [App\Http\Controllers\FileManagerController::class, 'listFiles'])->name('file.list');
+Route::delete('filemanager/files', [App\Http\Controllers\FileManagerController::class, 'deleteFile'])->name('file.delete');
+Route::get('filemanager/download/{file_name}', [App\Http\Controllers\FileManagerController::class, 'downloadFile'])->name('file.download');
+
+// ფაილ მენეჯერის მარშრუტები
+Route::group(['middleware' => ['auth', 'XSS']], function () {
+    Route::get('/file-upload', [App\Http\Controllers\FileManagerController::class, 'showUploadForm'])->name('file.upload.form');
+    Route::post('/file-upload', [App\Http\Controllers\FileManagerController::class, 'uploadFile'])->name('file.upload');
+    Route::get('/files', [App\Http\Controllers\FileManagerController::class, 'listFiles'])->name('file.list');
+    Route::post('/file-delete', [App\Http\Controllers\FileManagerController::class, 'deleteFile'])->name('file.delete');
+    Route::get('/file-download/{file_name}', [App\Http\Controllers\FileManagerController::class, 'downloadFile'])->name('file.download');
+});
+
+Route::group(['middleware' => ['auth','XSS','2fa']], function () {
+    // ... existing code ...
+    Route::resource('{slug}/task_categories', \App\Http\Controllers\TaskCategoryController::class)->only(['index', 'create', 'store', 'edit', 'update', 'destroy'])->names(['index' => 'task.categories', 'create' => 'task.categories.create', 'store' => 'task.categories.store', 'edit' => 'task.categories.edit', 'update' => 'task.categories.update', 'destroy' => 'task.categories.destroy']);
+    // ... existing code ...
+});
